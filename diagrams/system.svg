@@ -1,93 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1235" viewBox="0 0 900 1235" font-family="Inter, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1113" viewBox="0 0 900 1113" font-family="Inter, Helvetica, Arial, sans-serif">
 <title>My agent system today</title>
-<defs><marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#9A9A9A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ags" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#9A9A9A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ak" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#111111" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="aks" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#111111" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ars" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker></defs>
-<rect width="900" height="1235" fill="#FFFFFF"/>
-<rect x="40.0" y="34.0" width="48.0" height="4.0" rx="0" fill="#E5262B" stroke="none" stroke-width="1.2"/>
-<text x="40.0" y="80.0" font-size="32" font-weight="700" fill="#111111" text-anchor="start">The system today</text>
-<text x="40.0" y="112.0" font-size="18" font-weight="400" fill="#666666" text-anchor="start">How I direct agents. Work flows down. Short reports flow up.</text>
+<defs><marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#8C8C8C" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ags" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#8C8C8C" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ak" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#EDEDED" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="aks" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#EDEDED" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ars" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker></defs>
+<rect width="900" height="1113" fill="#111111"/>
+<g transform="translate(0,-122)">
 <rect x="40.0" y="150.0" width="270.0" height="96.0" rx="10" fill="none" stroke="#E5262B" stroke-width="2"/>
-<text x="58.0" y="179.0" font-size="19" font-weight="700" fill="#111111" text-anchor="start">Samuel</text>
-<text x="58.0" y="204.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">Taste, spend and every</text>
-<text x="58.0" y="225.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">hard-to-undo choice.</text>
-<rect x="590.0" y="150.0" width="270.0" height="96.0" rx="10" fill="none" stroke="#9A9A9A" stroke-width="1.4"/>
-<text x="608.0" y="179.0" font-size="19" font-weight="700" fill="#111111" text-anchor="start">Answer pane</text>
-<text x="608.0" y="204.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">Decisions with exact reply</text>
-<text x="608.0" y="225.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">words, read by plain code.</text>
-<line x1="316.0" y1="198.0" x2="584.0" y2="198.0" stroke="#9A9A9A" stroke-width="1.4" marker-end="url(#ag)" marker-start="url(#ags)"/>
-<text x="450.0" y="190.0" font-size="15" font-weight="500" fill="#666666" text-anchor="middle">decide</text>
-<rect x="40.0" y="316.0" width="820.0" height="84.0" rx="10" fill="none" stroke="#111111" stroke-width="1.8"/>
-<text x="58.0" y="345.0" font-size="19" font-weight="700" fill="#111111" text-anchor="start">Lead session</text>
-<text x="58.0" y="370.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">Plans, writes briefs, reviews short diffs, accepts or rejects what comes back.</text>
-<line x1="175.0" y1="246.0" x2="175.0" y2="310.0" stroke="#111111" stroke-width="1.4" marker-end="url(#ak)"/>
-<text x="187.0" y="285.0" font-size="15" font-weight="500" fill="#666666" text-anchor="start">goals</text>
-<line x1="725.0" y1="310.0" x2="725.0" y2="252.0" stroke="#9A9A9A" stroke-width="1.4" marker-end="url(#ag)"/>
-<text x="737.0" y="285.0" font-size="15" font-weight="500" fill="#666666" text-anchor="start">asks</text>
-<text x="40.0" y="452.0" font-size="20" font-weight="700" fill="#111111" text-anchor="start">Worker ladder</text>
-<text x="40.0" y="476.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">Each job goes to the lowest level that can do it well.</text>
-<rect x="40.0" y="494.0" width="560.0" height="46.0" rx="10" fill="none" stroke="#D6D6D6" stroke-width="1.2"/>
-<text x="56.0" y="523.0" font-size="16" font-weight="600" fill="#111111" text-anchor="start">Hard work</text>
-<text x="172.0" y="523.0" font-size="16" font-weight="400" fill="#111111" text-anchor="start">Opus 5.5, xhigh</text>
-<text x="352.0" y="523.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">long or hard builds</text>
-<rect x="40.0" y="550.0" width="560.0" height="46.0" rx="10" fill="none" stroke="#D6D6D6" stroke-width="1.2"/>
-<text x="56.0" y="579.0" font-size="16" font-weight="600" fill="#111111" text-anchor="start">Review</text>
-<text x="172.0" y="579.0" font-size="16" font-weight="400" fill="#111111" text-anchor="start">Opus 5.5, medium</text>
-<text x="352.0" y="579.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">reads a diff, lists blockers</text>
-<rect x="40.0" y="606.0" width="560.0" height="46.0" rx="10" fill="none" stroke="#D6D6D6" stroke-width="1.2"/>
-<text x="56.0" y="635.0" font-size="16" font-weight="600" fill="#111111" text-anchor="start">Routine</text>
-<text x="172.0" y="635.0" font-size="16" font-weight="400" fill="#111111" text-anchor="start">Sonnet 5.5, high</text>
-<text x="352.0" y="635.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">well-specified work</text>
-<rect x="40.0" y="662.0" width="560.0" height="46.0" rx="10" fill="none" stroke="#D6D6D6" stroke-width="1.2"/>
-<text x="56.0" y="691.0" font-size="16" font-weight="600" fill="#111111" text-anchor="start">Search</text>
-<text x="172.0" y="691.0" font-size="16" font-weight="400" fill="#111111" text-anchor="start">Explore</text>
-<text x="352.0" y="691.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">where is X questions</text>
-<rect x="40.0" y="718.0" width="560.0" height="46.0" rx="10" fill="none" stroke="#D6D6D6" stroke-width="1.2"/>
-<text x="56.0" y="747.0" font-size="16" font-weight="600" fill="#111111" text-anchor="start">Other family</text>
-<text x="172.0" y="747.0" font-size="16" font-weight="400" fill="#111111" text-anchor="start">Codex</text>
-<text x="352.0" y="747.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">second opinion and builds</text>
-<line x1="520.0" y1="400.0" x2="520.0" y2="488.0" stroke="#111111" stroke-width="1.4" marker-end="url(#ak)"/>
-<text x="532.0" y="444.0" font-size="15" font-weight="500" fill="#666666" text-anchor="start">briefs</text>
-<rect x="630.0" y="494.0" width="230.0" height="270.0" rx="10" fill="none" stroke="#9A9A9A" stroke-width="1.4"/>
-<text x="646.0" y="524.0" font-size="19" font-weight="700" fill="#111111" text-anchor="start">Reports are files</text>
-<text x="646.0" y="552.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">A worker writes the full</text>
-<text x="646.0" y="573.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">report to a path in the</text>
-<text x="646.0" y="594.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">brief.</text>
-<text x="646.0" y="623.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">It replies in 15 lines or</text>
-<text x="646.0" y="644.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">fewer. A report is data,</text>
-<text x="646.0" y="665.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">never approval.</text>
-<text x="646.0" y="694.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">The lead's context stays</text>
-<text x="646.0" y="715.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">small.</text>
-<line x1="600.0" y1="629.0" x2="630.0" y2="629.0" stroke="#9A9A9A" stroke-width="1.4" marker-end="url(#ag)"/>
-<text x="40.0" y="820.0" font-size="20" font-weight="700" fill="#111111" text-anchor="start">Checks before main</text>
-<text x="248.8" y="820.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">In the game project (closed 3 Oct)</text>
-<rect x="40.0" y="842.0" width="250.0" height="112.0" rx="10" fill="none" stroke="#9A9A9A" stroke-width="1.4"/>
-<text x="58.0" y="871.0" font-size="19" font-weight="700" fill="#111111" text-anchor="start">Verify gate</text>
-<text x="58.0" y="896.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">A full run writes a green</text>
-<text x="58.0" y="917.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">record for one commit.</text>
-<line x1="294.0" y1="898.0" x2="321.0" y2="898.0" stroke="#9A9A9A" stroke-width="1.4" marker-end="url(#ag)"/>
-<rect x="325.0" y="842.0" width="250.0" height="112.0" rx="10" fill="none" stroke="#9A9A9A" stroke-width="1.4"/>
-<text x="343.0" y="871.0" font-size="19" font-weight="700" fill="#111111" text-anchor="start">Fresh review</text>
-<text x="343.0" y="896.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">Someone who did not write</text>
-<text x="343.0" y="917.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">it reads the diff.</text>
-<line x1="579.0" y1="898.0" x2="606.0" y2="898.0" stroke="#9A9A9A" stroke-width="1.4" marker-end="url(#ag)"/>
-<rect x="610.0" y="842.0" width="250.0" height="112.0" rx="10" fill="none" stroke="#9A9A9A" stroke-width="1.4"/>
-<text x="628.0" y="871.0" font-size="19" font-weight="700" fill="#111111" text-anchor="start">Merge</text>
-<text x="628.0" y="896.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">Refused without a record.</text>
-<text x="628.0" y="917.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">Main waits for me.</text>
-<line x1="450.0" y1="768.0" x2="450.0" y2="810.0" stroke="#9A9A9A" stroke-width="1.2" stroke-dasharray="3 4" marker-end="url(#ag)"/>
-<text x="40.0" y="1010.0" font-size="20" font-weight="700" fill="#111111" text-anchor="start">Under everything</text>
-<text x="40.0" y="1034.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">Code that says no, and notes that persist.</text>
+<text x="58.0" y="179.0" font-size="19" font-weight="700" fill="#EDEDED" text-anchor="start">Samuel</text>
+<text x="58.0" y="204.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">Taste, spend and every</text>
+<text x="58.0" y="225.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">hard-to-undo choice.</text>
+<rect x="590.0" y="150.0" width="270.0" height="96.0" rx="10" fill="none" stroke="#8C8C8C" stroke-width="1.4"/>
+<text x="608.0" y="179.0" font-size="19" font-weight="700" fill="#EDEDED" text-anchor="start">Answer pane</text>
+<text x="608.0" y="204.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">Decisions with exact reply</text>
+<text x="608.0" y="225.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">words, read by plain code.</text>
+<line x1="316.0" y1="198.0" x2="584.0" y2="198.0" stroke="#8C8C8C" stroke-width="1.4" marker-end="url(#ag)" marker-start="url(#ags)"/>
+<text x="450.0" y="190.0" font-size="15" font-weight="500" fill="#B0B0B0" text-anchor="middle">decide</text>
+<rect x="40.0" y="316.0" width="820.0" height="84.0" rx="10" fill="none" stroke="#EDEDED" stroke-width="1.8"/>
+<text x="58.0" y="345.0" font-size="19" font-weight="700" fill="#EDEDED" text-anchor="start">Lead session</text>
+<text x="58.0" y="370.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">Plans, writes briefs, reviews short diffs, accepts or rejects what comes back.</text>
+<line x1="175.0" y1="246.0" x2="175.0" y2="310.0" stroke="#EDEDED" stroke-width="1.4" marker-end="url(#ak)"/>
+<text x="187.0" y="285.0" font-size="15" font-weight="500" fill="#B0B0B0" text-anchor="start">goals</text>
+<line x1="725.0" y1="310.0" x2="725.0" y2="252.0" stroke="#8C8C8C" stroke-width="1.4" marker-end="url(#ag)"/>
+<text x="737.0" y="285.0" font-size="15" font-weight="500" fill="#B0B0B0" text-anchor="start">asks</text>
+<text x="40.0" y="452.0" font-size="20" font-weight="700" fill="#EDEDED" text-anchor="start">Worker ladder</text>
+<text x="40.0" y="476.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">Each job goes to the lowest level that can do it well.</text>
+<rect x="40.0" y="494.0" width="560.0" height="46.0" rx="10" fill="none" stroke="#444444" stroke-width="1.2"/>
+<text x="56.0" y="523.0" font-size="16" font-weight="600" fill="#EDEDED" text-anchor="start">Hard work</text>
+<text x="172.0" y="523.0" font-size="16" font-weight="400" fill="#EDEDED" text-anchor="start">Opus 5.5, xhigh</text>
+<text x="352.0" y="523.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">long or hard builds</text>
+<rect x="40.0" y="550.0" width="560.0" height="46.0" rx="10" fill="none" stroke="#444444" stroke-width="1.2"/>
+<text x="56.0" y="579.0" font-size="16" font-weight="600" fill="#EDEDED" text-anchor="start">Review</text>
+<text x="172.0" y="579.0" font-size="16" font-weight="400" fill="#EDEDED" text-anchor="start">Opus 5.5, medium</text>
+<text x="352.0" y="579.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">reads a diff, lists blockers</text>
+<rect x="40.0" y="606.0" width="560.0" height="46.0" rx="10" fill="none" stroke="#444444" stroke-width="1.2"/>
+<text x="56.0" y="635.0" font-size="16" font-weight="600" fill="#EDEDED" text-anchor="start">Routine</text>
+<text x="172.0" y="635.0" font-size="16" font-weight="400" fill="#EDEDED" text-anchor="start">Sonnet 5.5, high</text>
+<text x="352.0" y="635.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">well-specified work</text>
+<rect x="40.0" y="662.0" width="560.0" height="46.0" rx="10" fill="none" stroke="#444444" stroke-width="1.2"/>
+<text x="56.0" y="691.0" font-size="16" font-weight="600" fill="#EDEDED" text-anchor="start">Search</text>
+<text x="172.0" y="691.0" font-size="16" font-weight="400" fill="#EDEDED" text-anchor="start">Explore</text>
+<text x="352.0" y="691.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">where is X questions</text>
+<rect x="40.0" y="718.0" width="560.0" height="46.0" rx="10" fill="none" stroke="#444444" stroke-width="1.2"/>
+<text x="56.0" y="747.0" font-size="16" font-weight="600" fill="#EDEDED" text-anchor="start">Other family</text>
+<text x="172.0" y="747.0" font-size="16" font-weight="400" fill="#EDEDED" text-anchor="start">Codex</text>
+<text x="352.0" y="747.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">second opinion and builds</text>
+<line x1="520.0" y1="400.0" x2="520.0" y2="488.0" stroke="#EDEDED" stroke-width="1.4" marker-end="url(#ak)"/>
+<text x="532.0" y="444.0" font-size="15" font-weight="500" fill="#B0B0B0" text-anchor="start">briefs</text>
+<rect x="630.0" y="494.0" width="230.0" height="270.0" rx="10" fill="none" stroke="#8C8C8C" stroke-width="1.4"/>
+<text x="646.0" y="524.0" font-size="19" font-weight="700" fill="#EDEDED" text-anchor="start">Reports are files</text>
+<text x="646.0" y="552.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">A worker writes the full</text>
+<text x="646.0" y="573.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">report to a path in the</text>
+<text x="646.0" y="594.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">brief.</text>
+<text x="646.0" y="623.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">It replies in 15 lines or</text>
+<text x="646.0" y="644.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">fewer. A report is data,</text>
+<text x="646.0" y="665.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">never approval.</text>
+<text x="646.0" y="694.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">The lead's context stays</text>
+<text x="646.0" y="715.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">small.</text>
+<line x1="600.0" y1="629.0" x2="630.0" y2="629.0" stroke="#8C8C8C" stroke-width="1.4" marker-end="url(#ag)"/>
+<text x="40.0" y="820.0" font-size="20" font-weight="700" fill="#EDEDED" text-anchor="start">Checks before main</text>
+<text x="248.8" y="820.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">In the game project (closed 3 Oct)</text>
+<rect x="40.0" y="842.0" width="250.0" height="112.0" rx="10" fill="none" stroke="#8C8C8C" stroke-width="1.4"/>
+<text x="58.0" y="871.0" font-size="19" font-weight="700" fill="#EDEDED" text-anchor="start">Verify gate</text>
+<text x="58.0" y="896.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">A full run writes a green</text>
+<text x="58.0" y="917.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">record for one commit.</text>
+<line x1="294.0" y1="898.0" x2="321.0" y2="898.0" stroke="#8C8C8C" stroke-width="1.4" marker-end="url(#ag)"/>
+<rect x="325.0" y="842.0" width="250.0" height="112.0" rx="10" fill="none" stroke="#8C8C8C" stroke-width="1.4"/>
+<text x="343.0" y="871.0" font-size="19" font-weight="700" fill="#EDEDED" text-anchor="start">Fresh review</text>
+<text x="343.0" y="896.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">Someone who did not write</text>
+<text x="343.0" y="917.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">it reads the diff.</text>
+<line x1="579.0" y1="898.0" x2="606.0" y2="898.0" stroke="#8C8C8C" stroke-width="1.4" marker-end="url(#ag)"/>
+<rect x="610.0" y="842.0" width="250.0" height="112.0" rx="10" fill="none" stroke="#8C8C8C" stroke-width="1.4"/>
+<text x="628.0" y="871.0" font-size="19" font-weight="700" fill="#EDEDED" text-anchor="start">Merge</text>
+<text x="628.0" y="896.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">Refused without a record.</text>
+<text x="628.0" y="917.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">Main waits for me.</text>
+<line x1="450.0" y1="768.0" x2="450.0" y2="810.0" stroke="#8C8C8C" stroke-width="1.2" stroke-dasharray="3 4" marker-end="url(#ag)"/>
+<text x="40.0" y="1010.0" font-size="20" font-weight="700" fill="#EDEDED" text-anchor="start">Under everything</text>
+<text x="40.0" y="1034.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">Code that says no, and notes that persist.</text>
 <rect x="40.0" y="1054.0" width="250.0" height="112.0" rx="10" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-dasharray="5 4"/>
-<text x="58.0" y="1083.0" font-size="19" font-weight="700" fill="#111111" text-anchor="start">Hooks and guards</text>
-<text x="58.0" y="1108.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">Usage, landing and</text>
-<text x="58.0" y="1129.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">resource guards refuse in</text>
-<text x="58.0" y="1150.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">the tool layer.</text>
-<rect x="325.0" y="1054.0" width="250.0" height="112.0" rx="10" fill="none" stroke="#9A9A9A" stroke-width="1.4" stroke-dasharray="5 4"/>
-<text x="343.0" y="1083.0" font-size="19" font-weight="700" fill="#111111" text-anchor="start">Mods and panes</text>
-<text x="343.0" y="1108.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">Answer, verify and board</text>
-<text x="343.0" y="1129.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">panes. An explain mod.</text>
-<rect x="610.0" y="1054.0" width="250.0" height="112.0" rx="10" fill="none" stroke="#9A9A9A" stroke-width="1.4" stroke-dasharray="5 4"/>
-<text x="628.0" y="1083.0" font-size="19" font-weight="700" fill="#111111" text-anchor="start">Memory</text>
-<text x="628.0" y="1108.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">A rules file with 40 saved</text>
-<text x="628.0" y="1129.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">versions, notes and diaries.</text>
-<text x="40.0" y="1211.0" font-size="15" font-weight="500" fill="#9A9A9A" text-anchor="start">Samuel Pavlovič  ·  AI agentic work audit  ·  data to 9 Oct 2026</text>
+<text x="58.0" y="1083.0" font-size="19" font-weight="700" fill="#EDEDED" text-anchor="start">Hooks and guards</text>
+<text x="58.0" y="1108.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">Usage, landing and</text>
+<text x="58.0" y="1129.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">resource guards refuse in</text>
+<text x="58.0" y="1150.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">the tool layer.</text>
+<rect x="325.0" y="1054.0" width="250.0" height="112.0" rx="10" fill="none" stroke="#8C8C8C" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="343.0" y="1083.0" font-size="19" font-weight="700" fill="#EDEDED" text-anchor="start">Mods and panes</text>
+<text x="343.0" y="1108.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">Answer, verify and board</text>
+<text x="343.0" y="1129.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">panes. An explain mod.</text>
+<rect x="610.0" y="1054.0" width="250.0" height="112.0" rx="10" fill="none" stroke="#8C8C8C" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="628.0" y="1083.0" font-size="19" font-weight="700" fill="#EDEDED" text-anchor="start">Memory</text>
+<text x="628.0" y="1108.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">A rules file with 40 saved</text>
+<text x="628.0" y="1129.0" font-size="16" font-weight="400" fill="#B0B0B0" text-anchor="start">versions, notes and diaries.</text>
+<text x="40.0" y="1211.0" font-size="15" font-weight="500" fill="#8C8C8C" text-anchor="start">Samuel Pavlovič  ·  AI agentic work audit  ·  data to 9 Oct 2026</text>
+</g>
 </svg>

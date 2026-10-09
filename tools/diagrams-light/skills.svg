@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1953" viewBox="0 0 900 1953" font-family="Inter, Helvetica, Arial, sans-serif">
+<title>Skills matrix: strong, partial, missing</title>
+<defs><marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#9A9A9A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ags" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#9A9A9A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ak" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#111111" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="aks" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#111111" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ars" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker></defs>
+<rect width="900" height="1953" fill="#FFFFFF"/>
+<rect x="40.0" y="34.0" width="48.0" height="4.0" rx="0" fill="#E5262B" stroke="none" stroke-width="1.2"/>
+<text x="40.0" y="80.0" font-size="32" font-weight="700" fill="#111111" text-anchor="start">Skills matrix</text>
+<text x="40.0" y="112.0" font-size="18" font-weight="400" fill="#666666" text-anchor="start">37 skills against the evidence: 20 strong (10 firm, 10 soft), 14 partial, 3 missing.</text>
+<rect x="545.0" y="136.0" width="90.0" height="1657.0" rx="8" fill="#F2F2F2" stroke="none" stroke-width="1.2"/>
+<text x="590.0" y="160.0" font-size="15" font-weight="600" fill="#666666" text-anchor="middle">Strong</text>
+<rect x="655.0" y="136.0" width="90.0" height="1657.0" rx="8" fill="#F2F2F2" stroke="none" stroke-width="1.2"/>
+<text x="700.0" y="160.0" font-size="15" font-weight="600" fill="#666666" text-anchor="middle">Partial</text>
+<rect x="755.0" y="136.0" width="90.0" height="1657.0" rx="8" fill="#F2F2F2" stroke="none" stroke-width="1.2"/>
+<text x="800.0" y="160.0" font-size="15" font-weight="600" fill="#666666" text-anchor="middle">Missing</text>
+<text x="40.0" y="210.0" font-size="18" font-weight="700" fill="#111111" text-anchor="start">Delegation and orchestration</text>
+<text x="40.0" y="249.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Lead and worker delegation</text>
+<circle cx="590.0" cy="244.0" r="8" fill="#E5262B" stroke="#E5262B" stroke-width="1.4"/>
+<line x1="40.0" y1="260.0" x2="860.0" y2="260.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="282.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Parallel work with isolation</text>
+<circle cx="590.0" cy="277.0" r="8" fill="#E5262B" stroke="#E5262B" stroke-width="1.4"/>
+<line x1="40.0" y1="293.0" x2="860.0" y2="293.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="315.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Scripted, resumable orchestration</text>
+<circle cx="590.0" cy="310.0" r="8" fill="#E5262B" stroke="#E5262B" stroke-width="1.4"/>
+<line x1="40.0" y1="326.0" x2="860.0" y2="326.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="348.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Cost-aware model routing</text>
+<circle cx="590.0" cy="343.0" r="8" fill="#E5262B" stroke="#E5262B" stroke-width="1.4"/>
+<line x1="40.0" y1="359.0" x2="860.0" y2="359.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="381.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Second opinion, other model family</text>
+<circle cx="590.0" cy="376.0" r="8" fill="#F6C4C6" stroke="#E5262B" stroke-width="1.6"/>
+<line x1="40.0" y1="392.0" x2="860.0" y2="392.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="414.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Simple design first, prune</text>
+<circle cx="590.0" cy="409.0" r="8" fill="#F6C4C6" stroke="#E5262B" stroke-width="1.6"/>
+<line x1="40.0" y1="425.0" x2="860.0" y2="425.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="460.0" font-size="18" font-weight="700" fill="#111111" text-anchor="start">Verification, review and evals</text>
+<text x="40.0" y="499.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Verification tied to a record</text>
+<circle cx="590.0" cy="494.0" r="8" fill="#E5262B" stroke="#E5262B" stroke-width="1.4"/>
+<line x1="40.0" y1="510.0" x2="860.0" y2="510.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="532.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Tests that fail on revert</text>
+<circle cx="590.0" cy="527.0" r="8" fill="#F6C4C6" stroke="#E5262B" stroke-width="1.6"/>
+<line x1="40.0" y1="543.0" x2="860.0" y2="543.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="565.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Independent review and gates</text>
+<circle cx="590.0" cy="560.0" r="8" fill="#E5262B" stroke="#E5262B" stroke-width="1.4"/>
+<line x1="40.0" y1="576.0" x2="860.0" y2="576.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="598.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Adversarial verifier stage</text>
+<circle cx="590.0" cy="593.0" r="8" fill="#F6C4C6" stroke="#E5262B" stroke-width="1.6"/>
+<line x1="40.0" y1="609.0" x2="860.0" y2="609.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="631.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Calibrated judges</text>
+<circle cx="590.0" cy="626.0" r="8" fill="#F6C4C6" stroke="#E5262B" stroke-width="1.6"/>
+<line x1="40.0" y1="642.0" x2="860.0" y2="642.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="664.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Evals from real failures, re-run</text>
+<circle cx="700.0" cy="659.0" r="8" fill="#FFFFFF" stroke="#E5262B" stroke-width="1.6"/>
+<path d="M 700 651 A 8 8 0 0 0 700 667 Z" fill="#E5262B"/>
+<line x1="40.0" y1="675.0" x2="860.0" y2="675.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="697.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Reliability: pass@k, pass^k</text>
+<circle cx="800.0" cy="692.0" r="8" fill="#FFFFFF" stroke="#9A9A9A" stroke-width="1.4"/>
+<line x1="40.0" y1="708.0" x2="860.0" y2="708.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="730.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Human review of agent output</text>
+<circle cx="700.0" cy="725.0" r="8" fill="#FFFFFF" stroke="#E5262B" stroke-width="1.6"/>
+<path d="M 700 717 A 8 8 0 0 0 700 733 Z" fill="#E5262B"/>
+<line x1="40.0" y1="741.0" x2="860.0" y2="741.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="763.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Benchmark literacy, private evals</text>
+<circle cx="700.0" cy="758.0" r="8" fill="#FFFFFF" stroke="#E5262B" stroke-width="1.6"/>
+<path d="M 700 750 A 8 8 0 0 0 700 766 Z" fill="#E5262B"/>
+<line x1="40.0" y1="774.0" x2="860.0" y2="774.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="809.0" font-size="18" font-weight="700" fill="#111111" text-anchor="start">Context and durable state</text>
+<text x="40.0" y="848.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Context engineering</text>
+<circle cx="590.0" cy="843.0" r="8" fill="#E5262B" stroke="#E5262B" stroke-width="1.4"/>
+<line x1="40.0" y1="859.0" x2="860.0" y2="859.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="881.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Durable memory and handoffs</text>
+<circle cx="590.0" cy="876.0" r="8" fill="#E5262B" stroke="#E5262B" stroke-width="1.4"/>
+<line x1="40.0" y1="892.0" x2="860.0" y2="892.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="914.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Prompt-cache discipline</text>
+<circle cx="700.0" cy="909.0" r="8" fill="#FFFFFF" stroke="#E5262B" stroke-width="1.6"/>
+<path d="M 700 901 A 8 8 0 0 0 700 917 Z" fill="#E5262B"/>
+<line x1="40.0" y1="925.0" x2="860.0" y2="925.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="960.0" font-size="18" font-weight="700" fill="#111111" text-anchor="start">Safety, approvals and unattended runs</text>
+<text x="40.0" y="999.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Hard guardrails in hooks</text>
+<circle cx="590.0" cy="994.0" r="8" fill="#E5262B" stroke="#E5262B" stroke-width="1.4"/>
+<line x1="40.0" y1="1010.0" x2="860.0" y2="1010.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1032.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">OS sandbox, credential isolation</text>
+<circle cx="590.0" cy="1027.0" r="8" fill="#F6C4C6" stroke="#E5262B" stroke-width="1.6"/>
+<line x1="40.0" y1="1043.0" x2="860.0" y2="1043.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1065.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Human approval gates</text>
+<circle cx="590.0" cy="1060.0" r="8" fill="#E5262B" stroke="#E5262B" stroke-width="1.4"/>
+<line x1="40.0" y1="1076.0" x2="860.0" y2="1076.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1098.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Prompt-injection defence</text>
+<circle cx="700.0" cy="1093.0" r="8" fill="#FFFFFF" stroke="#E5262B" stroke-width="1.6"/>
+<path d="M 700 1085 A 8 8 0 0 0 700 1101 Z" fill="#E5262B"/>
+<line x1="40.0" y1="1109.0" x2="860.0" y2="1109.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1131.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Unattended agents with a safety kit</text>
+<circle cx="700.0" cy="1126.0" r="8" fill="#FFFFFF" stroke="#E5262B" stroke-width="1.6"/>
+<path d="M 700 1118 A 8 8 0 0 0 700 1134 Z" fill="#E5262B"/>
+<line x1="40.0" y1="1142.0" x2="860.0" y2="1142.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1177.0" font-size="18" font-weight="700" fill="#111111" text-anchor="start">Extensibility and standards</text>
+<text x="40.0" y="1216.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Plugins and mods</text>
+<circle cx="590.0" cy="1211.0" r="8" fill="#F6C4C6" stroke="#E5262B" stroke-width="1.6"/>
+<line x1="40.0" y1="1227.0" x2="860.0" y2="1227.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1249.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Authoring skills</text>
+<circle cx="700.0" cy="1244.0" r="8" fill="#FFFFFF" stroke="#E5262B" stroke-width="1.6"/>
+<path d="M 700 1236 A 8 8 0 0 0 700 1252 Z" fill="#E5262B"/>
+<line x1="40.0" y1="1260.0" x2="860.0" y2="1260.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1282.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Open standards (AGENTS.md)</text>
+<circle cx="590.0" cy="1277.0" r="8" fill="#F6C4C6" stroke="#E5262B" stroke-width="1.6"/>
+<line x1="40.0" y1="1293.0" x2="860.0" y2="1293.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1315.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">MCP and tool design</text>
+<circle cx="700.0" cy="1310.0" r="8" fill="#FFFFFF" stroke="#E5262B" stroke-width="1.6"/>
+<path d="M 700 1302 A 8 8 0 0 0 700 1318 Z" fill="#E5262B"/>
+<line x1="40.0" y1="1326.0" x2="860.0" y2="1326.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1361.0" font-size="18" font-weight="700" fill="#111111" text-anchor="start">Measurement and honest proof</text>
+<text x="40.0" y="1400.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Honest reporting, baselines</text>
+<circle cx="590.0" cy="1395.0" r="8" fill="#F6C4C6" stroke="#E5262B" stroke-width="1.6"/>
+<line x1="40.0" y1="1411.0" x2="860.0" y2="1411.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1433.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Productivity against a baseline</text>
+<circle cx="700.0" cy="1428.0" r="8" fill="#FFFFFF" stroke="#E5262B" stroke-width="1.6"/>
+<path d="M 700 1420 A 8 8 0 0 0 700 1436 Z" fill="#E5262B"/>
+<line x1="40.0" y1="1444.0" x2="860.0" y2="1444.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1466.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Cost per successful task</text>
+<circle cx="700.0" cy="1461.0" r="8" fill="#FFFFFF" stroke="#E5262B" stroke-width="1.6"/>
+<path d="M 700 1453 A 8 8 0 0 0 700 1469 Z" fill="#E5262B"/>
+<line x1="40.0" y1="1477.0" x2="860.0" y2="1477.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1499.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Observability and replay</text>
+<circle cx="700.0" cy="1494.0" r="8" fill="#FFFFFF" stroke="#E5262B" stroke-width="1.6"/>
+<path d="M 700 1486 A 8 8 0 0 0 700 1502 Z" fill="#E5262B"/>
+<line x1="40.0" y1="1510.0" x2="860.0" y2="1510.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1532.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Autonomy tracking</text>
+<circle cx="700.0" cy="1527.0" r="8" fill="#FFFFFF" stroke="#E5262B" stroke-width="1.6"/>
+<path d="M 700 1519 A 8 8 0 0 0 700 1535 Z" fill="#E5262B"/>
+<line x1="40.0" y1="1543.0" x2="860.0" y2="1543.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1578.0" font-size="18" font-weight="700" fill="#111111" text-anchor="start">People, shipping and public proof</text>
+<text x="40.0" y="1617.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Expert oversight, plain language</text>
+<circle cx="590.0" cy="1612.0" r="8" fill="#F6C4C6" stroke="#E5262B" stroke-width="1.6"/>
+<line x1="40.0" y1="1628.0" x2="860.0" y2="1628.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1650.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Shipping to real users</text>
+<circle cx="700.0" cy="1645.0" r="8" fill="#FFFFFF" stroke="#E5262B" stroke-width="1.6"/>
+<path d="M 700 1637 A 8 8 0 0 0 700 1653 Z" fill="#E5262B"/>
+<line x1="40.0" y1="1661.0" x2="860.0" y2="1661.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1683.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Public, runnable proof</text>
+<circle cx="800.0" cy="1678.0" r="8" fill="#FFFFFF" stroke="#9A9A9A" stroke-width="1.4"/>
+<line x1="40.0" y1="1694.0" x2="860.0" y2="1694.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1716.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Customer ownership</text>
+<circle cx="800.0" cy="1711.0" r="8" fill="#FFFFFF" stroke="#9A9A9A" stroke-width="1.4"/>
+<line x1="40.0" y1="1727.0" x2="860.0" y2="1727.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<text x="40.0" y="1749.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Explaining the code that ships</text>
+<circle cx="700.0" cy="1744.0" r="8" fill="#FFFFFF" stroke="#E5262B" stroke-width="1.6"/>
+<path d="M 700 1736 A 8 8 0 0 0 700 1752 Z" fill="#E5262B"/>
+<line x1="40.0" y1="1760.0" x2="860.0" y2="1760.0" stroke="#E8E8E8" stroke-width="0.8"/>
+<circle cx="48.0" cy="1824.0" r="8" fill="#E5262B" stroke="#E5262B" stroke-width="1.4"/>
+<text x="64.0" y="1829.0" font-size="16" font-weight="500" fill="#111111" text-anchor="start">Strong, firm</text>
+<circle cx="196.6" cy="1824.0" r="8" fill="#F6C4C6" stroke="#E5262B" stroke-width="1.6"/>
+<text x="212.6" y="1829.0" font-size="16" font-weight="500" fill="#111111" text-anchor="start">Strong, soft</text>
+<circle cx="343.6" cy="1824.0" r="8" fill="#FFFFFF" stroke="#E5262B" stroke-width="1.6"/>
+<path d="M 343.609375 1816 A 8 8 0 0 0 343.609375 1832 Z" fill="#E5262B"/>
+<text x="359.6" y="1829.0" font-size="16" font-weight="500" fill="#111111" text-anchor="start">Partial</text>
+<circle cx="449.9" cy="1824.0" r="8" fill="#FFFFFF" stroke="#9A9A9A" stroke-width="1.4"/>
+<text x="465.9" y="1829.0" font-size="16" font-weight="500" fill="#111111" text-anchor="start">Missing</text>
+<text x="40.0" y="1903.0" font-size="15" font-weight="400" fill="#666666" text-anchor="start">in the audit evidence.</text>
+<text x="40.0" y="1882.0" font-size="15" font-weight="400" fill="#666666" text-anchor="start">one measurement, agent-written counts or a known pattern. Partial: shown with a named hole. Missing: not found</text>
+<text x="40.0" y="1861.0" font-size="15" font-weight="400" fill="#666666" text-anchor="start">Firm: shown in more than one place with numbers that were counted again. Soft: strong on paper, but it rests on</text>
+<text x="40.0" y="1929.0" font-size="15" font-weight="500" fill="#9A9A9A" text-anchor="start">Samuel Pavlovič  ·  AI agentic work audit  ·  data to 9 Oct 2026</text>
+</svg>

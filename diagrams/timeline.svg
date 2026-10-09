@@ -1,62 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1435" viewBox="0 0 900 1435" font-family="Inter, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1329" viewBox="0 0 900 1329" font-family="Inter, Helvetica, Arial, sans-serif">
 <title>Timeline of my agentic work, 25 Jun to 9 Oct 2026</title>
-<defs><marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#9A9A9A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ags" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#9A9A9A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ak" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#111111" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="aks" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#111111" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ars" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker></defs>
-<rect width="900" height="1435" fill="#FFFFFF"/>
-<rect x="40.0" y="34.0" width="48.0" height="4.0" rx="0" fill="#E5262B" stroke="none" stroke-width="1.2"/>
-<text x="40.0" y="80.0" font-size="32" font-weight="700" fill="#111111" text-anchor="start">Sixteen weeks, week by week</text>
-<text x="40.0" y="112.0" font-size="18" font-weight="400" fill="#666666" text-anchor="start">25 Jun to 9 Oct 2026. Typed prompts and own commits per week.</text>
-<rect x="92.4" y="156.0" width="162.3" height="30.0" rx="4" fill="#F2F2F2" stroke="none" stroke-width="1.2"/>
-<text x="173.6" y="177.0" font-size="15" font-weight="600" fill="#666666" text-anchor="middle">P1</text>
-<rect x="256.7" y="156.0" width="219.4" height="30.0" rx="4" fill="#E8E8E8" stroke="none" stroke-width="1.2"/>
-<text x="366.4" y="177.0" font-size="15" font-weight="600" fill="#666666" text-anchor="middle">P2</text>
-<rect x="478.1" y="156.0" width="148.0" height="30.0" rx="4" fill="#F2F2F2" stroke="none" stroke-width="1.2"/>
-<text x="552.1" y="177.0" font-size="15" font-weight="600" fill="#666666" text-anchor="middle">P3</text>
-<rect x="628.1" y="156.0" width="69.4" height="30.0" rx="4" fill="#E8E8E8" stroke="none" stroke-width="1.2"/>
-<text x="662.9" y="177.0" font-size="15" font-weight="600" fill="#666666" text-anchor="middle">P4</text>
-<rect x="699.6" y="156.0" width="83.7" height="30.0" rx="4" fill="#F2F2F2" stroke="none" stroke-width="1.2"/>
-<text x="741.4" y="177.0" font-size="15" font-weight="600" fill="#666666" text-anchor="middle">P5</text>
-<rect x="785.3" y="156.0" width="33.7" height="30.0" rx="4" fill="#E8E8E8" stroke="none" stroke-width="1.2"/>
-<text x="802.1" y="177.0" font-size="15" font-weight="600" fill="#666666" text-anchor="middle">P6</text>
-<rect x="821.0" y="156.0" width="33.7" height="30.0" rx="4" fill="#F2F2F2" stroke="none" stroke-width="1.2"/>
-<text x="837.9" y="177.0" font-size="15" font-weight="600" fill="#666666" text-anchor="middle">P7</text>
-<text x="70.0" y="146.0" font-size="15" font-weight="500" fill="#9A9A9A" text-anchor="start">Phases</text>
-<line x1="95.0" y1="240.0" x2="95.0" y2="740.0" stroke="#D6D6D6" stroke-width="0.9" stroke-dasharray="3 4"/>
-<line x1="152.1" y1="240.0" x2="152.1" y2="740.0" stroke="#D6D6D6" stroke-width="0.9" stroke-dasharray="3 4"/>
-<line x1="402.1" y1="240.0" x2="402.1" y2="740.0" stroke="#D6D6D6" stroke-width="0.9" stroke-dasharray="3 4"/>
-<line x1="530.7" y1="240.0" x2="530.7" y2="740.0" stroke="#D6D6D6" stroke-width="0.9" stroke-dasharray="3 4"/>
-<line x1="637.9" y1="240.0" x2="637.9" y2="740.0" stroke="#D6D6D6" stroke-width="0.9" stroke-dasharray="3 4"/>
-<line x1="737.9" y1="240.0" x2="737.9" y2="740.0" stroke="#D6D6D6" stroke-width="0.9" stroke-dasharray="3 4"/>
-<line x1="795.0" y1="240.0" x2="795.0" y2="740.0" stroke="#D6D6D6" stroke-width="0.9" stroke-dasharray="3 4"/>
-<line x1="845.0" y1="240.0" x2="845.0" y2="740.0" stroke="#D6D6D6" stroke-width="0.9" stroke-dasharray="3 4"/>
-<text x="70.0" y="280.0" font-size="17" font-weight="600" fill="#111111" text-anchor="start">Typed prompts per week</text>
-<line x1="70.0" y1="390.0" x2="870.0" y2="390.0" stroke="#D6D6D6" stroke-width="0.8"/>
-<text x="62.0" y="395.0" font-size="14" font-weight="400" fill="#9A9A9A" text-anchor="end">500</text>
-<line x1="70.0" y1="300.0" x2="870.0" y2="300.0" stroke="#D6D6D6" stroke-width="0.8"/>
-<text x="62.0" y="305.0" font-size="14" font-weight="400" fill="#9A9A9A" text-anchor="end">1,000</text>
-<line x1="70.0" y1="480.0" x2="870.0" y2="480.0" stroke="#9A9A9A" stroke-width="1.2"/>
-<rect x="77.0" y="452.3" width="36.0" height="27.7" rx="2" fill="#9A9A9A" stroke="none" stroke-width="1.2"/>
-<rect x="127.0" y="359.6" width="36.0" height="120.4" rx="2" fill="#9A9A9A" stroke="none" stroke-width="1.2"/>
-<rect x="177.0" y="370.9" width="36.0" height="109.1" rx="2" fill="#9A9A9A" stroke="none" stroke-width="1.2"/>
-<rect x="227.0" y="417.9" width="36.0" height="62.1" rx="2" fill="#9A9A9A" stroke="none" stroke-width="1.2"/>
-<rect x="277.0" y="392.9" width="36.0" height="87.1" rx="2" fill="#9A9A9A" stroke="none" stroke-width="1.2"/>
-<rect x="327.0" y="425.8" width="36.0" height="54.2" rx="2" fill="#9A9A9A" stroke="none" stroke-width="1.2"/>
-<rect x="377.0" y="417.7" width="36.0" height="62.3" rx="2" fill="#9A9A9A" stroke="none" stroke-width="1.2"/>
-<rect x="427.0" y="304.3" width="36.0" height="175.7" rx="2" fill="#9A9A9A" stroke="none" stroke-width="1.2"/>
-<text x="445.0" y="296.3" font-size="15" font-weight="700" fill="#111111" text-anchor="middle">976</text>
-<rect x="477.0" y="381.0" width="36.0" height="99.0" rx="2" fill="#9A9A9A" stroke="none" stroke-width="1.2"/>
-<rect x="527.0" y="421.1" width="36.0" height="58.9" rx="2" fill="#9A9A9A" stroke="none" stroke-width="1.2"/>
-<rect x="577.0" y="406.9" width="36.0" height="73.1" rx="2" fill="#9A9A9A" stroke="none" stroke-width="1.2"/>
-<rect x="627.0" y="445.4" width="36.0" height="34.6" rx="2" fill="#9A9A9A" stroke="none" stroke-width="1.2"/>
-<rect x="677.0" y="403.1" width="36.0" height="76.9" rx="2" fill="#9A9A9A" stroke="none" stroke-width="1.2"/>
-<rect x="727.0" y="352.4" width="36.0" height="127.6" rx="2" fill="#9A9A9A" stroke="none" stroke-width="1.2"/>
-<rect x="777.0" y="381.5" width="36.0" height="98.5" rx="2" fill="#9A9A9A" stroke="none" stroke-width="1.2"/>
-<rect x="827.0" y="459.8" width="36.0" height="20.2" rx="2" fill="#9A9A9A" stroke="none" stroke-width="1.2"/>
-<text x="70.0" y="540.0" font-size="17" font-weight="600" fill="#111111" text-anchor="start">Own commits per week</text>
-<line x1="70.0" y1="655.3" x2="870.0" y2="655.3" stroke="#D6D6D6" stroke-width="0.8"/>
-<text x="62.0" y="660.3" font-size="14" font-weight="400" fill="#9A9A9A" text-anchor="end">800</text>
-<line x1="70.0" y1="570.6" x2="870.0" y2="570.6" stroke="#D6D6D6" stroke-width="0.8"/>
-<text x="62.0" y="575.6" font-size="14" font-weight="400" fill="#9A9A9A" text-anchor="end">1,600</text>
-<line x1="70.0" y1="740.0" x2="870.0" y2="740.0" stroke="#9A9A9A" stroke-width="1.2"/>
+<defs><marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#8C8C8C" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ags" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#8C8C8C" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ak" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#EDEDED" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="aks" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#EDEDED" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ars" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker></defs>
+<rect width="900" height="1329" fill="#111111"/>
+<g transform="translate(0,-106)">
+<rect x="92.4" y="156.0" width="162.3" height="30.0" rx="4" fill="#1C1C1C" stroke="none" stroke-width="1.2"/>
+<text x="173.6" y="177.0" font-size="15" font-weight="600" fill="#B0B0B0" text-anchor="middle">P1</text>
+<rect x="256.7" y="156.0" width="219.4" height="30.0" rx="4" fill="#262626" stroke="none" stroke-width="1.2"/>
+<text x="366.4" y="177.0" font-size="15" font-weight="600" fill="#B0B0B0" text-anchor="middle">P2</text>
+<rect x="478.1" y="156.0" width="148.0" height="30.0" rx="4" fill="#1C1C1C" stroke="none" stroke-width="1.2"/>
+<text x="552.1" y="177.0" font-size="15" font-weight="600" fill="#B0B0B0" text-anchor="middle">P3</text>
+<rect x="628.1" y="156.0" width="69.4" height="30.0" rx="4" fill="#262626" stroke="none" stroke-width="1.2"/>
+<text x="662.9" y="177.0" font-size="15" font-weight="600" fill="#B0B0B0" text-anchor="middle">P4</text>
+<rect x="699.6" y="156.0" width="83.7" height="30.0" rx="4" fill="#1C1C1C" stroke="none" stroke-width="1.2"/>
+<text x="741.4" y="177.0" font-size="15" font-weight="600" fill="#B0B0B0" text-anchor="middle">P5</text>
+<rect x="785.3" y="156.0" width="33.7" height="30.0" rx="4" fill="#262626" stroke="none" stroke-width="1.2"/>
+<text x="802.1" y="177.0" font-size="15" font-weight="600" fill="#B0B0B0" text-anchor="middle">P6</text>
+<rect x="821.0" y="156.0" width="33.7" height="30.0" rx="4" fill="#1C1C1C" stroke="none" stroke-width="1.2"/>
+<text x="837.9" y="177.0" font-size="15" font-weight="600" fill="#B0B0B0" text-anchor="middle">P7</text>
+<text x="70.0" y="146.0" font-size="15" font-weight="500" fill="#8C8C8C" text-anchor="start">Phases</text>
+<line x1="95.0" y1="240.0" x2="95.0" y2="740.0" stroke="#444444" stroke-width="0.9" stroke-dasharray="3 4"/>
+<line x1="152.1" y1="240.0" x2="152.1" y2="740.0" stroke="#444444" stroke-width="0.9" stroke-dasharray="3 4"/>
+<line x1="402.1" y1="240.0" x2="402.1" y2="740.0" stroke="#444444" stroke-width="0.9" stroke-dasharray="3 4"/>
+<line x1="530.7" y1="240.0" x2="530.7" y2="740.0" stroke="#444444" stroke-width="0.9" stroke-dasharray="3 4"/>
+<line x1="637.9" y1="240.0" x2="637.9" y2="740.0" stroke="#444444" stroke-width="0.9" stroke-dasharray="3 4"/>
+<line x1="737.9" y1="240.0" x2="737.9" y2="740.0" stroke="#444444" stroke-width="0.9" stroke-dasharray="3 4"/>
+<line x1="795.0" y1="240.0" x2="795.0" y2="740.0" stroke="#444444" stroke-width="0.9" stroke-dasharray="3 4"/>
+<line x1="845.0" y1="240.0" x2="845.0" y2="740.0" stroke="#444444" stroke-width="0.9" stroke-dasharray="3 4"/>
+<text x="70.0" y="280.0" font-size="17" font-weight="600" fill="#EDEDED" text-anchor="start">Typed prompts per week</text>
+<line x1="70.0" y1="390.0" x2="870.0" y2="390.0" stroke="#444444" stroke-width="0.8"/>
+<text x="62.0" y="395.0" font-size="14" font-weight="400" fill="#8C8C8C" text-anchor="end">500</text>
+<line x1="70.0" y1="300.0" x2="870.0" y2="300.0" stroke="#444444" stroke-width="0.8"/>
+<text x="62.0" y="305.0" font-size="14" font-weight="400" fill="#8C8C8C" text-anchor="end">1,000</text>
+<line x1="70.0" y1="480.0" x2="870.0" y2="480.0" stroke="#8C8C8C" stroke-width="1.2"/>
+<rect x="77.0" y="452.3" width="36.0" height="27.7" rx="2" fill="#8C8C8C" stroke="none" stroke-width="1.2"/>
+<rect x="127.0" y="359.6" width="36.0" height="120.4" rx="2" fill="#8C8C8C" stroke="none" stroke-width="1.2"/>
+<rect x="177.0" y="370.9" width="36.0" height="109.1" rx="2" fill="#8C8C8C" stroke="none" stroke-width="1.2"/>
+<rect x="227.0" y="417.9" width="36.0" height="62.1" rx="2" fill="#8C8C8C" stroke="none" stroke-width="1.2"/>
+<rect x="277.0" y="392.9" width="36.0" height="87.1" rx="2" fill="#8C8C8C" stroke="none" stroke-width="1.2"/>
+<rect x="327.0" y="425.8" width="36.0" height="54.2" rx="2" fill="#8C8C8C" stroke="none" stroke-width="1.2"/>
+<rect x="377.0" y="417.7" width="36.0" height="62.3" rx="2" fill="#8C8C8C" stroke="none" stroke-width="1.2"/>
+<rect x="427.0" y="304.3" width="36.0" height="175.7" rx="2" fill="#8C8C8C" stroke="none" stroke-width="1.2"/>
+<text x="445.0" y="296.3" font-size="15" font-weight="700" fill="#EDEDED" text-anchor="middle">976</text>
+<rect x="477.0" y="381.0" width="36.0" height="99.0" rx="2" fill="#8C8C8C" stroke="none" stroke-width="1.2"/>
+<rect x="527.0" y="421.1" width="36.0" height="58.9" rx="2" fill="#8C8C8C" stroke="none" stroke-width="1.2"/>
+<rect x="577.0" y="406.9" width="36.0" height="73.1" rx="2" fill="#8C8C8C" stroke="none" stroke-width="1.2"/>
+<rect x="627.0" y="445.4" width="36.0" height="34.6" rx="2" fill="#8C8C8C" stroke="none" stroke-width="1.2"/>
+<rect x="677.0" y="403.1" width="36.0" height="76.9" rx="2" fill="#8C8C8C" stroke="none" stroke-width="1.2"/>
+<rect x="727.0" y="352.4" width="36.0" height="127.6" rx="2" fill="#8C8C8C" stroke="none" stroke-width="1.2"/>
+<rect x="777.0" y="381.5" width="36.0" height="98.5" rx="2" fill="#8C8C8C" stroke="none" stroke-width="1.2"/>
+<rect x="827.0" y="459.8" width="36.0" height="20.2" rx="2" fill="#8C8C8C" stroke="none" stroke-width="1.2"/>
+<text x="70.0" y="540.0" font-size="17" font-weight="600" fill="#EDEDED" text-anchor="start">Own commits per week</text>
+<line x1="70.0" y1="655.3" x2="870.0" y2="655.3" stroke="#444444" stroke-width="0.8"/>
+<text x="62.0" y="660.3" font-size="14" font-weight="400" fill="#8C8C8C" text-anchor="end">800</text>
+<line x1="70.0" y1="570.6" x2="870.0" y2="570.6" stroke="#444444" stroke-width="0.8"/>
+<text x="62.0" y="575.6" font-size="14" font-weight="400" fill="#8C8C8C" text-anchor="end">1,600</text>
+<line x1="70.0" y1="740.0" x2="870.0" y2="740.0" stroke="#8C8C8C" stroke-width="1.2"/>
 <rect x="77.0" y="738.4" width="36.0" height="1.6" rx="2" fill="#E5262B" stroke="none" stroke-width="1.2"/>
 <rect x="127.0" y="731.0" width="36.0" height="9.0" rx="2" fill="#E5262B" stroke="none" stroke-width="1.2"/>
 <rect x="177.0" y="739.6" width="36.0" height="0.4" rx="2" fill="#E5262B" stroke="none" stroke-width="1.2"/>
@@ -71,7 +69,7 @@
 <rect x="627.0" y="698.2" width="36.0" height="41.8" rx="2" fill="#E5262B" stroke="none" stroke-width="1.2"/>
 <rect x="677.0" y="672.0" width="36.0" height="68.0" rx="2" fill="#E5262B" stroke="none" stroke-width="1.2"/>
 <rect x="727.0" y="567.0" width="36.0" height="173.0" rx="2" fill="#E5262B" stroke="none" stroke-width="1.2"/>
-<text x="745.0" y="559.0" font-size="15" font-weight="700" fill="#111111" text-anchor="middle">1,634</text>
+<text x="745.0" y="559.0" font-size="15" font-weight="700" fill="#EDEDED" text-anchor="middle">1,634</text>
 <rect x="777.0" y="569.8" width="36.0" height="170.2" rx="2" fill="#E5262B" stroke="none" stroke-width="1.2"/>
 <rect x="827.0" y="736.1" width="36.0" height="3.9" rx="2" fill="#E5262B" stroke="none" stroke-width="1.2"/>
 <circle cx="95.0" cy="224.0" r="14" fill="#E5262B" stroke="none" stroke-width="1.4"/>
@@ -90,56 +88,57 @@
 <text x="795.0" y="230.0" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">7</text>
 <circle cx="845.0" cy="224.0" r="14" fill="#E5262B" stroke="none" stroke-width="1.4"/>
 <text x="845.0" y="230.0" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">8</text>
-<line x1="137.9" y1="740.0" x2="137.9" y2="748.0" stroke="#9A9A9A" stroke-width="1.2"/>
-<text x="141.9" y="766.0" font-size="15" font-weight="500" fill="#666666" text-anchor="start">Jul</text>
-<line x1="359.3" y1="740.0" x2="359.3" y2="748.0" stroke="#9A9A9A" stroke-width="1.2"/>
-<text x="363.3" y="766.0" font-size="15" font-weight="500" fill="#666666" text-anchor="start">Aug</text>
-<line x1="580.7" y1="740.0" x2="580.7" y2="748.0" stroke="#9A9A9A" stroke-width="1.2"/>
-<text x="584.7" y="766.0" font-size="15" font-weight="500" fill="#666666" text-anchor="start">Sep</text>
-<line x1="795.0" y1="740.0" x2="795.0" y2="748.0" stroke="#9A9A9A" stroke-width="1.2"/>
-<text x="799.0" y="766.0" font-size="15" font-weight="500" fill="#666666" text-anchor="start">Oct</text>
-<text x="40.0" y="810.0" font-size="20" font-weight="700" fill="#111111" text-anchor="start">Milestones</text>
+<line x1="137.9" y1="740.0" x2="137.9" y2="748.0" stroke="#8C8C8C" stroke-width="1.2"/>
+<text x="141.9" y="766.0" font-size="15" font-weight="500" fill="#B0B0B0" text-anchor="start">Jul</text>
+<line x1="359.3" y1="740.0" x2="359.3" y2="748.0" stroke="#8C8C8C" stroke-width="1.2"/>
+<text x="363.3" y="766.0" font-size="15" font-weight="500" fill="#B0B0B0" text-anchor="start">Aug</text>
+<line x1="580.7" y1="740.0" x2="580.7" y2="748.0" stroke="#8C8C8C" stroke-width="1.2"/>
+<text x="584.7" y="766.0" font-size="15" font-weight="500" fill="#B0B0B0" text-anchor="start">Sep</text>
+<line x1="795.0" y1="740.0" x2="795.0" y2="748.0" stroke="#8C8C8C" stroke-width="1.2"/>
+<text x="799.0" y="766.0" font-size="15" font-weight="500" fill="#B0B0B0" text-anchor="start">Oct</text>
+<text x="40.0" y="810.0" font-size="20" font-weight="700" fill="#EDEDED" text-anchor="start">Milestones</text>
 <circle cx="52.0" cy="855.0" r="12" fill="#E5262B" stroke="none" stroke-width="1.4"/>
 <text x="52.0" y="860.0" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
-<text x="78.0" y="860.0" font-size="17" font-weight="700" fill="#111111" text-anchor="start">25 Jun</text>
-<text x="160.0" y="860.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">First prompt on record. One agent, one project.</text>
+<text x="78.0" y="860.0" font-size="17" font-weight="700" fill="#EDEDED" text-anchor="start">25 Jun</text>
+<text x="160.0" y="860.0" font-size="17" font-weight="400" fill="#EDEDED" text-anchor="start">First prompt on record. One agent, one project.</text>
 <circle cx="52.0" cy="891.0" r="12" fill="#E5262B" stroke="none" stroke-width="1.4"/>
 <text x="52.0" y="896.0" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
-<text x="78.0" y="896.0" font-size="17" font-weight="700" fill="#111111" text-anchor="start">3 Jul</text>
-<text x="160.0" y="896.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">First rule: a costly model plans, cheaper agents build.</text>
+<text x="78.0" y="896.0" font-size="17" font-weight="700" fill="#EDEDED" text-anchor="start">3 Jul</text>
+<text x="160.0" y="896.0" font-size="17" font-weight="400" fill="#EDEDED" text-anchor="start">First rule: a costly model plans, cheaper agents build.</text>
 <circle cx="52.0" cy="927.0" r="12" fill="#E5262B" stroke="none" stroke-width="1.4"/>
 <text x="52.0" y="932.0" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
-<text x="78.0" y="932.0" font-size="17" font-weight="700" fill="#111111" text-anchor="start">7 Aug</text>
-<text x="160.0" y="932.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">In my first fleet: never two model families in one role.</text>
+<text x="78.0" y="932.0" font-size="17" font-weight="700" fill="#EDEDED" text-anchor="start">7 Aug</text>
+<text x="160.0" y="932.0" font-size="17" font-weight="400" fill="#EDEDED" text-anchor="start">In my first fleet: never two model families in one role.</text>
 <circle cx="52.0" cy="963.0" r="12" fill="#E5262B" stroke="none" stroke-width="1.4"/>
 <text x="52.0" y="968.0" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
-<text x="78.0" y="968.0" font-size="17" font-weight="700" fill="#111111" text-anchor="start">25 Aug</text>
-<text x="160.0" y="968.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">I measure my own grader and correct my first claim.</text>
+<text x="78.0" y="968.0" font-size="17" font-weight="700" fill="#EDEDED" text-anchor="start">25 Aug</text>
+<text x="160.0" y="968.0" font-size="17" font-weight="400" fill="#EDEDED" text-anchor="start">I measure my own grader and correct my first claim.</text>
 <circle cx="52.0" cy="999.0" r="12" fill="#E5262B" stroke="none" stroke-width="1.4"/>
 <text x="52.0" y="1004.0" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
-<text x="78.0" y="1004.0" font-size="17" font-weight="700" fill="#111111" text-anchor="start">9 Sep</text>
-<text x="160.0" y="1004.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Work below the lead, fenced by a balance floor and a file fence.</text>
+<text x="78.0" y="1004.0" font-size="17" font-weight="700" fill="#EDEDED" text-anchor="start">9 Sep</text>
+<text x="160.0" y="1004.0" font-size="17" font-weight="400" fill="#EDEDED" text-anchor="start">Work below the lead, fenced by a balance floor and a file fence.</text>
 <circle cx="52.0" cy="1035.0" r="12" fill="#E5262B" stroke="none" stroke-width="1.4"/>
 <text x="52.0" y="1040.0" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">6</text>
-<text x="78.0" y="1040.0" font-size="17" font-weight="700" fill="#111111" text-anchor="start">23 Sep</text>
-<text x="160.0" y="1040.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Biggest day: a 331-agent run. A failed night becomes a kit.</text>
+<text x="78.0" y="1040.0" font-size="17" font-weight="700" fill="#EDEDED" text-anchor="start">23 Sep</text>
+<text x="160.0" y="1040.0" font-size="17" font-weight="400" fill="#EDEDED" text-anchor="start">Biggest day: a 331-agent run. A failed night becomes a kit.</text>
 <circle cx="52.0" cy="1071.0" r="12" fill="#E5262B" stroke="none" stroke-width="1.4"/>
 <text x="52.0" y="1076.0" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">7</text>
-<text x="78.0" y="1076.0" font-size="17" font-weight="700" fill="#111111" text-anchor="start">1–2 Oct</text>
-<text x="160.0" y="1076.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">Six-level worker ladder. Seven mods: three guards, four panes and helpers.</text>
+<text x="78.0" y="1076.0" font-size="17" font-weight="700" fill="#EDEDED" text-anchor="start">1–2 Oct</text>
+<text x="160.0" y="1076.0" font-size="17" font-weight="400" fill="#EDEDED" text-anchor="start">Six-level worker ladder. Seven mods: three guards, four panes and helpers.</text>
 <circle cx="52.0" cy="1107.0" r="12" fill="#E5262B" stroke="none" stroke-width="1.4"/>
 <text x="52.0" y="1112.0" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">8</text>
-<text x="78.0" y="1112.0" font-size="17" font-weight="700" fill="#111111" text-anchor="start">8 Oct</text>
-<text x="160.0" y="1112.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">I measure my own tools. A 96-agent read-only review.</text>
-<text x="40.0" y="1172.0" font-size="20" font-weight="700" fill="#111111" text-anchor="start">Phases</text>
-<text x="40.0" y="1204.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">P1  One agent</text>
-<text x="460.0" y="1204.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">P2  Hand-run fleet</text>
-<text x="40.0" y="1234.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">P3  Cheap workers</text>
-<text x="460.0" y="1234.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">P4  Lead and councils</text>
-<text x="40.0" y="1264.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">P5  Write it down</text>
-<text x="460.0" y="1264.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">P6  Ladder and guards</text>
-<text x="40.0" y="1294.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">P7  Prune and measure</text>
-<text x="40.0" y="1385.0" font-size="15" font-weight="400" fill="#666666" text-anchor="start">volume, not quality.</text>
-<text x="40.0" y="1364.0" font-size="15" font-weight="400" fill="#666666" text-anchor="start">Prompts: the higher of the history file and the transcripts, so a floor. The last week is a part week. Bars show</text>
-<text x="40.0" y="1411.0" font-size="15" font-weight="500" fill="#9A9A9A" text-anchor="start">Samuel Pavlovič  ·  AI agentic work audit  ·  data to 9 Oct 2026</text>
+<text x="78.0" y="1112.0" font-size="17" font-weight="700" fill="#EDEDED" text-anchor="start">8 Oct</text>
+<text x="160.0" y="1112.0" font-size="17" font-weight="400" fill="#EDEDED" text-anchor="start">I measure my own tools. A 96-agent read-only review.</text>
+<text x="40.0" y="1172.0" font-size="20" font-weight="700" fill="#EDEDED" text-anchor="start">Phases</text>
+<text x="40.0" y="1204.0" font-size="17" font-weight="400" fill="#EDEDED" text-anchor="start">P1  One agent</text>
+<text x="460.0" y="1204.0" font-size="17" font-weight="400" fill="#EDEDED" text-anchor="start">P2  Hand-run fleet</text>
+<text x="40.0" y="1234.0" font-size="17" font-weight="400" fill="#EDEDED" text-anchor="start">P3  Cheap workers</text>
+<text x="460.0" y="1234.0" font-size="17" font-weight="400" fill="#EDEDED" text-anchor="start">P4  Lead and councils</text>
+<text x="40.0" y="1264.0" font-size="17" font-weight="400" fill="#EDEDED" text-anchor="start">P5  Write it down</text>
+<text x="460.0" y="1264.0" font-size="17" font-weight="400" fill="#EDEDED" text-anchor="start">P6  Ladder and guards</text>
+<text x="40.0" y="1294.0" font-size="17" font-weight="400" fill="#EDEDED" text-anchor="start">P7  Prune and measure</text>
+<text x="40.0" y="1385.0" font-size="15" font-weight="400" fill="#B0B0B0" text-anchor="start">volume, not quality.</text>
+<text x="40.0" y="1364.0" font-size="15" font-weight="400" fill="#B0B0B0" text-anchor="start">Prompts: the higher of the history file and the transcripts, so a floor. The last week is a part week. Bars show</text>
+<text x="40.0" y="1411.0" font-size="15" font-weight="500" fill="#8C8C8C" text-anchor="start">Samuel Pavlovič  ·  AI agentic work audit  ·  data to 9 Oct 2026</text>
+</g>
 </svg>
