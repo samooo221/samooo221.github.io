@@ -93,10 +93,10 @@
 <summary><span class="row"><span class="idx">01</span><span class="q">A check that never failed gives no proof that it tests anything.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>A check is not a guard until I have watched it fail</h4>
 <dl>
-<dt>Problem</dt><dd>If a check has never failed, I cannot tell whether it tests anything. It prints OK, and everyone trusts it.</dd>
-<dt>What I did</dt><dd>From 25 Jul, a worker had to revert its own change and see its check go red. If the check stayed green, the job went back. I had agents break the guards on purpose and then audit that sweep too. Gates were fed known-bad input. A gate that did not run must never print OK.</dd>
-<dt>Result</dt><dd>In one session, agents broke 16 guards on purpose, and 2 of them did not notice. The sweep itself once scored 100% while testing nothing; I had that fixed as well. The same habit shows up in five projects, July to October.</dd>
-<dt class="lim">Limit</dt><dd>The counts come from project notes and git history. I did not re-run the test suites for this page.</dd>
+<dt>Problem</dt><dd>A check that has never failed prints OK, and everyone trusts it.</dd>
+<dt>What I did</dt><dd>From July, a worker had to revert its own change and see its check go red. Agents broke guards on purpose, then audited the breaking tool too. A gate that did not run now exits with an error instead of printing OK.</dd>
+<dt>Result</dt><dd>In one session, 2 of 16 guards did not notice a deliberate break. The breaking tool once scored 100% while testing nothing, until a baseline check fixed it. The habit recurs across several projects.</dd>
+<dt class="lim">Limit</dt><dd>Counts come from notes and git history; I did not re-run the suites.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">git history</span><span class="tag">project notes</span><span class="tag">not re-run</span></dd>
 </dl></div>
 </details>
@@ -104,43 +104,43 @@
 <summary><span class="row"><span class="idx">02</span><span class="q">A worker's finding can sound right and still be wrong.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>A second stage whose only job is to refute</h4>
 <dl>
-<dt>Problem</dt><dd>Workers report findings with confidence. Some are wrong, and acting on a wrong one wastes a day.</dd>
-<dt>What I did</dt><dd>After the workers report, a verifier tries to break each claim before anyone acts. It re-opens every cited file, re-runs the gate or argues the opposite. Findings use fixed formats. Every report ends with a list of what was not checked.</dd>
-<dt>Result</dt><dd>In a 35-seat review panel on my game project, 203 findings came in. 196 held up, 6 were refuted and 1 stayed unclear. In a later review of my own portfolio, the checks overruled the first report 11 times.</dd>
-<dt class="lim">Limit</dt><dd>The panel numbers are model-made. A model verifier is not a human reviewer.</dd>
+<dt>Problem</dt><dd>Some confident findings are wrong, and acting on one wastes a day.</dd>
+<dt>What I did</dt><dd>I directed AI agents to add a stage that tries to refute each claim. It re-opens every cited file, re-runs the check or argues the opposite. Every report ends with a list of what was not checked.</dd>
+<dt>Result</dt><dd>In a 35-seat review run on a game project, the verifier refuted 6 of 203 findings, about 3%. In my portfolio review, a check settled most of 11 facts that differed between reports.</dd>
+<dt class="lim">Limit</dt><dd>The verifier is a model, often from the finder's family, so both can share blind spots. A low refutation rate is not a quality score.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">panel records</span><span class="tag">review plans</span><span class="tag">model-made counts</span></dd>
 </dl></div>
 </details>
 <details class="idea" id="idea-03">
-<summary><span class="row"><span class="idx">03</span><span class="q">A model reviewing its own family's work tends to agree with it.</span><span class="chev" aria-hidden="true"></span></span></summary>
-<div class="body"><h4>A reviewer from another model family, by rule</h4>
+<summary><span class="row"><span class="idx">03</span><span class="q">Two reviewers from one model family can share the same blind spots.</span><span class="chev" aria-hidden="true"></span></span></summary>
+<div class="body"><h4>A reviewer from another model family, for important changes</h4>
 <dl>
-<dt>Problem</dt><dd>Two sessions of the same model family tend to agree with each other. That is not a review.</dd>
-<dt>What I did</dt><dd>On 7 Aug I deleted a working reviewer because it came from the writer's model family and kept agreeing. My rule since then: the reviewer never comes from the writer's family. Codex reviews Claude, and other families review the rest. I measured the effect and made the rule part of every project.</dd>
-<dt>Result</dt><dd>Two reviewers from different families read the same 11-file snapshot. They shared only 1 of 11 findings. Once, four same-family sessions approved a file, and an outside model found its fault in about 10 minutes. From 19 Sep to 8 Oct I ran 441 Codex sessions.</dd>
-<dt class="lim">Limit</dt><dd>Both figures come from my own project notes. A model reviewer is still not a human reviewer.</dd>
-<dt>Evidence</dt><dd class="tags"><span class="tag">review reports</span><span class="tag">project notes</span><span class="tag">not re-run</span></dd>
+<dt>Problem</dt><dd>Two sessions from the same model family can miss the same faults. Their agreement is not an independent review.</dd>
+<dt>What I did</dt><dd>From 7 Aug, important changes get a second opinion from a different model family, such as Codex or Kimi. My rule: no two reviewers from the same family in the same role. I directed AI agents to run the reviews.</dd>
+<dt>Result</dt><dd>In one frozen 11-file snapshot, two outside reviewers shared only 1 of 11 findings. So I stopped treating one reviewer as independent.</dd>
+<dt class="lim">Limit</dt><dd>That is one example, not a general rate. Routine diffs still get a Claude reviewer. A model reviewer is not a human reviewer.</dd>
+<dt>Evidence</dt><dd class="tags"><span class="tag">review reports</span><span class="tag">project notes</span><span class="tag">one example</span></dd>
 </dl></div>
 </details>
 <details class="idea" id="idea-04">
 <summary><span class="row"><span class="idx">04</span><span class="q">A model judge can give two verdicts on the same answer.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>Measure the judge before I trust the score</h4>
 <dl>
-<dt>Problem</dt><dd>Model judges decide what counts as better. If the judge is noisy, every score is noise too.</dd>
-<dt>What I did</dt><dd>I tested my own graders. I gave them byte-identical answers and counted how often the verdict changed. A model judge never decides alone: it proposes, and a measuring tool is the gate. Where I could, I scored with no model at all.</dd>
-<dt>Result</dt><dd>Byte-identical answers got different verdicts on 2 of 18 rows, about 11%. So one judge could not show an effect smaller than 3 rows. I hired a new judge only after a gold-set test: 75% agreement and 0 wrong agreements in 32 trials.</dd>
-<dt class="lim">Limit</dt><dd>The legal assistant I measured this on missed its own target: 43% defensible answers against 75 to 80%. That repository is private, and I did not re-run the scores.</dd>
-<dt>Evidence</dt><dd class="tags"><span class="tag">experiment notes</span><span class="tag">gold-set tests</span><span class="tag">not re-run</span></dd>
+<dt>Problem</dt><dd>If the judge is noisy, a small change in the score is noise too.</dd>
+<dt>What I did</dt><dd>I gave my own AI grader identical answer pairs and counted the flipped verdicts.</dd>
+<dt>Result</dt><dd>First test: 2 of 17 rows flipped. Three graders on 18 more rows showed no flips, so about 6% pooled (2 of 35). I corrected my first claim of 11% the same day. A one-row change now counts as noise.</dd>
+<dt class="lim">Limit</dt><dd>The legal-text assistant I measured this on missed its target: 43% defensible answers against 75 to 80%. The repository is private, and I did not re-run the scores.</dd>
+<dt>Evidence</dt><dd class="tags"><span class="tag">experiment notes</span><span class="tag">own correction</span><span class="tag">not re-run</span></dd>
 </dl></div>
 </details>
 <details class="idea" id="idea-05">
 <summary><span class="row"><span class="idx">05</span><span class="q">An agent can say "done" when nothing was tested.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>A green check that is hard to fake</h4>
 <dl>
-<dt>Problem</dt><dd>An agent can say &quot;done&quot; when nothing was tested. Early on, my gate printed ALL GREEN while four workspaces were untested.</dd>
-<dt>What I did</dt><dd>I directed AI agents to build a verification gate for a game project. A full test run writes a green record tied to one commit and one clean working tree. Landing is refused without that record, and the landed tree must match the verified tree. A hook stops agents from writing into the record folder. I had the checks changed so they can fail.</dd>
-<dt>Result</dt><dd>The procedure was one full verify per wave. A log of 45 push decisions (2 to 4 Oct) shows 18 holds, 8 passes on a green record, 1 refusal of a subagent push and 18 that went ahead after my yes.</dd>
-<dt class="lim">Limit</dt><dd>The hook is not sandboxed. 13 waves landed since my last play test, so I added a human-only PLAYED step. The log does not show a green record for every wave.</dd>
+<dt>Problem</dt><dd>On 19 Sep my own gate printed ALL GREEN while four workspaces were untested.</dd>
+<dt>What I did</dt><dd>I directed AI agents to build a verification gate for a game project. A full test run writes a green record tied to one commit. Landing is refused without that record. A hook stops agents from writing into the record folder.</dd>
+<dt>Result</dt><dd>A log of 45 push decisions over three days shows 18 holds, 8 passes on a green record, 1 refusal and 18 that went ahead after my yes.</dd>
+<dt class="lim">Limit</dt><dd>The hook is not sandboxed. 13 waves landed before anyone played the game, so I added a play-test sign-off.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">git history</span><span class="tag">hook logs</span><span class="tag">counted, not re-run</span></dd>
 </dl></div>
 </details>
@@ -148,9 +148,9 @@
 <summary><span class="row"><span class="idx">06</span><span class="q">A brief says what to build, but rarely how to spot a wrong build.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>Rule pages that list the wrong builds their tests must reject</h4>
 <dl>
-<dt>Problem</dt><dd>A brief says what to build. It rarely says how to tell a wrong build from a right one.</dd>
-<dt>What I did</dt><dd>In my game project, I directed AI agents to write one rule page per game rule. Each page says what correct looks like and which tests pin it down. It also names the likely wrong builds those tests must reject. A checker runs the pages inside every verify run.</dd>
-<dt>Result</dt><dd>408 rule pages, 407 of them with tests, naming 572 wrong builds. A worker picks one page and knows what to build and how to check it. It works like a small test set for agents.</dd>
+<dt>Problem</dt><dd>A brief rarely says how to tell a wrong build from a right one.</dd>
+<dt>What I did</dt><dd>From 28 Sep, I directed AI agents to write one rule page per game rule. Each page says what correct looks like, which tests pin it down and which likely wrong builds those tests must reject. A checker runs the pages in every verify run.</dd>
+<dt>Result</dt><dd>408 rule pages, 407 with tests, naming 572 wrong builds. The pages are built to work like a small test set.</dd>
 <dt class="lim">Limit</dt><dd>The tests belong to one game. The same project made 329 top-level documents, so the process outgrew the product.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">rule-page files</span><span class="tag">git history</span><span class="tag">counted, not re-run</span></dd>
 </dl></div>
@@ -162,43 +162,43 @@
 <summary><span class="row"><span class="idx">07</span><span class="q">A rule written in a prompt is a rule a model can talk past.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>Rules written as code that says no</h4>
 <dl>
-<dt>Problem</dt><dd>A written rule is only a request. Under pressure, a model finds a way around it.</dd>
-<dt>What I did</dt><dd>I moved my rules out of prompts and into the tool layer. On 1 Oct I directed six AI agents to build six plugins (mods) for Claude Code. They took 1 hour 48 minutes, and a seventh followed. A refusal is final: the agent reports it word for word and never works around it.</dd>
-<dt>Result</dt><dd>7 mods, with about 9,300 lines of hook code and 8,200 lines of tests. In three days of logs the guards refused 22 memory-heavy jobs and 2 top-priced workers. For two guards, agents made dozens of deliberate breaks to see the tests catch them. 12 of my rules now have code behind them.</dd>
-<dt class="lim">Limit</dt><dd>Mods are not sandboxed. The tool kit has no git history, and one deliberate break in a review round went uncaught.</dd>
-<dt>Evidence</dt><dd class="tags"><span class="tag">guard logs</span><span class="tag">line counts</span><span class="tag">tests counted, not run</span></dd>
+<dt>Problem</dt><dd>Under pressure, a model can find a way around a written rule.</dd>
+<dt>What I did</dt><dd>I moved key rules into the tool layer. I directed AI agents to build six plugins (mods) for Claude Code in one evening, and a seventh the next day. Three are guards; the rest are panes and helpers. A refusal is final.</dd>
+<dt>Result</dt><dd>About 500 test cases, counted, not run for this page. In a small live log, the spend guard refused 2 top-priced workers. 11 of my rules now have code behind them.</dd>
+<dt class="lim">Limit</dt><dd>Mods are not sandboxed, so a guard is hard to talk past, not impossible. The kit has no git history.</dd>
+<dt>Evidence</dt><dd class="tags"><span class="tag">guard logs</span><span class="tag">test counts</span><span class="tag">counted, not run</span></dd>
 </dl></div>
 </details>
 <details class="idea" id="idea-08">
 <summary><span class="row"><span class="idx">08</span><span class="q">Telling an agent not to touch my files does not stop it.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>A kernel fence, not a polite request</h4>
 <dl>
-<dt>Problem</dt><dd>A prompt that says "read only" is not a fence. An agent can still write files or read secrets.</dd>
-<dt>What I did</dt><dd>I run risky agent jobs inside an operating-system fence. The system and home folders are read-only, credential folders are hidden and tokens are blanked. A time cap and a memory cap end runaway jobs. A short probe proves that writes and secret reads fail, and that allowed work still passes.</dd>
-<dt>Result</dt><dd>The fence is 29 lines and the probe is 24; the probe passed 11 of 11. I reused the same recipe in four projects, including a 35-seat review panel and a hostile Codex audit.</dd>
-<dt class="lim">Limit</dt><dd>An issue trigger built on the fence ran only in dry-run mode. The fence works on Linux only.</dd>
+<dt>Problem</dt><dd>A prompt that says "read only" does not stop an agent writing files or reading secrets.</dd>
+<dt>What I did</dt><dd>I directed AI agents to build a small Linux sandbox for risky agent runs. System and home are read-only, credential locations are unreachable and tokens are blanked. Time and memory caps end runaway jobs. A probe checks that writes and secret reads fail, and that normal work passes.</dd>
+<dt>Result</dt><dd>The probe's 11 checks passed. I reused the recipe on a security audit seat and on a 35-reviewer panel for a game project.</dd>
+<dt class="lim">Limit</dt><dd>Sandboxing is a known pattern, and this one works on Linux only. A trigger built on it ran in dry-run only.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">probe results</span><span class="tag">project notes</span><span class="tag">not re-run</span></dd>
 </dl></div>
 </details>
 <details class="idea" id="idea-09">
 <summary><span class="row"><span class="idx">09</span><span class="q">A study tutor that hands out answers stops being a tutor.</span><span class="chev" aria-hidden="true"></span></span></summary>
-<div class="body"><h4>The AI may teach, but I must produce, enforced in code</h4>
+<div class="body"><h4>The AI may teach, but not hand over the answer</h4>
 <dl>
-<dt>Problem</dt><dd>When I study with AI, it is easy to let it write the solution. Then I learn nothing.</dd>
-<dt>What I did</dt><dd>In my study tools, plain code checks every tutor reply. It blocks extra code blocks, long code and any phrase from the real solution. I signed a pre-registered self-experiment to test the system. Build gates keep course material out of public builds, and they fail closed.</dd>
-<dt>Result</dt><dd>The reply guard has 36 tests. A review found spacing tricks that slipped past it, so I had it hardened. A larger study tool has 1,458 tests in 33 files.</dd>
-<dt class="lim">Limit</dt><dd>The self-experiment has no data yet. Most of the repositories are private, and nobody else has used the tools.</dd>
-<dt>Evidence</dt><dd class="tags"><span class="tag">test counts</span><span class="tag">review notes</span><span class="tag">counted, not run</span></dd>
+<dt>Problem</dt><dd>If the AI writes the solution, I learn nothing.</dd>
+<dt>What I did</dt><dd>I directed AI agents to build a study tutor. Plain code checks every reply and rejects extra code blocks, long code or any phrase from the real solution. Prompt rules cover what the code cannot catch.</dd>
+<dt>Result</dt><dd>The reply check has 36 tests. A review found spacing tricks that slipped past it, so I had it hardened. I signed a pre-registered design for a one-person experiment.</dd>
+<dt class="lim">Limit</dt><dd>The check is a heuristic and cannot catch an answer in plain prose. The experiment has no data yet. Nobody else uses the tools.</dd>
+<dt>Evidence</dt><dd class="tags"><span class="tag">test counts</span><span class="tag">review notes</span><span class="tag">no data yet</span></dd>
 </dl></div>
 </details>
 <details class="idea" id="idea-10">
 <summary><span class="row"><span class="idx">10</span><span class="q">An overnight run froze, and nobody noticed for hours.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>Count the incident, build one small fix, arm it after a dry run</h4>
 <dl>
-<dt>Problem</dt><dd>An overnight agent run froze. 21 workers waited on approval prompts for hours before anyone noticed.</dd>
-<dt>What I did</dt><dd>I had my agents measure it: all 21 recursive deletes froze, and 22 worker calls stalled in all. The same day I directed five AI agents to build and test a small kit. Its guard hook fails open on its own bugs, and its away-switch expires after 16 hours. The memory watchdog started in log-only mode.</dd>
-<dt>Result</dt><dd>In log-only mode the watchdog logged 54 would-stop lines for 4 jobs in one day, before any real kill was allowed.</dd>
-<dt class="lim">Limit</dt><dd>The guard&#x27;s first real use saw no stall and no block (3 log lines), so it is unproven. The watchdog is still log-only.</dd>
+<dt>Problem</dt><dd>In a large overnight run, 21 workers waited on approval prompts for hours.</dd>
+<dt>What I did</dt><dd>Agents measured it from the logs: 23 of about 6,078 worker shell calls got no answer. The same day I directed five AI agents to build a small kit. Its guard fails open on its own bugs; its away-switch expires after 16 hours.</dd>
+<dt>Result</dt><dd>The memory watchdog started in log-only mode. It wrote 54 would-stop log entries in one day before any real kill was allowed.</dd>
+<dt class="lim">Limit</dt><dd>The guard's first real use saw no stall and no block (3 log lines), so it is unproven. The watchdog is still log-only.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">incident log</span><span class="tag">tool logs</span><span class="tag">counted, not re-run</span></dd>
 </dl></div>
 </details>
@@ -207,7 +207,7 @@
 <div class="body"><h4>Approvals an agent cannot give itself</h4>
 <dl>
 <dt>Problem</dt><dd>A worker report can read like a yes. A tired owner might accept it.</dd>
-<dt>What I did</dt><dd>I directed AI agents to build a small plugin layer for Claude Code. A decision closes only when my own typed reply (or one from my phone) holds the exact answer. It reads the origin stamp the tool engine gives each message. A worker report counts as data, never as approval. Plain code does the matching, no model.</dd>
+<dt>What I did</dt><dd>I directed AI agents to build a small plugin layer for Claude Code. A decision closes only when my own typed reply, or one from my phone, holds the exact answer. It uses the origin stamp the tool engine gives each message. A worker report is data, never approval. Plain code does the matching.</dd>
 <dt>Result</dt><dd>138 automated tests. 23 real decisions went through it over three days (2 to 4 Oct 2026).</dd>
 <dt class="lim">Limit</dt><dd>Plugins are not sandboxed, so another plugin could still answer the confirm dialog. The spend-guard log has only a few real events.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">test counts</span><span class="tag">decision logs</span><span class="tag">counted, not re-run</span></dd>
@@ -220,10 +220,10 @@
 <summary><span class="row"><span class="idx">12</span><span class="q">One agent at a time is slow; many at once collide.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>One person, many workers, in measured waves</h4>
 <dl>
-<dt>Problem</dt><dd>One agent at a time is slow. Many agents at once overwrite each other.</dd>
-<dt>What I did</dt><dd>I directed AI agents to build in waves on one machine. Builders work on separate branches and files. One lead merges, as the only committer. In a private browser game-engine project I landed 49 merge waves in 8 days (26 Sep to 3 Oct). Peak was an estimated 20 workers on one day. From 18 Sep to 8 Oct I ran 82 scripted workflow runs with 1,941 agents. The biggest run had 331 agents and took 105 minutes.</dd>
-<dt>Result</dt><dd>82 runs, 1,941 agents, 1,159 subagent spawns, 49 merge waves. The procedure was one full verify per wave. The 45-decision push log shows 8 landings on a green record.</dd>
-<dt class="lim">Limit</dt><dd>These counts are volume, not quality. 13 waves landed since my last play test, which I wrote down as a gap.</dd>
+<dt>Problem</dt><dd>Many agents at once overwrite each other.</dd>
+<dt>What I did</dt><dd>I directed AI agents to build in waves on one machine. Builders work on separate branches and files. One lead merges, as the only committer, and one full check runs per wave.</dd>
+<dt>Result</dt><dd>In a private browser game-engine project, 49 merge waves landed in 8 days (26 Sep to 3 Oct), with a peak of about 20 workers on one day. From 18 Sep to 8 Oct I ran 82 scripted workflow runs with 1,941 agents; the biggest had 331.</dd>
+<dt class="lim">Limit</dt><dd>These counts are volume, not quality. 13 waves landed before anyone played the game. Only I can judge if it is fun.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">workflow logs</span><span class="tag">git history</span><span class="tag">counted, not re-run</span></dd>
 </dl></div>
 </details>
@@ -231,10 +231,10 @@
 <summary><span class="row"><span class="idx">13</span><span class="q">A worker with a loose brief edits files it should not touch.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>Every job is a contract with a write scope</h4>
 <dl>
-<dt>Problem</dt><dd>A worker with a loose brief edits things it should not touch.</dd>
-<dt>What I did</dt><dd>For a private music studio project, every unit of work was a written contract: goal, files it may write, files it may not touch, and measurable acceptance lines. 172 contracts in 12 days. A script compared the git diff with the allowed files before the full test sweep ran. I directed AI agents to write the briefs, contracts and code.</dd>
-<dt>Result</dt><dd>In about 27 hours over 10 and 11 Sep, 12 typed messages led to 16 contracted lanes merged. Tests passing rose from about 1,250 to 1,674 (1,113 three days earlier).</dd>
-<dt class="lim">Limit</dt><dd>A UX audit had scored the product 3 of 10 while about 1,250 tests were green. Green tests were not enough. The repo is private, has no demo, and the human listening test has not run.</dd>
+<dt>Problem</dt><dd>A loose brief lets a worker edit the wrong files.</dd>
+<dt>What I did</dt><dd>In a private music studio project, every unit of work was a written contract: goal, files it may and may not touch, and measurable acceptance lines. A script checked the git diff against the allowed files. AI agents wrote the briefs, contracts and code.</dd>
+<dt>Result</dt><dd>172 contracts in 12 days. In one day, 12 typed messages led to 17 contracted lanes integrated, and passing tests rose from about 1,110 to 1,674.</dd>
+<dt class="lim">Limit</dt><dd>An outside-family AI audit scored usability 3 of 10 while over 1,200 tests were green. The repository is private, and the human listening test has not run.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">contract files</span><span class="tag">git history</span><span class="tag">not re-run</span></dd>
 </dl></div>
 </details>
@@ -242,21 +242,21 @@
 <summary><span class="row"><span class="idx">14</span><span class="q">A small open model fails on big, vague jobs.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>Shrink the job until a small local model can win it</h4>
 <dl>
-<dt>Problem</dt><dd>A small open model is cheap, but it fails on big, vague jobs. And "the model is weak" is not a number.</dd>
-<dt>What I did</dt><dd>I directed AI agents to build a work loop for a 27B open model. A curator writes a ticket and one failing acceptance test. The small model, in a fresh session, edits only the source folder and never commits. The curator re-runs every gate and makes the only commit.</dd>
-<dt>Result</dt><dd>28 tickets done in one day. 17 needed no repair prompt, 9 needed one and 2 needed two. There was 1 scope break. The full gate grew from 7 to 136 tests.</dd>
-<dt class="lim">Limit</dt><dd>All commits fall on one day, with no licence and no automatic test runs. My records do not show who played the curator.</dd>
+<dt>Problem</dt><dd>A small open model fails on big, vague jobs.</dd>
+<dt>What I did</dt><dd>I designed a loop with AI agents. A curator agent writes a ticket and one failing test. A local 27B open model implements it, with no commit rights. The curator re-runs every check and makes the only commit.</dd>
+<dt>Result</dt><dd>In one day, 28 tickets built a 136-test workflow runner. 17 needed no repair prompt, 9 needed one and 2 needed two. 1 scope break, a blocked edit done through a shell command, was closed.</dd>
+<dt class="lim">Limit</dt><dd>A one-day build, with no automatic test runs. My records do not show which model played the curator.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">workshop log</span><span class="tag">git history</span><span class="tag">per-ticket scorecards</span></dd>
 </dl></div>
 </details>
 <details class="idea" id="idea-15">
-<summary><span class="row"><span class="idx">15</span><span class="q">The model that builds a change is the worst judge of it.</span><span class="chev" aria-hidden="true"></span></span></summary>
-<div class="body"><h4>Codex builds, Claude proves, a fresh reviewer blocks</h4>
+<summary><span class="row"><span class="idx">15</span><span class="q">The model that builds a change is a weak judge of it.</span><span class="chev" aria-hidden="true"></span></span></summary>
+<div class="body"><h4>Codex builds, Claude checks, a fresh reviewer blocks</h4>
 <dl>
-<dt>Problem</dt><dd>The model that builds a change is the worst judge of it. I also wanted two vendors to work as one team.</dd>
-<dt>What I did</dt><dd>I directed AI agents to build an eight-step branch pipeline. Codex builds. A Claude worker proves the build in memory-capped boxes. A fresh Codex session reviews, and the same builder fixes. The lead reads only the fix diff. A job queue gives each job its own list of files and never pushes.</dd>
-<dt>Result</dt><dd>The queue is 1,808 lines with 142 test functions. Its first version drew 8 high and 4 medium review findings, fixed test-first. On 3 Oct I ran 114 headless Codex jobs in one day.</dd>
-<dt class="lim">Limit</dt><dd>The tool kit is private and not under git, and the game project it served is closed. So there is no public demo.</dd>
+<dt>Problem</dt><dd>I wanted two vendors to work as one team, and neither to judge its own work.</dd>
+<dt>What I did</dt><dd>I directed AI agents to build an eight-step branch pipeline. Codex builds. A Claude worker checks the build in memory-capped boxes. A fresh Codex session reviews, and the same builder fixes. The job queue itself never pushes.</dd>
+<dt>Result</dt><dd>The queue has 142 test functions. Its first review found 8 high and 4 medium issues, fixed with tests. On 3 Oct about 114 headless Codex jobs ran, by my sorting of the logs.</dd>
+<dt class="lim">Limit</dt><dd>The kit is private and not under git, and the game project it served is closed. There is no public demo.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">test counts</span><span class="tag">run logs</span><span class="tag">roles sorted by keyword</span></dd>
 </dl></div>
 </details>
@@ -265,9 +265,9 @@
 <div class="body"><h4>A diary per task, three strikes, thinnest slice first</h4>
 <dl>
 <dt>Problem</dt><dd>A resumed worker repeats the same failed attempt. Once, a loop ran 87 laps with no product progress.</dd>
-<dt>What I did</dt><dd>Every worker writes one line per attempt to a diary and reads it first when resumed. The third identical failure forces a new approach, and the sixth ends the task. Each job builds the thinnest end-to-end slice first. Claude and Codex workers share the same rules.</dd>
-<dt>Result</dt><dd>341 diaries in four days, with 11,758 lines and 340 failure lines. A worker costs about 35,000 tokens just to start, so a short diary is cheap insurance.</dd>
-<dt class="lim">Limit</dt><dd>I found no test for the diary script, and the benefit is not measured. The diary folder grew to 1.2 GB.</dd>
+<dt>What I did</dt><dd>I wrote four rules for my AI workers. Each keeps a one-line-per-attempt diary and reads it first when resumed. After three identical failures it must change approach; after six it stops and reports. Each job builds the thinnest end-to-end slice first. AI agents built the helper script.</dd>
+<dt>Result</dt><dd>About 340 diaries with 11,758 lines in the first days of use. Claude and Codex workers share the same rules.</dd>
+<dt class="lim">Limit</dt><dd>The helper script has no test yet. The diaries prove use, not benefit, and I have not measured the benefit.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">diary files</span><span class="tag">line counts</span><span class="tag">benefit not measured</span></dd>
 </dl></div>
 </details>
@@ -275,10 +275,10 @@
 <summary><span class="row"><span class="idx">17</span><span class="q">If the most expensive model does every job, the cost climbs.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>A written ladder of workers, priced</h4>
 <dl>
-<dt>Problem</dt><dd>If the most expensive model does every job, the cost climbs and the lead&#x27;s context fills up.</dd>
-<dt>What I did</dt><dd>Spend rules were in writing from 18 Sep. The full ladder came on 1 Oct: six levels (lead, hard work, review, routine, search, second-opinion model) with price ratios (list prices, checked 1 Oct), tiny-job limits, a move-up rule after two failed tries, and a prompt gate that stops top-priced workers unless I say yes. I directed AI agents to build the agent files and the guard.</dd>
-<dt>Result</dt><dd>Sonnet 5.5 became the routine worker on 29 Sep. In the 4-day part week to 8 Oct it did 69% of worker turns, or about 57% without one 96-agent review run. 693 of 1,159 subagent spawns used the three ladder levels; 50 used levels outside the ladder.</dd>
-<dt class="lim">Limit</dt><dd>I cannot show the ladder caused the shift. The table recorded practice that had already started. Whether the lead or the workers cost more is still open.</dd>
+<dt>Problem</dt><dd>Using the top model for every job costs too much.</dd>
+<dt>What I did</dt><dd>On 1 Oct my written spend rules became a ladder of six worker levels, with price ratios, tiny-job limits and a move-up rule. A prompt gate stops top-priced workers unless I say yes. I directed AI agents to build the gate.</dd>
+<dt>Result</dt><dd>The cheaper Sonnet model became the routine worker on 29 Sep. Nine days later it did 69% of worker turns in a partial week. 50 of 1,159 spawns used levels outside the ladder.</dd>
+<dt class="lim">Limit</dt><dd>The shift matches the policy, but I cannot show the policy caused it. Whether the lead or the workers cost more is still open.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">transcript aggregates</span><span class="tag">guard logs</span><span class="tag">list-price assumptions</span></dd>
 </dl></div>
 </details>
@@ -287,34 +287,34 @@
 <div class="fold">
 <details class="idea" id="idea-18">
 <summary><span class="row"><span class="idx">18</span><span class="q">Agents can quietly rewrite the rules they are meant to follow.</span><span class="chev" aria-hidden="true"></span></span></summary>
-<div class="body"><h4>A rulebook that updates itself, only from my words</h4>
+<div class="body"><h4>A rulebook that keeps its history</h4>
 <dl>
-<dt>Problem</dt><dd>Rules for agents drift. A web page or a worker report could slip in a new rule.</dd>
-<dt>What I did</dt><dd>My working rules live in one file that saves every version and checks itself against a 10,000-byte cap. It changes only from what I type. Text in files, web pages or reports never edits a rule. Rules that keep coming back then become code.</dd>
-<dt>Result</dt><dd>40 saved versions, from 1,045 bytes to 9,996. 10 failures in the log each produced a rule, and 12 rules now have code behind them.</dd>
-<dt class="lim">Limit</dt><dd>The memory index links to 13 notes that no longer exist. A long rules file also costs tokens, which is why I capped it.</dd>
+<dt>Problem</dt><dd>A web page or worker report could slip in a new rule.</dd>
+<dt>What I did</dt><dd>My working rules live in one file. An agent keeps it current. I directed AI agents to build a hook that checks every edit, saves every version, holds a 10,000-byte cap, protects four safety lines and can undo. The file says only my own typed words change a rule.</dd>
+<dt>Result</dt><dd>40 saved versions, from 1,045 bytes to 9,996. 10 logged failures each produced a rule; 11 rules now have code behind them.</dd>
+<dt class="lim">Limit</dt><dd>The words-only rule is written and protected, not checked by code. A few of my other notes still have broken links.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">version history</span><span class="tag">rule tables</span><span class="tag">counted</span></dd>
 </dl></div>
 </details>
 <details class="idea" id="idea-19">
 <summary><span class="row"><span class="idx">19</span><span class="q">A good idea fades if building it takes weeks.</span><span class="chev" aria-hidden="true"></span></span></summary>
-<div class="body"><h4>From a dictated idea to a checked thing on a real device in hours</h4>
+<div class="body"><h4>From a dictated idea to a checked result in hours</h4>
 <dl>
-<dt>Problem</dt><dd>Speed alone proves little. But a good idea fades if building it takes weeks.</dd>
-<dt>What I did</dt><dd>I dictate the idea, the lead briefs workers, and the result is checked where it will run. Each fast case ends in a read-back check or a real test on my phone.</dd>
-<dt>Result</dt><dd>An iPhone app went from empty project to all five phases in about 4 hours. I checked it on a real phone the next day. A small power-settings app took 17.5 minutes from request to commit, with 29 of 29 read-back checks.</dd>
-<dt class="lim">Limit</dt><dd>Nothing here is public, and no outside user has used it. The times come from commits and transcripts, and self-timing is weak proof.</dd>
-<dt>Evidence</dt><dd class="tags"><span class="tag">commit times</span><span class="tag">transcripts</span><span class="tag">not public</span></dd>
+<dt>Problem</dt><dd>A good idea fades if building it takes weeks.</dd>
+<dt>What I did</dt><dd>I dictate the idea, and AI agents build it. Each fast case ends in a check where it will run, or in a written list of what was not tested.</dd>
+<dt>Result</dt><dd>A question-answering app for law texts took one evening, about 4 hours. An iPhone app reached its ninth TestFlight build in 3 days. A small desktop settings app went from request to first commit in 17.5 minutes, with a list of what was not tested.</dd>
+<dt class="lim">Limit</dt><dd>Nothing here is public or has outside users. The times come from commits and session logs, which is weak proof.</dd>
+<dt>Evidence</dt><dd class="tags"><span class="tag">commit times</span><span class="tag">session logs</span><span class="tag">not public</span></dd>
 </dl></div>
 </details>
 <details class="idea" id="idea-20">
 <summary><span class="row"><span class="idx">20</span><span class="q">With many agents running, I felt I was losing control.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>A control panel for an owner who writes no code</h4>
 <dl>
-<dt>Problem</dt><dd>With many agents running, decisions piled up. I did not want to be the human who just says yes.</dd>
-<dt>What I did</dt><dd>I keep taste and every hard-to-undo choice, and I directed AI agents to build the surface for it. Each decision comes with two or three options, a recommendation and exact reply words. A plain-language score checks the reports. Explainer pages end with check questions. In the game project, only I could tick the PLAYED box.</dd>
-<dt>Result</dt><dd>23 decisions went through the answer pane in three days. The writing scorer has 27 tests. The PLAYED step came after 13 waves had landed with no play test.</dd>
-<dt class="lim">Limit</dt><dd>More than once, I lifted my own stop line late at night. The explainer pages are not scored by anyone else.</dd>
+<dt>Problem</dt><dd>I did not want to be the human who just says yes.</dd>
+<dt>What I did</dt><dd>I keep taste and irreversible choices. I directed AI agents to build the surface for it: a decision form with options, a recommendation and exact reply words; a plain-language writing score; explainer pages with check questions; and a play-test sign-off that only my own typed reply can fill.</dd>
+<dt>Result</dt><dd>23 real decisions went through it in three days (2 to 4 Oct), covered by 138 automated tests.</dd>
+<dt class="lim">Limit</dt><dd>The pages are disposable and nobody else scores them. The file guard is best effort. On 2 to 3 Oct I lifted my own stop line for a night run.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">decision logs</span><span class="tag">explainer files</span><span class="tag">counted</span></dd>
 </dl></div>
 </details>
@@ -322,10 +322,10 @@
 <summary><span class="row"><span class="idx">21</span><span class="q">Models change every few months, so what in a project should last?</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>Keep what no model can rebuild; let the rest be thrown away</h4>
 <dl>
-<dt>Problem</dt><dd>Models get better every few months. Much of what an agent writes today, a better one will redo.</dd>
-<dt>What I did</dt><dd>In a new game project I split everything into two kinds. Truth is my words, my rulings and dated records, and it is add-only. Everything else is derived, and a stronger model can rebuild it. Ten written laws hold the split, and a checker enforces what a machine can.</dd>
-<dt>Result</dt><dd>24.5 hours from dictated idea to last commit, with six playable scenes. 95 rulings, each with my exact quote. Hostile critic agents broke the checker in 10 of 21 cases, and three fix rounds followed.</dd>
-<dt class="lim">Limit</dt><dd>No stranger has played anything, and 12 of 12 assumptions are untested. Nothing has been committed since 4 Oct.</dd>
+<dt>Problem</dt><dd>A better model will redo much of what an agent writes today.</dd>
+<dt>What I did</dt><dd>In a browser game prototype I split everything in two. Truth is my words and dated decisions, add-only. The rest is derived, and a stronger model can rebuild it. Ten written laws guide agents. I directed AI agents to build a script that checks what a machine can.</dd>
+<dt>Result</dt><dd>In 24.5 hours: six playable scenes and 95 rulings. A Codex critic found 10 wrong results in 21 hostile tests, fixed over three rounds.</dd>
+<dt class="lim">Limit</dt><dd>A git history rewrite can hide old versions. No outside player has tried it, and it is paused.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">ruling records</span><span class="tag">git history</span><span class="tag">tests counted, not run</span></dd>
 </dl></div>
 </details>
@@ -336,10 +336,10 @@
 <summary><span class="row"><span class="idx">22</span><span class="q">A number without its baseline looks better than it is.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>Numbers beside their baseline, failures beside their wins</h4>
 <dl>
-<dt>Problem</dt><dd>Agents report what went well. A number with no baseline looks better than it is.</dd>
-<dt>What I did</dt><dd>From day two I asked for status as actually built, not as planned. My projects keep failure logs, honest null results and "not checked" lists. My global rule: show any model accuracy beside the "always guess the most common answer" baseline.</dd>
-<dt>Result</dt><dd>One edit router scored 0.942. The baseline scored 0.234, and a keyword rule 0.830. A research check on 5 Oct found 4 of 7 blog numbers wrong. A review of my own portfolio passed 0 of 21 repositories on a recruiter check.</dd>
-<dt class="lim">Limit</dt><dd>Several repositories are private. My weakest results, like a trial with no data and no users yet, stay written as they are.</dd>
+<dt>Problem</dt><dd>A number with no baseline looks better than it is.</dd>
+<dt>What I did</dt><dd>From my first week I asked for status as built, not as planned. My notes keep failure logs and "not checked" lists. One rule covers every project: show model accuracy beside the "always guess the most common answer" baseline.</dd>
+<dt>Result</dt><dd>A small model beat a keyword rule on one task (0.94 against 0.83, baseline 0.23) and lost on another, so I cut it back. In an AI audit of my portfolio, 0 of 21 repositories passed a recruiter check.</dd>
+<dt class="lim">Limit</dt><dd>My repositories are private, I am the only user, and agents did most of the writing and grading.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">experiment ledgers</span><span class="tag">status files</span><span class="tag">baselines shown</span></dd>
 </dl></div>
 </details>
@@ -347,10 +347,10 @@
 <summary><span class="row"><span class="idx">23</span><span class="q">A runaway agent loop can spend real money overnight.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>Spend as code: reserve first, stop for good</h4>
 <dl>
-<dt>Problem</dt><dd>A runaway loop can spend real money while I sleep. Once, a "free" test run billed a paid API by mistake.</dd>
-<dt>What I did</dt><dd>Every paid call runs under a ledger. A gate writes the worst-case charge before the call leaves. An unknown outcome keeps the full charge. An overspend sets a stop latch that never clears. Subscription lanes strip metered keys, so nothing bills silently.</dd>
-<dt>Result</dt><dd>One night run stopped at its $5 balance floor, as designed. A later run used $1.34 of a $5 cap. A research batch settled 180 calls with 0 unknown, $0.93 of a $6 ceiling.</dd>
-<dt class="lim">Limit</dt><dd>The ledgers show the metered share, not the total cost. An earlier spend harness had no automatic tests and caused a defect.</dd>
+<dt>Problem</dt><dd>Once, a "free" test run billed a paid account by mistake.</dd>
+<dt>What I did</dt><dd>I directed AI agents to build a spending gate. Before any paid model call, it writes the worst-case charge to a ledger. If the result is unknown, the full charge stays. If real usage passes the reserve, a stop latch trips, and nothing clears it.</dd>
+<dt>Result</dt><dd>In one research batch, 180 settled calls cost $0.93 inside a $6 ceiling, with 0 unknown. A night run stopped at its $5 floor, as designed.</dd>
+<dt class="lim">Limit</dt><dd>The ledgers show the metered share, not the total cost. A harness defect let some jobs spend their budget and return nothing; I replaced it.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">spend ledgers</span><span class="tag">run logs</span><span class="tag">metered share only</span></dd>
 </dl></div>
 </details>
@@ -358,10 +358,10 @@
 <summary><span class="row"><span class="idx">24</span><span class="q">Tools and process pile up, and some stop paying for themselves.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>Test before adding, delete what does not pay</h4>
 <dl>
-<dt>Problem</dt><dd>Tools and process pile up. Each one costs attention, and some stop paying for themselves.</dd>
-<dt>What I did</dt><dd>I test a tool before I adopt it, and I delete what stops earning its place. That includes seats, scripts, process pages and even a finished portfolio site. I archive first, with a checksum or an undo list, so a cut is safe.</dd>
-<dt>Result</dt><dd>On 25 Sep I removed an old worker scheme of 219 files, after a checksummed archive. About 250 orchestrator tools came down to the 3 I kept. One protocol shrank from 370 lines to 138.</dd>
-<dt class="lim">Limit</dt><dd>Pruning cost me once. A tidy-up removed my live context plugin, and context doubled for about two days.</dd>
+<dt>Problem</dt><dd>Each tool or process costs attention, and some stop paying.</dd>
+<dt>What I did</dt><dd>I review a tool before I adopt it, and I cut what stops earning its place: worker setups, scripts, process pages, even my old portfolio site. AI agents make the cuts on my approval. They archive first, with a checksum or an undo list, so a cut is safe.</dd>
+<dt>Result</dt><dd>On 25 Sep agents removed an old worker scheme of 219 files, after a checksummed archive. I reviewed about 250 listed orchestrator tools against a plain instruction.</dd>
+<dt class="lim">Limit</dt><dd>Pruning cost me once. A tidy-up moved my live context plugin to the trash, and context doubled for about two days.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">git history</span><span class="tag">archive manifests</span><span class="tag">counted</span></dd>
 </dl></div>
 </details>
@@ -369,10 +369,10 @@
 <summary><span class="row"><span class="idx">25</span><span class="q">A long session re-reads its whole context on every turn.</span><span class="chev" aria-hidden="true"></span></span></summary>
 <div class="body"><h4>Measure the context policy, cut what does not pay</h4>
 <dl>
-<dt>Problem</dt><dd>A long agent session re-reads its own context on every turn. That is most of the cost.</dd>
-<dt>What I did</dt><dd>I extended an open-source (MIT) compaction plugin for Claude Code and replayed my own recorded sessions through it. The small decision model it used picked no better than a free rule, so I removed it. I kept the one lever that paid: when to compact. A simulation over 204 sessions (assumed prices, stated) chose the trigger. Directed AI agents wrote and reviewed the code.</dd>
-<dt>Result</dt><dd>Replay of 3 sessions (14 points): 24.2% of characters removed by the small model, 24.1% by the free rule, 75 regrets each. Mean context per reply: 353k tokens with no plugin, 152k with the early plugin versions, about 135k with version 0.4.0.</dd>
-<dt class="lim">Limit</dt><dd>A replay and a simulation, not a controlled trial. The context drop is a before-and-after, not a test, and most of it came with the trigger the plugin already had. I re-tuned that trigger.</dd>
+<dt>Problem</dt><dd>Re-reading context each turn was two thirds of the cost in one session I measured.</dd>
+<dt>What I did</dt><dd>I copied an open-source (MIT) compaction plugin for Claude Code and replayed my own sessions through it. Its small decision model did no better than a free rule, so I removed it. A simulation of 204 sessions chose the trigger. AI agents built and reviewed the code.</dd>
+<dt>Result</dt><dd>In a replay of 3 sessions, model and rule removed 24.2% and 24.1%. Mean context per reply fell from about 353k tokens to about 134k.</dd>
+<dt class="lim">Limit</dt><dd>Replays and a simulation, not a controlled trial. The drop is a before-and-after over different weeks.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">session replays</span><span class="tag">simulation</span><span class="tag">baseline shown</span></dd>
 </dl></div>
 </details>
@@ -420,7 +420,7 @@
 </details>
 <details>
 <summary><span class="row"><span class="dash" aria-hidden="true"></span><span class="q">Measure, then cut what does not pay.</span><span class="chev" aria-hidden="true"></span></span></summary>
-<div class="more"><p>I test a tool before I adopt it, and I delete what stops earning its place. I archive first, with a checksum or an undo list, so a cut is safe. In phase P2 my hand-run fleet cost more than it paid, so I deleted it (<a href="#idea-24">idea 24</a>).</p></div>
+<div class="more"><p>I review a tool before I adopt it, and I cut what stops earning its place. I archive first, with a checksum or an undo list, so a cut is safe. In phase P2 my hand-run fleet cost more than it paid, so I deleted it (<a href="#idea-24">idea 24</a>).</p></div>
 </details>
 </div>
 </section>
@@ -446,7 +446,7 @@
 </details>
 <details>
 <summary><span class="row"><span class="dash" aria-hidden="true"></span><span class="q">Counts of agents, commits and waves show volume, not quality.</span><span class="chev" aria-hidden="true"></span></span></summary>
-<div class="more"><p>In the music studio project, about 1,250 tests were green. Yet a UX audit scored the product 3 of 10 (<a href="#idea-13">idea 13</a>). To show quality, I need human tests and outside users.</p></div>
+<div class="more"><p>In the music studio project, over 1,200 tests were green. Yet an AI audit from another model family scored the product 3 of 10 (<a href="#idea-13">idea 13</a>). To show quality, I need human tests and outside users.</p></div>
 </details>
 <details>
 <summary><span class="row"><span class="dash" aria-hidden="true"></span><span class="q">I counted tests from git and logs; I did not re-run every suite.</span><span class="chev" aria-hidden="true"></span></span></summary>
