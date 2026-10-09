@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samuel Pavlovič: AI agentic engineering, Jun–Oct 2026</title>
+<meta name="description" content="A case study of one student directing AI coding agents, 25 Jun to 9 Oct 2026: the system, how it evolved, the ideas that survived the audit and the evidence.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+<div class="topnav"><a href="index.html">&larr; Samuel Pavlovič</a></div>
+
+<header class="hero case">
+  <div class="who"><b>Samuel Pavlovič</b> &nbsp;·&nbsp; student and solo developer &nbsp;·&nbsp; Case study, 25 Jun – 9 Oct 2026</div>
+  <h1>I direct AI agents,<br>and I build the machinery<br>that <em>checks</em> them.</h1>
+  <p class="sub">For 107 days I worked with AI coding agents, almost every day. I did not stop at speed. I built the gates, guards and measurements that tell me whether the work is right. This page shows what survived my own audit.</p>
+  <div class="bar"></div>
+</header>
+
+<section id="numbers">
+  <div class="eyebrow">Scale</div>
+  <h2>Six numbers</h2>
+  <p class="lede">Measured from git history and agent logs, 25 Jun to 9 Oct 2026.</p>
+  <div class="nums"><div class="num"><div class="n">107</div><div class="u">days</div><p>from the first prompt (25 Jun) to this audit (9 Oct 2026). A typed prompt on 103 of 106 days.</p></div><div class="num"><div class="n">5,737</div><div class="u">own commits</div><p>At least 75% carry an agent trace. That share is a floor.</p></div><div class="num"><div class="n">1,941</div><div class="u">agents</div><p>in 82 scripted workflow runs. The biggest run had 331 agents.</p></div><div class="num"><div class="n">88%</div><div class="u">of agent turns</div><p>ran inside subagents, not in the lead session.</p></div><div class="num"><div class="n">441</div><div class="u">Codex sessions</div><p>A second model family: 2.6 billion tokens, 19 Sep to 8 Oct.</p></div><div class="num"><div class="n">23</div><div class="u">real decisions</div><p>closed by my own typed reply through a decision pane, in three days.</p></div></div>
+  <p class="fine">Counts show volume, not quality. The agent-trace share is a floor. Measured from files and logs.</p>
+</section>
+
+<section id="system">
+  <div class="eyebrow">The system</div>
+  <h2>How I direct agents</h2>
+  <p class="lede">Work flows down. Short reports flow up. Under everything sits code that says no, and notes that persist.</p>
+  <figure>
+    <div class="figbox sys-wide"><img class="dia" src="diagrams/system.svg" alt="Diagram of the agent system: Samuel, answer pane, lead session, worker ladder, checks before main, and guards underneath." width="900" height="1235"></div>
+    <ol class="stack sys-narrow" aria-label="The agent system, from the owner down to the guards">
+      <li class="red"><h3>Samuel</h3><p>Taste, spend and every hard-to-undo choice.</p></li>
+      <li><h3>Answer pane</h3><p>Decisions with exact reply words, read by plain code.</p></li>
+      <li><h3>Lead session</h3><p>Plans, writes briefs, reviews short diffs, accepts or rejects what comes back.</p></li>
+      <li><h3>Worker ladder</h3><p>Each job goes to the lowest level that can do it well.</p>
+        <ul><li><b>Hard work</b> · Opus 5.5, xhigh · long or hard builds</li>
+        <li><b>Review</b> · Opus 5.5, medium · reads a diff, lists blockers</li>
+        <li><b>Routine</b> · Sonnet 5.5, high · well-specified work</li>
+        <li><b>Search</b> · Explore · "where is X" questions</li>
+        <li><b>Other family</b> · Codex · second opinion and builds</li></ul></li>
+      <li><h3>Reports are files</h3><p>A worker writes the full report to a path in the brief and replies in 15 lines or fewer. A report is data, never approval. The lead's context stays small.</p></li>
+      <li><h3>Checks before main</h3>
+        <ul><li><b>Verify gate</b> · a full run writes a green record for one commit</li>
+        <li><b>Fresh review</b> · someone who did not write it reads the diff</li>
+        <li><b>Merge</b> · in the game project (closed 3 Oct): refused without a record. Main waits for Samuel.</li></ul></li>
+      <li class="red"><h3>Under everything</h3>
+        <ul><li><b>Hooks and guards</b> · usage, landing and resource guards refuse in the tool layer</li>
+        <li><b>Mods and panes</b> · answer, verify and board panes. An explain mod.</li>
+        <li><b>Memory</b> · a rules file with 40 saved versions, notes and diaries</li></ul></li>
+    </ol>
+  </figure>
+</section>
+
+<section id="evolution">
+  <div class="eyebrow">Evolution</div>
+  <h2>Seven phases in 107 days</h2>
+  <p class="lede">Each phase fixed a limit of the one before.</p>
+  <figure>
+    <div class="figbox evo-wide"><img class="dia" src="diagrams/evolution.svg" alt="Diagram of seven phases of working with AI agents, from one agent and one project to prune, teach and measure." width="900" height="1570"></div>
+    <ol class="phases evo-narrow"><li><span class="pid">P1</span><div><h3>One agent, one project</h3><div class="dates">25 Jun – 17 Jul</div><p>One Claude session at a time. He tests by hand. First phone app in two days.</p></div></li><li><span class="pid">P2</span><div><h3>The hand-run fleet</h3><div class="dates">18 Jul – 17 Aug</div><p>Many model families in tmux. He carries the messages. Roles on paper. The machinery cost more than it paid, so he deleted it.</p></div></li><li><span class="pid">P3</span><div><h3>Cheap workers, strict judges</h3><div class="dates">18 Aug – 7 Sep</div><p>Cheap and open models do the work. Judges, caps and contracts keep it honest.</p></div></li><li><span class="pid">P4</span><div><h3>A lead, seats and councils</h3><div class="dates">8 Sep – 17 Sep</div><p>A lead session, a Codex builder, review councils and the first night runs.</p></div></li><li><span class="pid">P5</span><div><h3>Write it down</h3><div class="dates">18 Sep – 29 Sep</div><p>The peak. Global rules, scripted workflows, the worst night and its repair.</p></div></li><li><span class="pid">P6</span><div><h3>Ladder and guards as code</h3><div class="dates">30 Sep – 4 Oct</div><p>A price-based worker ladder. Seven mods: three guards that refuse, four panes and helpers.</p></div></li><li><span class="pid">P7</span><div><h3>Prune, teach, measure</h3><div class="dates">5 Oct – 9 Oct</div><p>Config cut to two kinds. The home folder tidied. His own tools measured.</p></div></li></ol>
+    <div class="threads evo-narrow"><span class="lbl">Four ideas ran through the record</span><span class="chip">Checks that can fail · from 28 Jun</span><span class="chip">His own judgement · from 26 Jun</span><span class="chip">Spend control · from 3 Jul</span><span class="chip">A second model family · from 25 Jul</span></div>
+  </figure>
+</section>
+
+<section id="ideas">
+  <div class="eyebrow">Ideas</div>
+  <h2>Verified ideas by theme</h2>
+  <p class="lede">Each one was checked against its sources in a private audit. Each has its limit written beside it. Dates in the record start in git, logs or notes.</p>
+  <div class="ideas"><article class="idea">
+<div class="idx">01</div>
+<div class="body"><h3>A green check that is hard to fake</h3>
+<dl>
+<dt>Problem</dt><dd>An agent can say &quot;done&quot; when nothing was tested. Early on, my gate printed ALL GREEN while four workspaces were untested.</dd>
+<dt>What I did</dt><dd>I directed AI agents to build a verification gate for a game project. A full test run writes a green record tied to one commit and one clean working tree. Landing is refused without that record, and the landed tree must match the verified tree. A hook stops agents from writing into the record folder. I had the checks changed so they can fail.</dd>
+<dt>Result</dt><dd>The procedure was one full verify per wave. A log of 45 push decisions (2 to 4 Oct) shows 18 holds, 8 passes on a green record, 1 refusal of a subagent push and 18 that went ahead after my yes.</dd>
+<dt class="lim">Limit</dt><dd>The hook is not sandboxed. 13 waves landed since my last play test, so I added a human-only PLAYED step. The log does not show a green record for every wave.</dd>
+<dt>Evidence</dt><dd class="tags"><span class="tag">git history</span><span class="tag">hook logs</span><span class="tag">counted, not re-run</span></dd>
+</dl></div></article><article class="idea">
+<div class="idx">02</div>
+<div class="body"><h3>Approvals an agent cannot give itself</h3>
+<dl>
+<dt>Problem</dt><dd>A worker report can read like a yes. A tired owner might accept it.</dd>
+<dt>What I did</dt><dd>I directed AI agents to build a small plugin layer for Claude Code. A decision closes only when my own typed reply (or one from my phone) holds the exact answer. It reads the origin stamp the tool engine gives each message. A worker report counts as data, never as approval. Plain code does the matching, no model.</dd>
+<dt>Result</dt><dd>138 automated tests. 23 real decisions went through it over three days (2 to 4 Oct 2026).</dd>
+<dt class="lim">Limit</dt><dd>Plugins are not sandboxed, so another plugin could still answer the confirm dialog. The spend-guard log has only a few real events.</dd>
+<dt>Evidence</dt><dd class="tags"><span class="tag">test counts</span><span class="tag">decision logs</span><span class="tag">counted, not re-run</span></dd>
+</dl></div></article><article class="idea">
+<div class="idx">03</div>
+<div class="body"><h3>A written ladder of workers, priced</h3>
+<dl>
+<dt>Problem</dt><dd>If the most expensive model does every job, the cost climbs and the lead&#x27;s context fills up.</dd>
+<dt>What I did</dt><dd>Spend rules were in writing from 18 Sep. The full ladder came on 1 Oct: six levels (lead, hard work, review, routine, search, second-opinion model) with price ratios (list prices, checked 1 Oct), tiny-job limits, a move-up rule after two failed tries, and a prompt gate that stops top-priced workers unless I say yes. I directed AI agents to build the agent files and the guard.</dd>
+<dt>Result</dt><dd>Sonnet 5.5 became the routine worker on 29 Sep. In the 4-day part week to 8 Oct it did 69% of worker turns, or about 57% without one 96-agent review run. 693 of 1,159 subagent spawns used the three ladder levels; 50 used levels outside the ladder.</dd>
+<dt class="lim">Limit</dt><dd>I cannot show the ladder caused the shift. The table recorded practice that had already started. Whether the lead or the workers cost more is still open.</dd>
+<dt>Evidence</dt><dd class="tags"><span class="tag">transcript aggregates</span><span class="tag">guard logs</span><span class="tag">list-price assumptions</span></dd>
+</dl></div></article><article class="idea">
+<div class="idx">04</div>
+<div class="body"><h3>Measure the context policy, cut what does not pay</h3>
+<dl>
+<dt>Problem</dt><dd>A long agent session re-reads its own context on every turn. That is most of the cost.</dd>
+<dt>What I did</dt><dd>I extended an open-source (MIT) compaction plugin for Claude Code and replayed my own recorded sessions through it. The small decision model it used picked no better than a free rule, so I removed it. I kept the one lever that paid: when to compact. A simulation over 204 sessions (assumed prices, stated) chose the trigger. Directed AI agents wrote and reviewed the code.</dd>
+<dt>Result</dt><dd>Replay of 3 sessions (14 points): 24.2% of characters removed by the small model, 24.1% by the free rule, 75 regrets each. Mean context per reply: 353k tokens with no plugin, 152k with the early plugin versions, about 135k with version 0.4.0.</dd>
+<dt class="lim">Limit</dt><dd>A replay and a simulation, not a controlled trial. The context drop is a before-and-after, not a test, and most of it came with the trigger the plugin already had. I re-tuned that trigger.</dd>
+<dt>Evidence</dt><dd class="tags"><span class="tag">session replays</span><span class="tag">simulation</span><span class="tag">baseline shown</span></dd>
+</dl></div></article><article class="idea">
+<div class="idx">05</div>
+<div class="body"><h3>Count the incident, build one small fix, arm it after a dry run</h3>
+<dl>
+<dt>Problem</dt><dd>An overnight agent run froze. 21 workers waited on approval prompts for hours before anyone noticed.</dd>
+<dt>What I did</dt><dd>I had my agents measure it: all 21 recursive deletes froze, and 22 worker calls stalled in all. The same day I directed five AI agents to build and test a small kit. Its guard hook fails open on its own bugs, and its away-switch expires after 16 hours. The memory watchdog started in log-only mode.</dd>
+<dt>Result</dt><dd>In log-only mode the watchdog logged 54 would-stop lines for 4 jobs in one day, before any real kill was allowed.</dd>
+<dt class="lim">Limit</dt><dd>The guard&#x27;s first real use saw no stall and no block (3 log lines), so it is unproven. The watchdog is still log-only.</dd>
+<dt>Evidence</dt><dd class="tags"><span class="tag">incident log</span><span class="tag">tool logs</span><span class="tag">counted, not re-run</span></dd>
+</dl></div></article><article class="idea">
+<div class="idx">06</div>
+<div class="body"><h3>One person, many workers, in measured waves</h3>
+<dl>
+<dt>Problem</dt><dd>One agent at a time is slow. Many agents at once overwrite each other.</dd>
+<dt>What I did</dt><dd>I directed AI agents to build in waves on one machine. Builders work on separate branches and files. One lead merges, as the only committer. In a private browser game-engine project I landed 49 merge waves in 8 days (26 Sep to 3 Oct). Peak was an estimated 20 workers on one day. From 18 Sep to 8 Oct I ran 82 scripted workflow runs with 1,941 agents. The biggest run had 331 agents and took 105 minutes.</dd>
+<dt>Result</dt><dd>82 runs, 1,941 agents, 1,159 subagent spawns, 49 merge waves. The procedure was one full verify per wave. The 45-decision push log shows 8 landings on a green record.</dd>
+<dt class="lim">Limit</dt><dd>These counts are volume, not quality. 13 waves landed since my last play test, which I wrote down as a gap.</dd>
+<dt>Evidence</dt><dd class="tags"><span class="tag">workflow logs</span><span class="tag">git history</span><span class="tag">counted, not re-run</span></dd>
+</dl></div></article><article class="idea">
+<div class="idx">07</div>
+<div class="body"><h3>Every job is a contract with a write scope</h3>
+<dl>
+<dt>Problem</dt><dd>A worker with a loose brief edits things it should not touch.</dd>
+<dt>What I did</dt><dd>For a private music studio project, every unit of work was a written contract: goal, files it may write, files it may not touch, and measurable acceptance lines. 172 contracts in 12 days. A script compared the git diff with the allowed files before the full test sweep ran. I directed AI agents to write the briefs, contracts and code.</dd>
+<dt>Result</dt><dd>In about 27 hours over 10 and 11 Sep, 12 typed messages led to 16 contracted lanes merged. Tests passing rose from about 1,250 to 1,674 (1,113 three days earlier).</dd>
+<dt class="lim">Limit</dt><dd>A UX audit had scored the product 3 of 10 while about 1,250 tests were green. Green tests were not enough. The repo is private, has no demo, and the human listening test has not run.</dd>
+<dt>Evidence</dt><dd class="tags"><span class="tag">contract files</span><span class="tag">git history</span><span class="tag">not re-run</span></dd>
+</dl></div></article></div>
+</section>
+
+<section id="skills">
+  <div class="eyebrow">Skills matrix</div>
+  <h2>37 agentic-engineering skills, rated against the evidence</h2>
+  <p class="lede">20 strong (10 firm, 10 soft), 14 partial, 3 missing. I rated myself against the capabilities that 2026 research and job postings ask for, and I kept the gaps in.</p>
+  <div class="legend">
+    <span class="r-strong"><i class="dot"></i>Strong, firm: shown in more than one place with numbers that were counted again</span>
+    <span class="r-soft"><i class="dot"></i>Strong, soft: strong on paper, but it rests on one measurement, agent-written counts or a known pattern</span>
+    <span class="r-partial"><i class="dot"></i>Partial: shown, with a named hole</span>
+    <span class="r-missing"><i class="dot"></i>Missing: not found in the audit evidence</span>
+  </div>
+  <div class="skills"><div class="sg"><h3>Delegation and orchestration</h3><ul><li class="r-strong"><span class="dot"></span>Lead and worker delegation<span class="sr"> (strong)</span></li><li class="r-strong"><span class="dot"></span>Parallel work with isolation<span class="sr"> (strong)</span></li><li class="r-strong"><span class="dot"></span>Scripted, resumable orchestration<span class="sr"> (strong)</span></li><li class="r-strong"><span class="dot"></span>Cost-aware model routing<span class="sr"> (strong)</span></li><li class="r-soft"><span class="dot"></span>Second opinion, other model family<span class="sr"> (strong, soft)</span></li><li class="r-soft"><span class="dot"></span>Simple design first, prune<span class="sr"> (strong, soft)</span></li></ul></div><div class="sg"><h3>Verification, review and evals</h3><ul><li class="r-strong"><span class="dot"></span>Verification tied to a record<span class="sr"> (strong)</span></li><li class="r-soft"><span class="dot"></span>Tests that fail on revert<span class="sr"> (strong, soft)</span></li><li class="r-strong"><span class="dot"></span>Independent review and gates<span class="sr"> (strong)</span></li><li class="r-soft"><span class="dot"></span>Adversarial verifier stage<span class="sr"> (strong, soft)</span></li><li class="r-soft"><span class="dot"></span>Calibrated judges<span class="sr"> (strong, soft)</span></li><li class="r-partial"><span class="dot"></span>Evals from real failures, re-run<span class="sr"> (partial)</span></li><li class="r-missing"><span class="dot"></span>Reliability: pass@k, pass^k<span class="sr"> (missing)</span></li><li class="r-partial"><span class="dot"></span>Human review of agent output<span class="sr"> (partial)</span></li><li class="r-partial"><span class="dot"></span>Benchmark literacy, private evals<span class="sr"> (partial)</span></li></ul></div><div class="sg"><h3>Context and durable state</h3><ul><li class="r-strong"><span class="dot"></span>Context engineering<span class="sr"> (strong)</span></li><li class="r-strong"><span class="dot"></span>Durable memory and handoffs<span class="sr"> (strong)</span></li><li class="r-partial"><span class="dot"></span>Prompt-cache discipline<span class="sr"> (partial)</span></li></ul></div><div class="sg"><h3>Safety, approvals and unattended runs</h3><ul><li class="r-strong"><span class="dot"></span>Hard guardrails in hooks<span class="sr"> (strong)</span></li><li class="r-soft"><span class="dot"></span>OS sandbox, credential isolation<span class="sr"> (strong, soft)</span></li><li class="r-strong"><span class="dot"></span>Human approval gates<span class="sr"> (strong)</span></li><li class="r-partial"><span class="dot"></span>Prompt-injection defence<span class="sr"> (partial)</span></li><li class="r-partial"><span class="dot"></span>Unattended agents with a safety kit<span class="sr"> (partial)</span></li></ul></div><div class="sg"><h3>Extensibility and standards</h3><ul><li class="r-soft"><span class="dot"></span>Plugins and mods<span class="sr"> (strong, soft)</span></li><li class="r-partial"><span class="dot"></span>Authoring skills<span class="sr"> (partial)</span></li><li class="r-soft"><span class="dot"></span>Open standards (AGENTS.md)<span class="sr"> (strong, soft)</span></li><li class="r-partial"><span class="dot"></span>MCP and tool design<span class="sr"> (partial)</span></li></ul></div><div class="sg"><h3>Measurement and honest proof</h3><ul><li class="r-soft"><span class="dot"></span>Honest reporting, baselines<span class="sr"> (strong, soft)</span></li><li class="r-partial"><span class="dot"></span>Productivity against a baseline<span class="sr"> (partial)</span></li><li class="r-partial"><span class="dot"></span>Cost per successful task<span class="sr"> (partial)</span></li><li class="r-partial"><span class="dot"></span>Observability and replay<span class="sr"> (partial)</span></li><li class="r-partial"><span class="dot"></span>Autonomy tracking<span class="sr"> (partial)</span></li></ul></div><div class="sg"><h3>People, shipping and public proof</h3><ul><li class="r-soft"><span class="dot"></span>Expert oversight, plain language<span class="sr"> (strong, soft)</span></li><li class="r-partial"><span class="dot"></span>Shipping to real users<span class="sr"> (partial)</span></li><li class="r-missing"><span class="dot"></span>Public, runnable proof<span class="sr"> (missing)</span></li><li class="r-missing"><span class="dot"></span>Customer ownership<span class="sr"> (missing)</span></li><li class="r-partial"><span class="dot"></span>Explaining the code that ships<span class="sr"> (partial)</span></li></ul></div></div>
+  <p class="fine">Self-rated from the audit evidence. "Missing" means not found there, not proven absent. The biggest gap: no public, runnable proof yet. This page is the first step.</p>
+</section>
+
+<section id="how">
+  <div class="eyebrow">How I work</div>
+  <h2>Principles</h2>
+  <div class="two">
+    <div><h3 class="col">Seven rules I keep</h3><ol class="list"><li><h3>Work flows down. Short reports flow up.</h3><p>Each job goes to the lowest level that can do it well. A worker writes its full report to a file and replies in 15 lines or fewer.</p></li><li><h3>A report is data, never approval.</h3><p>Only my own typed reply approves. Spending, deploys and pushes to main wait for it.</p></li><li><h3>A real check before &quot;done&quot;.</h3><p>A check that ran, tied to one commit. Someone who did not write the code reads the diff and lists blockers.</p></li><li><h3>A check is not a guard until it has failed.</h3><p>I have agents break a check on purpose and watch it go red.</p></li><li><h3>A number needs its baseline.</h3><p>Accuracy goes beside the &quot;always guess the most common answer&quot; score. Failures go beside wins.</p></li><li><h3>Rules that keep coming back become code.</h3><p>Prose asks. A hook refuses. When a guard says no, report it word for word and never work around it.</p></li><li><h3>Measure, then cut what does not pay.</h3><p>I tested my own tools on my own sessions and removed the ones that lost.</p></li></ol></div>
+    <div><h3 class="col">How one task flows</h3><ol class="list"><li><h3>Brief</h3><p>The lead writes the goal and what &quot;done&quot; means. It names the files the worker owns, what to leave alone, the check to run and the report path.</p></li><li><h3>Worker</h3><p>It builds on its own files and logs one line per attempt in a diary. Three identical failures force a new approach.</p></li><li><h3>Report file</h3><p>The full report goes to a file. The reply is 15 lines or fewer.</p></li><li><h3>Verify and review</h3><p>A real check writes a green record for one commit. A fresh reader lists blockers.</p></li><li><h3>Decision</h3><p>The lead accepts or rejects. Spending, deploys and pushes to main wait for my typed reply.</p></li><li><h3>Merge</h3><p>In the game project (closed 3 Oct), landing was refused without a matching green record. The merged tree had to equal the verified tree.</p></li></ol></div>
+  </div>
+</section>
+
+<section id="more">
+  <div class="eyebrow">More diagrams</div>
+  <h2>Five more diagrams</h2>
+  <p class="lede">The same material drawn another way. Each opens as an SVG.</p>
+  <ul class="morelist">
+    <li><a href="diagrams/flow.svg">How one task flows</a></li>
+    <li><a href="diagrams/ideas.svg">Verified ideas by theme</a></li>
+    <li><a href="diagrams/numbers.svg">Six numbers</a></li>
+    <li><a href="diagrams/skills.svg">Skills matrix</a></li>
+    <li><a href="diagrams/timeline.svg">Timeline</a></li>
+  </ul>
+</section>
+
+<section id="limits">
+  <div class="eyebrow">Honest limits</div>
+  <h2>What this page does not show</h2>
+  <ul class="notshown"><li>The repos are private. The proof here is the method, the diagrams and the numbers.</li><li>Counts of agents, commits and waves show volume, not quality.</li><li>Numbers come from git history, tool logs and session logs. I did not re-run every test suite.</li><li>AI agents wrote the code. I directed them. I wrote none of it by hand.</li><li>No outside players or paying users yet. A human play test is a step I added after I saw it missing.</li><li>Cost figures are list-price estimates, not invoices.</li><li>I make no claim of novelty. This is not a survey of other people&#x27;s work.</li></ul>
+</section>
+
+<section id="links">
+  <div class="eyebrow">Contact</div>
+  <h2>Let's talk</h2>
+  <p class="lede">I am a first-year student looking for an AI engineering internship.</p>
+  <div class="links">
+    <a class="btn primary" href="https://www.linkedin.com/in/samuel-pavlovi%C4%8D-3906b141b/" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/samooo221" rel="noopener">GitHub</a>
+    <a class="btn" href="cv/Pavlovic_Samuel_CV_EN.pdf">Download CV (PDF)</a>
+  </div>
+</section>
+
+<footer><a href="index.html">Home</a> &nbsp;·&nbsp; Samuel Pavlovič &nbsp;·&nbsp; AI agentic work audit &nbsp;·&nbsp; data to 9 Oct 2026</footer>
+</div>
+</body>
+</html>

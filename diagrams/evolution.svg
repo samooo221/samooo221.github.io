@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1570" viewBox="0 0 900 1570" font-family="Inter, Helvetica, Arial, sans-serif">
+<title>Phases of Samuel's way of working with agents</title>
+<defs><marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#9A9A9A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ags" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#9A9A9A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ak" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#111111" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="aks" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#111111" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ars" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker></defs>
+<rect width="900" height="1570" fill="#FFFFFF"/>
+<rect x="40.0" y="34.0" width="48.0" height="4.0" rx="0" fill="#E5262B" stroke="none" stroke-width="1.2"/>
+<text x="40.0" y="80.0" font-size="32" font-weight="700" fill="#111111" text-anchor="start">How the way of working evolved</text>
+<text x="40.0" y="112.0" font-size="18" font-weight="400" fill="#666666" text-anchor="start">Seven phases in 107 days. Each one fixed a limit of the one before.</text>
+<line x1="64.0" y1="176.0" x2="64.0" y2="1244.0" stroke="#D6D6D6" stroke-width="1.5"/>
+<circle cx="64.0" cy="170.0" r="11" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+<text x="98.0" y="176.0" font-size="22" font-weight="700" fill="#E5262B" text-anchor="start">P1</text>
+<text x="144.0" y="176.0" font-size="22" font-weight="700" fill="#111111" text-anchor="start">One agent, one project</text>
+<rect x="660.0" y="188.0" width="148.4" height="8.0" rx="2" fill="#D6D6D6" stroke="none" stroke-width="1.2"/>
+<text x="98.0" y="204.0" font-size="16" font-weight="500" fill="#666666" text-anchor="start">25 Jun – 17 Jul   ·   23 days</text>
+<text x="98.0" y="238.0" font-size="18" font-weight="400" fill="#111111" text-anchor="start">One Claude session at a time. Hand tests and a first "verification leash". First phone app</text>
+<text x="98.0" y="264.0" font-size="18" font-weight="400" fill="#111111" text-anchor="start">in two days.</text>
+<text x="98.0" y="294.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">→ One agent was not enough, so he ran several.</text>
+<circle cx="64.0" cy="348.0" r="11" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+<text x="98.0" y="354.0" font-size="22" font-weight="700" fill="#E5262B" text-anchor="start">P2</text>
+<text x="144.0" y="354.0" font-size="22" font-weight="700" fill="#111111" text-anchor="start">The hand-run fleet</text>
+<rect x="660.0" y="366.0" width="200.0" height="8.0" rx="2" fill="#D6D6D6" stroke="none" stroke-width="1.2"/>
+<text x="98.0" y="382.0" font-size="16" font-weight="500" fill="#666666" text-anchor="start">18 Jul – 17 Aug   ·   31 days</text>
+<text x="98.0" y="416.0" font-size="18" font-weight="400" fill="#111111" text-anchor="start">Many model families in tmux. He carries the messages. Roles on paper.</text>
+<text x="98.0" y="446.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">→ The machinery cost more than it paid. He deleted it.</text>
+<circle cx="64.0" cy="526.0" r="11" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+<text x="98.0" y="532.0" font-size="22" font-weight="700" fill="#E5262B" text-anchor="start">P3</text>
+<text x="144.0" y="532.0" font-size="22" font-weight="700" fill="#111111" text-anchor="start">Cheap workers, strict judges</text>
+<rect x="660.0" y="544.0" width="135.5" height="8.0" rx="2" fill="#D6D6D6" stroke="none" stroke-width="1.2"/>
+<text x="98.0" y="560.0" font-size="16" font-weight="500" fill="#666666" text-anchor="start">18 Aug – 7 Sep   ·   21 days</text>
+<text x="98.0" y="594.0" font-size="18" font-weight="400" fill="#111111" text-anchor="start">Cheap and open models do the work. Judges, caps and contracts keep it honest.</text>
+<text x="98.0" y="624.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">→ The next project starts with guards on day one.</text>
+<circle cx="64.0" cy="704.0" r="11" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+<text x="98.0" y="710.0" font-size="22" font-weight="700" fill="#E5262B" text-anchor="start">P4</text>
+<text x="144.0" y="710.0" font-size="22" font-weight="700" fill="#111111" text-anchor="start">A lead, seats and councils</text>
+<rect x="660.0" y="722.0" width="64.5" height="8.0" rx="2" fill="#D6D6D6" stroke="none" stroke-width="1.2"/>
+<text x="98.0" y="738.0" font-size="16" font-weight="500" fill="#666666" text-anchor="start">8 Sep – 17 Sep   ·   10 days</text>
+<text x="98.0" y="772.0" font-size="18" font-weight="400" fill="#111111" text-anchor="start">A lead session, a Codex builder, review councils and the first night runs.</text>
+<text x="98.0" y="802.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">→ Rules still lived in prose. On 18 Sep he wrote them down.</text>
+<circle cx="64.0" cy="882.0" r="11" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+<text x="98.0" y="888.0" font-size="22" font-weight="700" fill="#E5262B" text-anchor="start">P5</text>
+<text x="144.0" y="888.0" font-size="22" font-weight="700" fill="#111111" text-anchor="start">Write it down</text>
+<rect x="660.0" y="900.0" width="77.4" height="8.0" rx="2" fill="#D6D6D6" stroke="none" stroke-width="1.2"/>
+<text x="98.0" y="916.0" font-size="16" font-weight="500" fill="#666666" text-anchor="start">18 Sep – 29 Sep   ·   12 days</text>
+<text x="98.0" y="950.0" font-size="18" font-weight="400" fill="#111111" text-anchor="start">The peak. Global rules, scripted workflows, the worst night and its repair.</text>
+<text x="98.0" y="980.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">→ Rules were text. From 30 Sep he turns them into code.</text>
+<circle cx="64.0" cy="1060.0" r="11" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+<text x="98.0" y="1066.0" font-size="22" font-weight="700" fill="#E5262B" text-anchor="start">P6</text>
+<text x="144.0" y="1066.0" font-size="22" font-weight="700" fill="#111111" text-anchor="start">Ladder and guards as code</text>
+<rect x="660.0" y="1078.0" width="32.3" height="8.0" rx="2" fill="#D6D6D6" stroke="none" stroke-width="1.2"/>
+<text x="98.0" y="1094.0" font-size="16" font-weight="500" fill="#666666" text-anchor="start">30 Sep – 4 Oct   ·   5 days</text>
+<text x="98.0" y="1128.0" font-size="18" font-weight="400" fill="#111111" text-anchor="start">A price-based worker ladder. Seven mods: three guards, four panes and helpers.</text>
+<text x="98.0" y="1158.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">→ He moves to the desktop apps and starts to prune.</text>
+<circle cx="64.0" cy="1238.0" r="11" fill="#E5262B" stroke="#E5262B" stroke-width="2"/>
+<text x="98.0" y="1244.0" font-size="22" font-weight="700" fill="#E5262B" text-anchor="start">P7</text>
+<text x="144.0" y="1244.0" font-size="22" font-weight="700" fill="#111111" text-anchor="start">Prune, teach, measure</text>
+<rect x="660.0" y="1256.0" width="32.3" height="8.0" rx="2" fill="#E5262B" stroke="none" stroke-width="1.2"/>
+<text x="98.0" y="1272.0" font-size="16" font-weight="500" fill="#666666" text-anchor="start">5 Oct – 9 Oct   ·   5 days</text>
+<text x="98.0" y="1306.0" font-size="18" font-weight="400" fill="#111111" text-anchor="start">Config cut to two kinds. The home folder tidied. His own tools measured.</text>
+<text x="98.0" y="1336.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">→ Open. This audit runs on 9 Oct.</text>
+<rect x="40.0" y="1376.0" width="820.0" height="2.0" rx="0" fill="#D6D6D6" stroke="none" stroke-width="1.2"/>
+<text x="40.0" y="1412.0" font-size="20" font-weight="700" fill="#111111" text-anchor="start">Four ideas ran through the record</text>
+<rect x="40.0" y="1440.0" width="289.1" height="36.0" rx="18" fill="none" stroke="#E5262B" stroke-width="1.4"/>
+<text x="56.0" y="1464.0" font-size="16" font-weight="500" fill="#111111" text-anchor="start">Checks that can fail · from 28 Jun</text>
+<rect x="341.1" y="1440.0" width="285.1" height="36.0" rx="18" fill="none" stroke="#E5262B" stroke-width="1.4"/>
+<text x="357.1" y="1464.0" font-size="16" font-weight="500" fill="#111111" text-anchor="start">His own judgement · from 26 Jun</text>
+<rect x="40.0" y="1488.0" width="229.6" height="36.0" rx="18" fill="none" stroke="#E5262B" stroke-width="1.4"/>
+<text x="56.0" y="1512.0" font-size="16" font-weight="500" fill="#111111" text-anchor="start">Spend control · from 3 Jul</text>
+<rect x="281.6" y="1488.0" width="306.3" height="36.0" rx="18" fill="none" stroke="#E5262B" stroke-width="1.4"/>
+<text x="297.6" y="1512.0" font-size="16" font-weight="500" fill="#111111" text-anchor="start">A second model family · from 25 Jul</text>
+<text x="40.0" y="1546.0" font-size="15" font-weight="500" fill="#9A9A9A" text-anchor="start">Samuel Pavlovič  ·  AI agentic work audit  ·  data to 9 Oct 2026</text>
+</svg>

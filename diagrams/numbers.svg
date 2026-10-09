@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="670" viewBox="0 0 900 670" font-family="Inter, Helvetica, Arial, sans-serif">
+<title>Six key numbers</title>
+<defs><marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#9A9A9A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ags" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#9A9A9A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ak" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#111111" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="aks" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#111111" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ars" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker></defs>
+<rect width="900" height="670" fill="#FFFFFF"/>
+<rect x="40.0" y="34.0" width="48.0" height="4.0" rx="0" fill="#E5262B" stroke="none" stroke-width="1.2"/>
+<text x="40.0" y="80.0" font-size="32" font-weight="700" fill="#111111" text-anchor="start">Six numbers</text>
+<text x="40.0" y="112.0" font-size="18" font-weight="400" fill="#666666" text-anchor="start">25 Jun to 9 Oct 2026, measured from git history and agent logs.</text>
+<rect x="40.0" y="170.0" width="36.0" height="3.0" rx="0" fill="#E5262B" stroke="none" stroke-width="1.2"/>
+<text x="40.0" y="246.0" font-size="58" font-weight="700" fill="#111111" text-anchor="start">107</text>
+<text x="40.0" y="284.0" font-size="17" font-weight="400" fill="#666666" text-anchor="start">days from the first prompt to</text>
+<text x="40.0" y="308.0" font-size="17" font-weight="400" fill="#666666" text-anchor="start">this audit. A typed prompt on</text>
+<text x="40.0" y="332.0" font-size="17" font-weight="400" fill="#666666" text-anchor="start">103 of 106 days.</text>
+<rect x="317.0" y="170.0" width="36.0" height="3.0" rx="0" fill="#E5262B" stroke="none" stroke-width="1.2"/>
+<text x="317.0" y="246.0" font-size="58" font-weight="700" fill="#111111" text-anchor="start">5,737</text>
+<text x="317.0" y="284.0" font-size="17" font-weight="400" fill="#666666" text-anchor="start">own commits. At least 75%</text>
+<text x="317.0" y="308.0" font-size="17" font-weight="400" fill="#666666" text-anchor="start">carry an agent trace.</text>
+<rect x="594.0" y="170.0" width="36.0" height="3.0" rx="0" fill="#E5262B" stroke="none" stroke-width="1.2"/>
+<text x="594.0" y="246.0" font-size="58" font-weight="700" fill="#111111" text-anchor="start">1,941</text>
+<text x="594.0" y="284.0" font-size="17" font-weight="400" fill="#666666" text-anchor="start">agents in 82 scripted workflow</text>
+<text x="594.0" y="308.0" font-size="17" font-weight="400" fill="#666666" text-anchor="start">runs. The biggest run had 331.</text>
+<rect x="40.0" y="410.0" width="36.0" height="3.0" rx="0" fill="#E5262B" stroke="none" stroke-width="1.2"/>
+<text x="40.0" y="486.0" font-size="58" font-weight="700" fill="#111111" text-anchor="start">88%</text>
+<text x="40.0" y="524.0" font-size="17" font-weight="400" fill="#666666" text-anchor="start">of Claude agent turns ran inside</text>
+<text x="40.0" y="548.0" font-size="17" font-weight="400" fill="#666666" text-anchor="start">subagents, not in the lead</text>
+<text x="40.0" y="572.0" font-size="17" font-weight="400" fill="#666666" text-anchor="start">session.</text>
+<rect x="317.0" y="410.0" width="36.0" height="3.0" rx="0" fill="#E5262B" stroke="none" stroke-width="1.2"/>
+<text x="317.0" y="486.0" font-size="58" font-weight="700" fill="#111111" text-anchor="start">441</text>
+<text x="317.0" y="524.0" font-size="17" font-weight="400" fill="#666666" text-anchor="start">Codex sessions with logs. A</text>
+<text x="317.0" y="548.0" font-size="17" font-weight="400" fill="#666666" text-anchor="start">second model family, 2.6 billion</text>
+<text x="317.0" y="572.0" font-size="17" font-weight="400" fill="#666666" text-anchor="start">tokens.</text>
+<rect x="594.0" y="410.0" width="36.0" height="3.0" rx="0" fill="#E5262B" stroke="none" stroke-width="1.2"/>
+<text x="594.0" y="486.0" font-size="58" font-weight="700" fill="#111111" text-anchor="start">11</text>
+<text x="594.0" y="524.0" font-size="17" font-weight="400" fill="#666666" text-anchor="start">rules now run as code, each</text>
+<text x="594.0" y="548.0" font-size="17" font-weight="400" fill="#666666" text-anchor="start">checked in a file. A 12th rests</text>
+<text x="594.0" y="572.0" font-size="17" font-weight="400" fill="#666666" text-anchor="start">on a note.</text>
+<text x="40.0" y="620.0" font-size="15" font-weight="400" fill="#666666" text-anchor="start">Counts show volume, not quality. The agent-trace share is a floor. Measured from files and logs.</text>
+<text x="40.0" y="646.0" font-size="15" font-weight="500" fill="#9A9A9A" text-anchor="start">Samuel Pavlovič  ·  AI agentic work audit  ·  data to 9 Oct 2026</text>
+</svg>
