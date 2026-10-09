@@ -53,6 +53,8 @@ header.hero.case{padding:40px 0 8px}
 .num .n{font-size:clamp(34px,5vw,44px);font-weight:700;letter-spacing:-.03em;line-height:1}
 .num .u{font-size:14px;font-weight:600;color:var(--red);margin:8px 0 6px}
 .num p{font-size:14.5px;line-height:1.5;color:var(--mute)}
+/* short case study: four number tiles as a 2 x 2 grid on wide screens */
+@media (min-width:761px){.nums.four{grid-template-columns:repeat(2,1fr)}}
 /* diagrams: dark SVGs sit straight on the page, no box around them */
 figure{margin:28px 0 0}
 .figbox{margin:0}
