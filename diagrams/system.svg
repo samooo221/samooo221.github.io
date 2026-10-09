@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1235" viewBox="0 0 900 1235" font-family="Inter, Helvetica, Arial, sans-serif">
-<title>Samuel's agent system today</title>
+<title>My agent system today</title>
 <defs><marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#9A9A9A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ags" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#9A9A9A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ak" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#111111" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="aks" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#111111" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ars" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker></defs>
 <rect width="900" height="1235" fill="#FFFFFF"/>
 <rect x="40.0" y="34.0" width="48.0" height="4.0" rx="0" fill="#E5262B" stroke="none" stroke-width="1.2"/>
 <text x="40.0" y="80.0" font-size="32" font-weight="700" fill="#111111" text-anchor="start">The system today</text>
-<text x="40.0" y="112.0" font-size="18" font-weight="400" fill="#666666" text-anchor="start">How Samuel directs agents. Work flows down. Short reports flow up.</text>
+<text x="40.0" y="112.0" font-size="18" font-weight="400" fill="#666666" text-anchor="start">How I direct agents. Work flows down. Short reports flow up.</text>
 <rect x="40.0" y="150.0" width="270.0" height="96.0" rx="10" fill="none" stroke="#E5262B" stroke-width="2"/>
 <text x="58.0" y="179.0" font-size="19" font-weight="700" fill="#111111" text-anchor="start">Samuel</text>
 <text x="58.0" y="204.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">Taste, spend and every</text>
@@ -72,7 +72,7 @@
 <rect x="610.0" y="842.0" width="250.0" height="112.0" rx="10" fill="none" stroke="#9A9A9A" stroke-width="1.4"/>
 <text x="628.0" y="871.0" font-size="19" font-weight="700" fill="#111111" text-anchor="start">Merge</text>
 <text x="628.0" y="896.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">Refused without a record.</text>
-<text x="628.0" y="917.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">Main waits for Samuel.</text>
+<text x="628.0" y="917.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">Main waits for me.</text>
 <line x1="450.0" y1="768.0" x2="450.0" y2="810.0" stroke="#9A9A9A" stroke-width="1.2" stroke-dasharray="3 4" marker-end="url(#ag)"/>
 <text x="40.0" y="1010.0" font-size="20" font-weight="700" fill="#111111" text-anchor="start">Under everything</text>
 <text x="40.0" y="1034.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">Code that says no, and notes that persist.</text>

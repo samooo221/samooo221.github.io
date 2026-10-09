@@ -49,9 +49,9 @@
 <text x="84.0" y="860.0" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
 <text x="136.0" y="858.0" font-size="21" font-weight="700" fill="#111111" text-anchor="start">Decision</text>
 <text x="136.0" y="886.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">The lead accepts or rejects. Spending, deploys and pushes</text>
-<text x="136.0" y="907.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">to main wait for Samuel's typed reply.</text>
+<text x="136.0" y="907.0" font-size="16" font-weight="400" fill="#666666" text-anchor="start">to main wait for my typed reply.</text>
 <text x="640.0" y="858.0" font-size="14" font-weight="600" fill="#9A9A9A" text-anchor="start">Who</text>
-<text x="640.0" y="882.0" font-size="17" font-weight="500" fill="#111111" text-anchor="start">Lead, then Samuel</text>
+<text x="640.0" y="882.0" font-size="17" font-weight="500" fill="#111111" text-anchor="start">Lead, then me</text>
 <line x1="366.0" y1="949.0" x2="366.0" y2="987.0" stroke="#111111" stroke-width="1.5" marker-end="url(#ak)"/>
 <rect x="116.0" y="990.0" width="500.0" height="122.0" rx="10" fill="none" stroke="#9A9A9A" stroke-width="1.4"/>
 <circle cx="84.0" cy="1020.0" r="16" fill="#111111" stroke="none" stroke-width="1.4"/>

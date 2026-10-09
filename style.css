@@ -53,7 +53,8 @@ header.hero.case{padding:40px 0 8px}
 .num .u{font-size:14px;font-weight:600;color:var(--red);margin:8px 0 6px}
 .num p{font-size:14.5px;line-height:1.5;color:var(--mute)}
 .fine{font-size:14px;color:var(--mute);margin-top:16px}
-.dia{display:block;width:100%;height:auto}
+.dia{display:block;width:100%;max-width:100%;height:auto}
+figcaption{font-size:14px;color:var(--mute);margin-top:10px}
 figure{margin:28px 0 0}
 .figbox{border:1px solid var(--line);padding:12px;background:#fff}
 .sys-wide,.evo-wide{display:block}
@@ -103,17 +104,13 @@ figure{margin:28px 0 0}
 .sg li{font-size:15px;padding:4px 0;display:flex;align-items:flex-start;line-height:1.4}
 .sg li .dot{margin-top:5px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-.two{display:grid;grid-template-columns:1fr;gap:36px;margin-top:28px}
-.two h3.col{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:6px}
-ol.list{list-style:none;padding:0;counter-reset:c}
-.list li{padding:16px 0;border-top:1px solid var(--line);counter-increment:c;display:grid;grid-template-columns:28px 1fr;gap:4px}
-.list li::before{content:counter(c);font-size:13px;font-weight:700;color:var(--red);padding-top:3px}
-.list li h3{grid-column:2;font-size:16px}
-.list li p{grid-column:2;color:var(--mute);font-size:15px;margin-top:2px}
+.rules{list-style:none;padding:0;margin-top:24px}
+.rules li{padding:14px 0 14px 22px;border-top:1px solid var(--line);position:relative;font-size:17px;font-weight:600}
+.rules li:last-child{border-bottom:1px solid var(--line)}
+.rules li::before{content:"";position:absolute;left:0;top:25px;width:8px;height:2px;background:var(--red)}
 .notshown{list-style:none;padding:0;margin-top:20px}
 .notshown li{padding:10px 0 10px 22px;border-top:1px solid var(--line);position:relative;font-size:15.5px;color:var(--mute)}
 .notshown li::before{content:"";position:absolute;left:0;top:19px;width:8px;height:2px;background:var(--red)}
-.morelist{padding-left:20px;margin-top:12px}
 footer{padding:48px 0 64px;margin-top:64px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
 @media (max-width:760px){
  body{font-size:16px}

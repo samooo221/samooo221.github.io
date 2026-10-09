@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1435" viewBox="0 0 900 1435" font-family="Inter, Helvetica, Arial, sans-serif">
-<title>Timeline of Samuel's agentic work, 25 Jun to 9 Oct 2026</title>
+<title>Timeline of my agentic work, 25 Jun to 9 Oct 2026</title>
 <defs><marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#9A9A9A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ags" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#9A9A9A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ak" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#111111" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="aks" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#111111" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker><marker id="ars" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1.5,1.5 L8,5 L1.5,8.5" fill="none" stroke="#E5262B" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></marker></defs>
 <rect width="900" height="1435" fill="#FFFFFF"/>
 <rect x="40.0" y="34.0" width="48.0" height="4.0" rx="0" fill="#E5262B" stroke="none" stroke-width="1.2"/>
@@ -110,11 +110,11 @@
 <circle cx="52.0" cy="927.0" r="12" fill="#E5262B" stroke="none" stroke-width="1.4"/>
 <text x="52.0" y="932.0" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
 <text x="78.0" y="932.0" font-size="17" font-weight="700" fill="#111111" text-anchor="start">7 Aug</text>
-<text x="160.0" y="932.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">In his first fleet: never two model families in one role.</text>
+<text x="160.0" y="932.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">In my first fleet: never two model families in one role.</text>
 <circle cx="52.0" cy="963.0" r="12" fill="#E5262B" stroke="none" stroke-width="1.4"/>
 <text x="52.0" y="968.0" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
 <text x="78.0" y="968.0" font-size="17" font-weight="700" fill="#111111" text-anchor="start">25 Aug</text>
-<text x="160.0" y="968.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">He measures his own grader and corrects his first claim.</text>
+<text x="160.0" y="968.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">I measure my own grader and correct my first claim.</text>
 <circle cx="52.0" cy="999.0" r="12" fill="#E5262B" stroke="none" stroke-width="1.4"/>
 <text x="52.0" y="1004.0" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
 <text x="78.0" y="1004.0" font-size="17" font-weight="700" fill="#111111" text-anchor="start">9 Sep</text>
@@ -130,7 +130,7 @@
 <circle cx="52.0" cy="1107.0" r="12" fill="#E5262B" stroke="none" stroke-width="1.4"/>
 <text x="52.0" y="1112.0" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">8</text>
 <text x="78.0" y="1112.0" font-size="17" font-weight="700" fill="#111111" text-anchor="start">8 Oct</text>
-<text x="160.0" y="1112.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">He measures his own tools. A 96-agent read-only review.</text>
+<text x="160.0" y="1112.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">I measure my own tools. A 96-agent read-only review.</text>
 <text x="40.0" y="1172.0" font-size="20" font-weight="700" fill="#111111" text-anchor="start">Phases</text>
 <text x="40.0" y="1204.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">P1  One agent</text>
 <text x="460.0" y="1204.0" font-size="17" font-weight="400" fill="#111111" text-anchor="start">P2  Hand-run fleet</text>
