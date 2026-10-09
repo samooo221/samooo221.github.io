@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "tools" / "diagrams-light"
 OUT = ROOT / "diagrams"
-NAMES = ["system", "evolution", "timeline", "ideas", "skills", "flow"]
+NAMES = ["system", "evolution", "timeline", "skills", "flow"]
 
 BG = "#111111"      # same as the page background
 RED = "#E5262B"
