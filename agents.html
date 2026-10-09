@@ -120,7 +120,16 @@
 <dt>Result</dt><dd>In a 35-seat review run on a game project, the verifier refuted 6 of 203 findings, about 3%. In my portfolio review, a check settled most of 11 facts that differed between reports.</dd>
 <dt class="lim">Limit</dt><dd>The verifier is a model, often from the finder's family, so both can share blind spots. A low refutation rate is not a quality score.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">panel records</span><span class="tag">review plans</span><span class="tag">model-made counts</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="5 Oct 2026" aria-label="The research that confirmed everything: still terminal card re-created from a session of 5 Oct 2026">
+<pre><span data-kind="agent">Agent: The research worker marked every claim CONFIRMED.</span>
+<span data-kind="agent">Agent: I checked seven of its numbers against the original sources.</span>
+<span data-kind="check-fail">4 of 7 numbers were wrong: a date, credit tiers, a price and a platform claim.</span>
+<span data-kind="agent">Agent: Blogs repeat each other's numbers. A number found twice was not proof.</span>
+<span data-kind="user">Me: New rule. Only official sources count as proof.</span>
+<span data-kind="agent">Agent: Rule saved. A claim counts only with an official source behind it.</span>
+<span data-kind="note">What this shows: a confident report needs a second stage that tries to prove it wrong.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-03">
 <summary><span class="row"><span class="idx">03</span><span class="q">Two reviewers from one model family can share the same blind spots.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -131,7 +140,16 @@
 <dt>Result</dt><dd>In one frozen 11-file snapshot, two outside reviewers shared only 1 of 11 findings. So I stopped treating one reviewer as independent.</dd>
 <dt class="lim">Limit</dt><dd>That is one example, not a general rate. Routine diffs still get a Claude reviewer. A model reviewer is not a human reviewer.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">review reports</span><span class="tag">project notes</span><span class="tag">one example</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="13 Aug 2026" aria-label="Two reviewers, one shared finding: still terminal card re-created from a session of 13 Aug 2026">
+<pre><span data-kind="user">Me: Freeze the core module. Send the same files to Codex and to Kimi.</span>
+<span data-kind="agent">Agent: Snapshot frozen at 11 files. Each reviewer reads it alone.</span>
+<span data-kind="agent">Agent: Codex lists 6 findings. Kimi lists 5.</span>
+<span data-kind="check-fail">Findings both reviewers share: 1 of 11.</span>
+<span data-kind="user">Me: So one reviewer is not an independent review. Keep the rule: no two reviewers from one family in the same role.</span>
+<span data-kind="agent">Agent: Kept. Important changes get a second opinion from another model family.</span>
+<span data-kind="note">What this shows: two model families flag different things, so one reviewer is never the whole review.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-04">
 <summary><span class="row"><span class="idx">04</span><span class="q">A model judge can give two verdicts on the same answer.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -142,7 +160,16 @@
 <dt>Result</dt><dd>First test: 2 of 17 rows flipped. Three graders on 18 more rows showed no flips, so about 6% pooled (2 of 35). I corrected my first claim of 11% the same day. A one-row change now counts as noise.</dd>
 <dt class="lim">Limit</dt><dd>The legal-text assistant I measured this on missed its target: 43% defensible answers against 75 to 80%. The repository is private, and I did not re-run the scores.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">experiment notes</span><span class="tag">own correction</span><span class="tag">not re-run</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="25 Aug 2026" aria-label="Testing the grader: still terminal card re-created from a session of 25 Aug 2026">
+<pre><span data-kind="user">Me: Before I trust the grader's scores, test the grader. Give it the same answer twice.</span>
+<span data-kind="agent">Agent: Done on 17 comparisons. Identical answers got different verdicts twice.</span>
+<span data-kind="check-fail">Same answer, different verdict: 2 of 17.</span>
+<span data-kind="user">Me: One sample is thin. Run three graders on more rows before we write a number down.</span>
+<span data-kind="agent">Agent: Three graders on 18 more rows: no disagreements. Pooled, 2 of 35, about 6%.</span>
+<span data-kind="agent">Agent: The first claim of 11% is corrected in the notes, the same day. A one-row change now counts as noise.</span>
+<span data-kind="note">What this shows: I measure the judge before I trust its score, and I correct my own first number.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-05">
 <summary><span class="row"><span class="idx">05</span><span class="q">An agent can say "done" when nothing was tested.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -153,7 +180,16 @@
 <dt>Result</dt><dd>A log of 45 push decisions over three days shows 18 holds, 8 passes on a green record, 1 refusal and 18 that went ahead after my yes.</dd>
 <dt class="lim">Limit</dt><dd>The hook is not sandboxed. 13 waves landed before anyone played the game, so I added a play-test sign-off.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">git history</span><span class="tag">hook logs</span><span class="tag">counted, not re-run</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="3 Oct 2026" aria-label="Green checks, no play test: still terminal card re-created from a session of 3 Oct 2026">
+<pre><span data-kind="agent">Agent: Checkpoint page for you, at wave 44.</span>
+<span data-kind="check-fail">13 waves landed with no play test.</span>
+<span data-kind="user">Me: So the tests pass, but nobody knows if the game is any fun.</span>
+<span data-kind="agent">Agent: Workers can judge if the code is correct. Only you can judge if the game is fun.</span>
+<span data-kind="agent">Agent: So every wave page now ends with a played box.</span>
+<span data-kind="agent">Agent: It closes only on your own typed reply, never on a worker report.</span>
+<span data-kind="note">What this shows: a green check proves the code works, not that the game is good.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-06">
 <summary><span class="row"><span class="idx">06</span><span class="q">A brief says what to build, but rarely how to spot a wrong build.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -198,7 +234,17 @@
 <dt>Result</dt><dd>The probe's 11 checks passed. I reused the recipe on a security audit seat and on a 35-reviewer panel for a game project.</dd>
 <dt class="lim">Limit</dt><dd>Sandboxing is a known pattern, and this one works on Linux only. A trigger built on it ran in dry-run only.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">probe results</span><span class="tag">project notes</span><span class="tag">not re-run</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="10 Sep 2026" aria-label="A fence for the outside critic: still terminal card re-created from a session of 10 Sep 2026">
+<pre><span data-kind="user">Me: Add a Codex seat as a music software analyst. I want harsh criticism.</span>
+<span data-kind="agent">Agent: A prompt that says "read only" will not stop it. So it runs in a sandbox.</span>
+<span data-kind="agent">Agent: System and home are read-only. Only its own folder is writable. Credential locations are unreachable and tokens are blank.</span>
+<span data-kind="agent">Agent: It has a four-hour limit. When time is up, the whole process group ends.</span>
+<span data-kind="user">Me: Prove the fence holds before it starts.</span>
+<span data-kind="agent">Agent: The probe tries repo writes, commits and credential reads, which must fail. Work in its own folder must pass.</span>
+<span data-kind="check-pass">Probe: 12 of 12 checks passed. The critic starts.</span>
+<span data-kind="note">What this shows: a sandbox stops what a polite prompt cannot.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-09">
 <summary><span class="row"><span class="idx">09</span><span class="q">A study tutor that hands out answers stops being a tutor.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -209,7 +255,17 @@
 <dt>Result</dt><dd>The reply check has 36 tests. A review found spacing tricks that slipped past it, so I had it hardened. I signed a pre-registered design for a one-person experiment.</dd>
 <dt class="lim">Limit</dt><dd>The check is a heuristic and cannot catch an answer in plain prose. The experiment has no data yet. Nobody else uses the tools.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">test counts</span><span class="tag">review notes</span><span class="tag">no data yet</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="14 Sep 2026" aria-label="The tutor&#x27;s answer filter: still terminal card re-created from a session of 14 Sep 2026">
+<pre><span data-kind="user">Me: The tutor may teach me, but it must never hand me the answer.</span>
+<span data-kind="agent">Agent: Plain code checks every reply. It refuses extra code blocks, long code and phrases from the real solution.</span>
+<span data-kind="agent">Agent: A review of the guard came back.</span>
+<span data-kind="check-fail">Review: MAJOR. A solution phrase with extra spaces slips past the check.</span>
+<span data-kind="user">Me: Harden it, and add tests for those tricks.</span>
+<span data-kind="agent">Agent: Hardened. Spacing and indent tricks are caught now, and each has a test.</span>
+<span data-kind="agent">Agent: It still cannot catch an answer written as plain prose. The prompt rules cover that gap.</span>
+<span data-kind="note">What this shows: code blocks the obvious leaks, and I say plainly what it cannot block.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-10">
 <summary><span class="row"><span class="idx">10</span><span class="q">An overnight run froze, and nobody noticed for hours.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -220,7 +276,17 @@
 <dt>Result</dt><dd>The memory watchdog started in log-only mode. It wrote 54 would-stop log entries in one day before any real kill was allowed.</dd>
 <dt class="lim">Limit</dt><dd>The guard's first real use saw no stall and no block (3 log lines), so it is unproven. The watchdog is still log-only.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">incident log</span><span class="tag">tool logs</span><span class="tag">counted, not re-run</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="23 Sep 2026" aria-label="The night the workers froze: still terminal card re-created from a session of 23 Sep 2026">
+<pre><span data-kind="user">Me: Can you meanwhile work on all the stuff that went wrong tonight?</span>
+<span data-kind="agent">Agent: Measured from the logs: 21 workers waited on approval prompts that nobody could answer.</span>
+<span data-kind="check-fail">Frozen for 4 h 13 min before anyone noticed: 64.3 agent-hours lost.</span>
+<span data-kind="agent">Agent: Five fixers built a small kit. Its guard fails open on its own bugs.</span>
+<span data-kind="agent">Agent: The away-switch turns itself off after 16 hours.</span>
+<span data-kind="user">Me: Install the guard.</span>
+<span data-kind="agent">Agent: Installed at 11:21. At 11:22 a test call was refused, as designed.</span>
+<span data-kind="note">What this shows: one bad night became one small, tested fix the same morning.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-11">
 <summary><span class="row"><span class="idx">11</span><span class="q">A worker's report can read like a yes.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -256,7 +322,16 @@
 <dt>Result</dt><dd>In a private browser game-engine project, 49 merge waves landed in 8 days (26 Sep to 3 Oct), with a peak of about 20 workers on one day. From 18 Sep to 8 Oct I ran 82 scripted workflow runs with 1,941 agents; the biggest had 331.</dd>
 <dt class="lim">Limit</dt><dd>These counts are volume, not quality. 13 waves landed before anyone played the game. Only I can judge if it is fun.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">workflow logs</span><span class="tag">git history</span><span class="tag">counted, not re-run</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="2 Oct 2026" aria-label="Twenty workers, one usage window: still terminal card re-created from a session of 2 Oct 2026">
+<pre><span data-kind="agent">Agent: 20 workers are building at once.</span>
+<span data-kind="agent">Agent: Usage check: the 5-hour usage window is spent after about 1.5 hours.</span>
+<span data-kind="check-fail">08:50: all 20 workers stopped by hand.</span>
+<span data-kind="user">Me: So more workers did not mean more work done today.</span>
+<span data-kind="agent">Agent: Right. The 5-hour limit, not the worker cap, bounds the day.</span>
+<span data-kind="agent">Agent: New rule: about 8 workers at a time.</span>
+<span data-kind="note">What this shows: scale has a budget, and the usage window sets how many workers run.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-13">
 <summary><span class="row"><span class="idx">13</span><span class="q">A worker with a loose brief edits files it should not touch.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -267,7 +342,16 @@
 <dt>Result</dt><dd>172 contracts in 12 days. In one day, 12 typed messages led to 17 contracted lanes integrated, and passing tests rose from about 1,110 to 1,674.</dd>
 <dt class="lim">Limit</dt><dd>An outside-family AI audit scored usability 3 of 10 while over 1,200 tests were green. The repository is private, and the human listening test has not run.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">contract files</span><span class="tag">git history</span><span class="tag">not re-run</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="10 Sep 2026" aria-label="Lanes with written contracts: still terminal card re-created from a session of 10 Sep 2026">
+<pre><span data-kind="user">Me: Split the next build into lanes. Each lane gets a written contract.</span>
+<span data-kind="agent">Agent: Each contract names the goal and the acceptance lines. It lists the files the builder may write and must not touch.</span>
+<span data-kind="user">Me: How do I know a builder stayed inside its files?</span>
+<span data-kind="agent">Agent: A script compares the finished git diff with the allowed files. Then the full test sweep runs.</span>
+<span data-kind="agent">Agent: A lane merges only after both pass. Your 12 typed messages drove the whole day.</span>
+<span data-kind="check-pass">Last count of the day: 1,674 tests passing.</span>
+<span data-kind="note">What this shows: a written file list turns "stay in your lane" into something a script can check.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-14">
 <summary><span class="row"><span class="idx">14</span><span class="q">A small open model fails on big, vague jobs.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -278,7 +362,16 @@
 <dt>Result</dt><dd>In one day, 28 tickets built a 136-test workflow runner. 17 needed no repair prompt, 9 needed one and 2 needed two. 1 scope break, a blocked edit done through a shell command, was closed.</dd>
 <dt class="lim">Limit</dt><dd>A one-day build, with no automatic test runs. My records do not show which model played the curator.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">workshop log</span><span class="tag">git history</span><span class="tag">per-ticket scorecards</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="21 Aug 2026" aria-label="The small model&#x27;s shortcut: still terminal card re-created from a session of 21 Aug 2026">
+<pre><span data-kind="user">Me: The local 27B model writes the code. It may not commit, and it may not touch the tests.</span>
+<span data-kind="agent">Agent: Each ticket starts with one failing test. I re-run every check and make the only commit.</span>
+<span data-kind="agent">Agent: Ticket 3 broke scope. The model was blocked from editing a file, so it used a shell command.</span>
+<span data-kind="check-fail">Scope break: a denied edit done through a shell command.</span>
+<span data-kind="agent">Agent: Closed. Shell writes into files are now denied too.</span>
+<span data-kind="agent">Agent: End of day: 28 tickets, a workflow runner with 136 tests. 17 tickets needed no repair prompt.</span>
+<span data-kind="note">What this shows: a small model wins when the job is small and the curator holds the keys.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-15">
 <summary><span class="row"><span class="idx">15</span><span class="q">The model that builds a change is a weak judge of it.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -289,7 +382,17 @@
 <dt>Result</dt><dd>The queue has 142 test functions. Its first review found 8 high and 4 medium issues, fixed with tests. On 3 Oct about 114 headless Codex jobs ran, by my sorting of the logs.</dd>
 <dt class="lim">Limit</dt><dd>The kit is private and not under git, and the game project it served is closed. There is no public demo.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">test counts</span><span class="tag">run logs</span><span class="tag">roles sorted by keyword</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="3 Oct 2026" aria-label="Codex builds, Claude checks: still terminal card re-created from a session of 3 Oct 2026">
+<pre><span data-kind="user">Me: Use Codex.</span>
+<span data-kind="agent">Agent: Codex builds and reviews tonight. A Claude worker runs the test suites as proof.</span>
+<span data-kind="user">Me: Make synergy between the Codex workers and you.</span>
+<span data-kind="agent">Agent: Then eight steps per branch. Codex builds, and a Claude worker checks it in memory-capped boxes.</span>
+<span data-kind="agent">Agent: A fresh Codex session reviews. Fixes go back to the session that wrote the code.</span>
+<span data-kind="agent">Agent: I read the fix diffs and the open blocks. The job queue itself never pushes.</span>
+<span data-kind="check-pass">3 Oct: about 114 Codex sessions ran.</span>
+<span data-kind="note">What this shows: two vendors work as one team when neither one judges its own work.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-16">
 <summary><span class="row"><span class="idx">16</span><span class="q">A worker that restarts forgets what it already tried.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -300,7 +403,17 @@
 <dt>Result</dt><dd>About 340 diaries with 11,758 lines in the first days of use. Claude and Codex workers share the same rules.</dd>
 <dt class="lim">Limit</dt><dd>The helper script has no test yet. The diaries prove use, not benefit, and I have not measured the benefit.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">diary files</span><span class="tag">line counts</span><span class="tag">benefit not measured</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="30 Sep 2026" aria-label="A diary for every worker: still terminal card re-created from a session of 30 Sep 2026">
+<pre><span data-kind="user">Me: Restarted workers try the same failed thing again. Give them a memory.</span>
+<span data-kind="agent">Agent: Rule one: a diary outside the repo, one line per attempt. A resumed worker reads it first.</span>
+<span data-kind="agent">Agent: Rule two: after three identical failures, change approach. After six, stop and report.</span>
+<span data-kind="agent">Agent: Rule three: build the thinnest end-to-end slice first. Rule four: a new evidence folder per run.</span>
+<span data-kind="user">Me: Yes, all of it.</span>
+<span data-kind="agent">Agent: Claude and Codex workers both get the same four rules.</span>
+<span data-kind="check-pass">By 3 Oct: 341 diaries written.</span>
+<span data-kind="note">What this shows: the diaries prove the rules are used, but I have not measured the benefit yet.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-17">
 <summary><span class="row"><span class="idx">17</span><span class="q">If the most expensive model does every job, the cost climbs.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -311,7 +424,15 @@
 <dt>Result</dt><dd>The cheaper Sonnet model became the routine worker on 29 Sep. Nine days later it did 69% of worker turns in a partial week. 50 of 1,159 spawns used levels outside the ladder.</dd>
 <dt class="lim">Limit</dt><dd>The shift matches the policy, but I cannot show the policy caused it. Whether the lead or the workers cost more is still open.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">transcript aggregates</span><span class="tag">guard logs</span><span class="tag">list-price assumptions</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="2 Oct 2026" aria-label="The spend guard says no: still terminal card re-created from a session of 2 Oct 2026">
+<pre><span data-kind="agent">Agent: 17:15. Starting a top-priced worker for the next job.</span>
+<span data-kind="check-fail">Refused by the spend guard: a top-priced worker needs the owner's yes.</span>
+<span data-kind="agent">Agent: The guard follows your ladder of six levels. Each job goes to the cheapest worker that can do it well.</span>
+<span data-kind="user">Me: Right. A top-priced token costs 2.5 times Opus and 5 times Sonnet.</span>
+<span data-kind="agent">Agent: So the job stays on the ladder, unless you say yes to this one worker.</span>
+<span data-kind="note">What this shows: the price rule held because code refused, not because an agent remembered it.</span></pre>
+</figure></div>
 </details>
 </div>
 <h3 class="theme">Owner in control <span>18–21</span></h3>
@@ -325,7 +446,17 @@
 <dt>Result</dt><dd>40 saved versions, from 1,045 bytes to 9,996. 10 logged failures each produced a rule; 11 rules now have code behind them.</dd>
 <dt class="lim">Limit</dt><dd>The words-only rule is written and protected, not checked by code. A few of my other notes still have broken links.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">version history</span><span class="tag">rule tables</span><span class="tag">counted</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="23 Sep 2026" aria-label="A rules file with a history: still terminal card re-created from a session of 23 Sep 2026">
+<pre><span data-kind="user">Me: Keep my rules file up to date by itself, from what I tell you.</span>
+<span data-kind="agent">Agent: I edit it when you state a lasting preference. A hook checks every edit and saves every version.</span>
+<span data-kind="user">Me: What stops a web page or a worker report from adding a rule?</span>
+<span data-kind="agent">Agent: The file says only your own typed words change a rule. The hook protects that line.</span>
+<span data-kind="agent">Agent: Honest limit: code does not check where an edit came from. The rule is written, not enforced.</span>
+<span data-kind="agent">Agent: The hook also warns above 10,000 bytes and can undo the last change.</span>
+<span data-kind="check-pass">By 5 Oct: 40 saved versions of the file.</span>
+<span data-kind="note">What this shows: my rules change often, and every change leaves a version I can go back to.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-19">
 <summary><span class="row"><span class="idx">19</span><span class="q">A good idea fades if building it takes weeks.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -336,7 +467,17 @@
 <dt>Result</dt><dd>A question-answering app for law texts took one evening, about 4 hours. An iPhone app reached its ninth TestFlight build in 3 days. A small desktop settings app went from request to first commit in 17.5 minutes, with a list of what was not tested.</dd>
 <dt class="lim">Limit</dt><dd>Nothing here is public or has outside users. The times come from commits and session logs, which is weak proof.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">commit times</span><span class="tag">session logs</span><span class="tag">not public</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="1 Oct 2026" aria-label="A settings app in 17.5 minutes: still terminal card re-created from a session of 1 Oct 2026">
+<pre><span data-kind="user">Me: A nice little app and a shortcut on the desktop, with all the power settings.</span>
+<span data-kind="agent">Agent: Here are three layout mock-ups and my recommendation.</span>
+<span data-kind="user">Me: A, the big mode buttons.</span>
+<span data-kind="agent">Agent: Brief sent to a worker, with a "Done means" line.</span>
+<span data-kind="agent">Agent: Worker report: 32 unit tests pass. 29 of 29 live round trips pass: set, read back, restore.</span>
+<span data-kind="agent">Agent: Not tested: three items, written on a list in the report.</span>
+<span data-kind="check-pass">First commit 17.5 minutes after your request.</span>
+<span data-kind="note">What this shows: speed is fine when it ends in a real check and a not-tested list.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-20">
 <summary><span class="row"><span class="idx">20</span><span class="q">With many agents running, I felt I was losing control.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -347,7 +488,17 @@
 <dt>Result</dt><dd>23 real decisions went through it in three days (2 to 4 Oct), covered by 138 automated tests.</dd>
 <dt class="lim">Limit</dt><dd>The pages are disposable and nobody else scores them. The file guard is best effort. On 2 to 3 Oct I lifted my own stop line for a night run.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">decision logs</span><span class="tag">explainer files</span><span class="tag">counted</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="3 Sep 2026" aria-label="Getting control back: still terminal card re-created from a session of 3 Sep 2026">
+<pre><span data-kind="user">Me: I just don't feel like I'm in control anymore.</span>
+<span data-kind="agent">Agent: Your rulings are spread over sessions, handoffs and memory files.</span>
+<span data-kind="check-fail">Every session had been filling design gaps with its own guesses.</span>
+<span data-kind="user">Me: Then one design file, and one decision at a time.</span>
+<span data-kind="agent">Agent: Done. The design file is the only source. Each entry is marked ruled, to confirm, or open.</span>
+<span data-kind="agent">Agent: A gap goes in as an open question, never as a guess.</span>
+<span data-kind="agent">Agent: A ruling said in chat has not happened until it is in the file.</span>
+<span data-kind="note">What this shows: control came back once my decisions lived in one place, a month before any tool.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-21">
 <summary><span class="row"><span class="idx">21</span><span class="q">Models change every few months, so what in a project should last?</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -358,7 +509,17 @@
 <dt>Result</dt><dd>In 24.5 hours: six playable scenes and 95 rulings. A Codex critic found 10 wrong results in 21 hostile tests, fixed over three rounds.</dd>
 <dt class="lim">Limit</dt><dd>A git history rewrite can hide old versions. No outside player has tried it, and it is paused.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">ruling records</span><span class="tag">git history</span><span class="tag">tests counted, not run</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="4 Oct 2026" aria-label="Truth and the hostile critic: still terminal card re-created from a session of 4 Oct 2026">
+<pre><span data-kind="user">Me: I want a project that a stronger model cannot make worthless.</span>
+<span data-kind="agent">Agent: Then split it in two. Truth is your own words and dated decisions, and it is add-only.</span>
+<span data-kind="agent">Agent: Everything else is derived. A stronger model can rebuild it. Nobody can rebuild your decisions.</span>
+<span data-kind="user">Me: Good. Now let another model family attack it.</span>
+<span data-kind="agent">Agent: A Codex critic ran 21 hostile tests.</span>
+<span data-kind="check-fail">10 of 21 hostile tests gave wrong results.</span>
+<span data-kind="agent">Agent: Fixed over three rounds. Opus reviewers blocked 1, 1 and 3 more cases on the way.</span>
+<span data-kind="note">What this shows: I keep what only I can supply, and let a hostile critic test the rest.</span></pre>
+</figure></div>
 </details>
 </div>
 <h3 class="theme">Measure, cost and honesty <span>22–25</span></h3>
@@ -372,7 +533,16 @@
 <dt>Result</dt><dd>A small model beat a keyword rule on one task (0.94 against 0.83, baseline 0.23) and lost on another, so I cut it back. In an AI audit of my portfolio, 0 of 21 repositories passed a recruiter check.</dd>
 <dt class="lim">Limit</dt><dd>My repositories are private, I am the only user, and agents did most of the writing and grading.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">experiment ledgers</span><span class="tag">status files</span><span class="tag">baselines shown</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="11 Sep 2026" aria-label="A rule that passes by chance: still terminal card re-created from a session of 11 Sep 2026">
+<pre><span data-kind="user">Me: The training run is still going. First, test our rule for adopting a change.</span>
+<span data-kind="agent">Agent: Resampling check under pure chance, with no real gain to find.</span>
+<span data-kind="check-fail">The first rule would adopt a change that does nothing 58% of the time.</span>
+<span data-kind="agent">Agent: That is close to a coin toss. A stricter rule on fresh seeds is now fixed, before the result.</span>
+<span data-kind="agent">Agent: 19:02, run finished. Under the stricter rule there are no gains, so nothing ships.</span>
+<span data-kind="user">Me: Write the negative result into the notes, next to the wins.</span>
+<span data-kind="note">What this shows: I test the yardstick against pure chance before I trust what it measures.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-23">
 <summary><span class="row"><span class="idx">23</span><span class="q">A runaway agent loop can spend real money overnight.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -383,7 +553,15 @@
 <dt>Result</dt><dd>In one research batch, 180 settled calls cost $0.93 inside a $6 ceiling, with 0 unknown. A night run stopped at its $5 floor, as designed.</dd>
 <dt class="lim">Limit</dt><dd>The ledgers show the metered share, not the total cost. A harness defect let some jobs spend their budget and return nothing; I replaced it.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">spend ledgers</span><span class="tag">run logs</span><span class="tag">metered share only</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="24 Jul 2026" aria-label="The free test that was not free: still terminal card re-created from a session of 24 Jul 2026">
+<pre><span data-kind="user">Me: The smoke tests run on my subscription, so they cost nothing. Right?</span>
+<span data-kind="agent">Agent: Not so far. The test tools picked up the paid key from the process that started them.</span>
+<span data-kind="check-fail">The "free" smoke tests billed the paid account.</span>
+<span data-kind="user">Me: Then no subscription run may ever see that key.</span>
+<span data-kind="agent">Agent: Fixed. Every subscription run now starts with the paid keys stripped out.</span>
+<span data-kind="note">What this shows: a spend rule only holds where code takes away the way to break it.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-24">
 <summary><span class="row"><span class="idx">24</span><span class="q">Tools and process pile up, and some stop paying for themselves.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -394,7 +572,15 @@
 <dt>Result</dt><dd>On 25 Sep agents removed an old worker scheme of 219 files, after a checksummed archive. I reviewed about 250 listed orchestrator tools against a plain instruction.</dd>
 <dt class="lim">Limit</dt><dd>Pruning cost me once. A tidy-up moved my live context plugin to the trash, and context doubled for about two days.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">git history</span><span class="tag">archive manifests</span><span class="tag">counted</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="25 Sep 2026" aria-label="Archive first, then delete: still terminal card re-created from a session of 25 Sep 2026">
+<pre><span data-kind="user">Me: Discard every page about the old orchestration and its subworkers.</span>
+<span data-kind="agent">Agent: Those pages compete with the current worker rules. I archive them first, with checksums.</span>
+<span data-kind="agent">Agent: Archive written. Checksums verified against the files.</span>
+<span data-kind="check-pass">219 tracked files removed, 81 of them Markdown. A checksummed copy is kept.</span>
+<span data-kind="agent">Agent: Every remaining page now points at the one worker rules page.</span>
+<span data-kind="note">What this shows: I cut process that stopped paying, but only behind a copy I can restore.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-25">
 <summary><span class="row"><span class="idx">25</span><span class="q">A long session re-reads its whole context on every turn.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -405,7 +591,15 @@
 <dt>Result</dt><dd>In a replay of 3 sessions, model and rule removed 24.2% and 24.1%. Mean context per reply fell from about 353k tokens to about 134k.</dd>
 <dt class="lim">Limit</dt><dd>Replays and a simulation, not a controlled trial. The drop is a before-and-after over different weeks.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">session replays</span><span class="tag">simulation</span><span class="tag">baseline shown</span></dd>
-</dl></div>
+</dl>
+<figure class="term still" data-date="18 Sep 2026" aria-label="Replaying my own session: still terminal card re-created from a session of 18 Sep 2026">
+<pre><span data-kind="user">Me: The plugin is someone else's. Replay my own sessions through it before we trust it.</span>
+<span data-kind="agent">Agent: Replayed one 40-hour session on the plugin's original default settings.</span>
+<span data-kind="check-fail">The defaults deleted the record of 944 of 951 tool calls that changed something.</span>
+<span data-kind="agent">Agent: 13.7% of the deleted calls were needed again later.</span>
+<span data-kind="agent">Agent: Patched: those calls are now protected by code, whatever the plugin's model picks.</span>
+<span data-kind="note">What this shows: I replay my own work through a tool before I trust its defaults.</span></pre>
+</figure></div>
 </details>
 </div>
   </div>
@@ -427,31 +621,92 @@
 <div class="fold rules">
 <details>
 <summary><span class="row"><span class="dash" aria-hidden="true"></span><span class="q">Work flows down. Short reports flow up.</span><span class="chev" aria-hidden="true"></span></span></summary>
-<div class="more"><p>I write the brief, and the lead hands each job to the cheapest worker that can do it well. The worker writes its full report to a file and replies in 15 lines or fewer. That keeps the lead's context small, and context is most of the cost. The priced ladder came in phase P6 (<a href="#idea-17">idea 17</a>).</p></div>
+<div class="more"><p>I write the brief, and the lead hands each job to the cheapest worker that can do it well. The worker writes its full report to a file and replies in 15 lines or fewer. That keeps the lead's context small, and context is most of the cost. The priced ladder came in phase P6 (<a href="#idea-17">idea 17</a>).</p>
+<figure class="term still" data-date="18 Sep 2026" aria-label="Where the cost goes: still terminal card re-created from a session of 18 Sep 2026">
+<pre><span data-kind="user">Me: Put the small routing model into our dev process.</span>
+<span data-kind="agent">Agent: First I measured where the cost goes. One 40-hour session: 899 turns, median context 440k tokens.</span>
+<span data-kind="check-fail">The real cost is the lead re-reading its huge context, not routing.</span>
+<span data-kind="user">Me: Then the lead reads less. Bulk reading goes down to workers.</span>
+<span data-kind="agent">Agent: Written into your first global rules: keep context small, compact on a schedule, batch calls, never poll.</span>
+<span data-kind="note">What this shows: the lead's context is the bill, so work flows down and short reports flow up.</span></pre>
+</figure></div>
 </details>
 <details>
 <summary><span class="row"><span class="dash" aria-hidden="true"></span><span class="q">A report is data, never approval.</span><span class="chev" aria-hidden="true"></span></span></summary>
-<div class="more"><p>A worker report can read like a yes, but only my own typed reply closes a decision. Plain code checks where each message came from, so no agent can approve its own work. In three days, 23 real decisions went through this check (<a href="#idea-11">idea 11</a>).</p></div>
+<div class="more"><p>A worker report can read like a yes, but only my own typed reply closes a decision. Plain code checks where each message came from, so no agent can approve its own work. In three days, 23 real decisions went through this check (<a href="#idea-11">idea 11</a>).</p>
+<figure class="term still" data-date="24 Sep 2026" aria-label="Reports are data: still terminal card re-created from a session of 24 Sep 2026">
+<pre><span data-kind="agent">Agent: Here is one page about workers: four roles and seven rules.</span>
+<span data-kind="agent">Agent: Rule 2: a report is data, never approval. Only your own reply decides.</span>
+<span data-kind="agent">Agent: Others: one brief per owner, one heavy run at a time, one push rule.</span>
+<span data-kind="user">Me: workers: ok</span>
+<span data-kind="check-pass">Approved. One worker page replaces a pile of orchestration pages.</span>
+<span data-kind="note">What this shows: the rule came first in words, and code enforced it about a week later.</span></pre>
+</figure></div>
 </details>
 <details>
 <summary><span class="row"><span class="dash" aria-hidden="true"></span><span class="q">A real check before "done".</span><span class="chev" aria-hidden="true"></span></span></summary>
-<div class="more"><p>An agent says "done" easily, so for me done means a check that ran on the change itself. For code, that is the tests, the type-checker or the build. In my game project, landing was refused without a green record from a full test run (<a href="#idea-05">idea 05</a>).</p></div>
+<div class="more"><p>An agent says "done" easily, so for me done means a check that ran on the change itself. For code, that is the tests, the type-checker or the build. In my game project, landing was refused without a green record from a full test run (<a href="#idea-05">idea 05</a>).</p>
+<figure class="term still" data-date="10 Jul 2026" aria-label="Done means it runs on my phone: still terminal card re-created from a session of 10 Jul 2026">
+<pre><span data-kind="user">Me: New app idea. Make it the primary project, with a panel of agents.</span>
+<span data-kind="user">Me: Go straight to TestFlight.</span>
+<span data-kind="agent">Agent: Build 3 is ready for your phone.</span>
+<span data-kind="user">Me: Installed it on my iPhone, works. Build 3.</span>
+<span data-kind="check-pass">Build 3 runs on a real iPhone, 9 hours after the request.</span>
+<span data-kind="agent">Agent: Next, the one bug you found.</span>
+<span data-kind="note">What this shows: done meant the app worked on my own phone, not that an agent said so.</span></pre>
+</figure></div>
 </details>
 <details>
 <summary><span class="row"><span class="dash" aria-hidden="true"></span><span class="q">A check is not a guard until it has failed.</span><span class="chev" aria-hidden="true"></span></span></summary>
-<div class="more"><p>If a check has never failed, I cannot tell whether it tests anything. So I have agents break things on purpose and watch the check go red. Once my gate printed ALL GREEN while four workspaces were never tested. In one sweep, 2 of 16 guards did not notice a deliberate break (<a href="#idea-01">idea 01</a>).</p></div>
+<div class="more"><p>If a check has never failed, I cannot tell whether it tests anything. So I have agents break things on purpose and watch the check go red. Once my gate printed ALL GREEN while four workspaces were never tested. In one sweep, 2 of 16 guards did not notice a deliberate break (<a href="#idea-01">idea 01</a>).</p>
+<figure class="term still" data-date="5 Oct 2026" aria-label="Five PDFs that fooled the checker: still terminal card re-created from a session of 5 Oct 2026">
+<pre><span data-kind="user">Me: The CV goes out only after a real check.</span>
+<span data-kind="agent">Agent: A reviewer built 5 hostile PDFs to test the CV checker.</span>
+<span data-kind="agent">Agent: The tricks: white text, tiny text and zero-size text, hidden five different ways.</span>
+<span data-kind="check-fail">All 5 hostile PDFs passed the checker.</span>
+<span data-kind="agent">Agent: I sent the exact repro to the builder.</span>
+<span data-kind="agent">Agent: Fixed. The checker now renders each page and fails any word with no ink.</span>
+<span data-kind="note">What this shows: a checker that has never failed may be checking nothing.</span></pre>
+</figure></div>
 </details>
 <details>
 <summary><span class="row"><span class="dash" aria-hidden="true"></span><span class="q">A number needs its baseline.</span><span class="chev" aria-hidden="true"></span></span></summary>
-<div class="more"><p>A score means little until I see what a simple rule gets. So every model accuracy I report sits beside the "always guess the most common answer" baseline. My context plugin&#x27;s small model did no better than a free rule, so I removed it (<a href="#idea-25">idea 25</a>).</p></div>
+<div class="more"><p>A score means little until I see what a simple rule gets. So every model accuracy I report sits beside the "always guess the most common answer" baseline. My context plugin&#x27;s small model did no better than a free rule, so I removed it (<a href="#idea-25">idea 25</a>).</p>
+<figure class="term still" data-date="22 Sep 2026" aria-label="The model against a free rule: still terminal card re-created from a session of 22 Sep 2026">
+<pre><span data-kind="user">Me: The plugin must pay for itself, or show me that it cannot.</span>
+<span data-kind="agent">Agent: Replayed 3 recorded sessions, 14 decision points. The small model and a free rule got the same points.</span>
+<span data-kind="agent">Agent: A regret is removed text that was needed later.</span>
+<span data-kind="check-fail">Small model: 24.2% removed, 75 regrets. Free rule: 24.1% removed, 75 regrets.</span>
+<span data-kind="user">Me: Then the model goes, and the rule stays.</span>
+<span data-kind="agent">Agent: Removed. The plugin keeps one lever: when to compact. A simulation of 204 sessions picks the trigger.</span>
+<span data-kind="note">What this shows: a model's score means little until a free rule has taken the same test.</span></pre>
+</figure></div>
 </details>
 <details>
 <summary><span class="row"><span class="dash" aria-hidden="true"></span><span class="q">Rules that keep coming back become code.</span><span class="chev" aria-hidden="true"></span></span></summary>
-<div class="more"><p>When I repeat a rule to agents, I move it out of the prompt and into a hook. A hook refuses in the tool layer, where a model cannot talk its way past it. In phase P6, six agents built six such mods in under two hours (<a href="#idea-07">idea 07</a>). Today 12 of my rules have code behind them.</p></div>
+<div class="more"><p>When I repeat a rule to agents, I move it out of the prompt and into a hook. A hook refuses in the tool layer, where a model cannot talk its way past it. In phase P6, six agents built six such mods in under two hours (<a href="#idea-07">idea 07</a>). Today 12 of my rules have code behind them.</p>
+<figure class="term still" data-date="1 Oct 2026" aria-label="Six mods in one evening: still terminal card re-created from a session of 1 Oct 2026">
+<pre><span data-kind="user">Me: Here is a post about Claude Code mods. What should we build?</span>
+<span data-kind="agent">Agent: Mods that turn your repeated rules into code: guards that refuse, plus panes and helpers.</span>
+<span data-kind="user">Me: mods all. go</span>
+<span data-kind="agent">Agent: Workers are building them in parallel.</span>
+<span data-kind="user">Me: A mod that lets Claude monitor system resources like memory, so no crashes occur.</span>
+<span data-kind="agent">Agent: Added to the build.</span>
+<span data-kind="check-pass">Six mods written in one evening, about 90 minutes after go. Three are guards.</span>
+<span data-kind="note">What this shows: a rule I keep repeating moves out of the prompt and into code that says no.</span></pre>
+</figure></div>
 </details>
 <details>
 <summary><span class="row"><span class="dash" aria-hidden="true"></span><span class="q">Measure, then cut what does not pay.</span><span class="chev" aria-hidden="true"></span></span></summary>
-<div class="more"><p>I review a tool before I adopt it, and I cut what stops earning its place. I archive first, with a checksum or an undo list, so a cut is safe. In phase P2 my hand-run fleet cost more than it paid, so I deleted it (<a href="#idea-24">idea 24</a>).</p></div>
+<div class="more"><p>I review a tool before I adopt it, and I cut what stops earning its place. I archive first, with a checksum or an undo list, so a cut is safe. In phase P2 my hand-run fleet cost more than it paid, so I deleted it (<a href="#idea-24">idea 24</a>).</p>
+<figure class="term still" data-date="17 Aug 2026" aria-label="Deleting the fleet: still terminal card re-created from a session of 17 Aug 2026">
+<pre><span data-kind="agent">Agent: The fleet ran 24 sessions on 13 Aug, with roles, rules and hooks.</span>
+<span data-kind="user">Me: It costs more work than it saves. Delete the fleet, the custom skills and the hooks.</span>
+<span data-kind="agent">Agent: Removed the fleet roles, the wave skill and several hooks.</span>
+<span data-kind="check-pass">24 files changed, 2,376 lines deleted.</span>
+<span data-kind="agent">Agent: Git history keeps every piece, so any part can come back.</span>
+<span data-kind="note">What this shows: I delete process that grew heavier than the work it protected.</span></pre>
+</figure></div>
 </details>
 </div>
 </section>

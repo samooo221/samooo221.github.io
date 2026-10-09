@@ -131,6 +131,9 @@ background:radial-gradient(circle at 18px 50%,var(--red) 0 4px,transparent 4.5px
 .term-replay:hover{color:var(--ink);border-color:var(--red)}
 .term-replay:focus-visible{outline:2px solid var(--red);outline-offset:2px}
 .card .term{margin-top:16px}
+/* still cards: same look, no replay button, final text shown at once */
+.term.still::before{padding-right:16px}
+.fold .more .term{margin-top:18px}
 @media print{.term .off{visibility:visible}.term-replay{display:none}}
 @media (max-width:480px){.term pre{font-size:13px;padding:12px 12px 14px}.term::before{padding-left:58px}}
 footer{padding:48px 0 64px;margin-top:64px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}

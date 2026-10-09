@@ -1,7 +1,8 @@
 /* Replays each terminal scene: my lines are typed out, agent lines appear whole.
-   Without JS, or with reduced motion, the full text simply shows. */
+   Without JS, or with reduced motion, the full text simply shows.
+   Still cards (figure.term.still) are left alone: they show the final text at once. */
 (function () {
-  var figs = document.querySelectorAll('figure.term');
+  var figs = document.querySelectorAll('figure.term:not(.still)');
   var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!figs.length || still) return;
   var io = 'IntersectionObserver' in window && new IntersectionObserver(function (es) {
