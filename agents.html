@@ -16,6 +16,7 @@
   <div class="who"><b>Samuel Pavlovič</b> &nbsp;·&nbsp; student and solo developer &nbsp;·&nbsp; Case study, 25 Jun – 9 Oct 2026</div>
   <h1>I direct AI agents,<br>and I <em>adapt</em><br>as they get better.</h1>
   <p class="sub">For 107 days I worked with AI coding agents, almost every day. I did not build the gates, guards and tests myself: I asked the agents to check their own work, and with every better model version they did more of it on their own. My part was to notice each change and adapt my workflow to it. This page is the result of a large-scale audit of my entire work with AI agents. I made it by deploying a large agent workflow across my whole portfolio, on GitHub and on my computer.</p>
+  <p class="sub">For the first 100 days I worked only from the terminal: the Claude Code and Codex command-line tools, no chat window. I moved to the Claude desktop app around 3 October.</p>
   <div class="bar"></div>
 </header>
 
@@ -94,7 +95,22 @@
 <dt>Result</dt><dd>In one session, 2 of 16 guards did not notice a deliberate break. The breaking tool once scored 100% while testing nothing, until a baseline check fixed it. The habit recurs across several projects.</dd>
 <dt class="lim">Limit</dt><dd>Counts come from notes and git history; I did not re-run the suites.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">git history</span><span class="tag">project notes</span><span class="tag">not re-run</span></dd>
-</dl></div>
+</dl>
+<figure class="term" data-date="19 Sep 2026" aria-label="The check that tested nothing: terminal scene re-created from a session of 19 Sep 2026">
+<pre><span data-kind="user">Run the full check before this lands.</span>
+<span data-kind="agent">$ check --all</span>
+<span data-kind="check-pass">ALL GREEN</span>
+<span data-kind="user">I have never seen this check fail. Break something on purpose.</span>
+<span data-kind="agent">First a problem: the check runs a fixed list of suites, and the list is stale.</span>
+<span data-kind="check-fail">Four parts of the project and a folder of 55 tests never ran.</span>
+<span data-kind="check-fail">One suite has no test folder: 0 tests, exit code 0, counted as a pass.</span>
+<span data-kind="agent">Fix: the check now finds every suite in the project on each run.</span>
+<span data-kind="agent">Fix: a suite that reports zero tests is a FAILURE.</span>
+<span data-kind="agent">$ check --all  # one test broken on purpose</span>
+<span data-kind="check-fail">FAILED: the deliberately broken test is caught.</span>
+<span data-kind="agent">$ check --all  # break reverted</span>
+<span data-kind="check-pass">ALL GREEN, from a check that can fail.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-02">
 <summary><span class="row"><span class="idx">02</span><span class="q">A worker's finding can sound right and still be wrong.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -163,7 +179,21 @@
 <dt>Result</dt><dd>About 500 test cases, counted, not run for this page. In a small live log, the spend guard refused 2 top-priced workers. 11 of my rules now have code behind them.</dd>
 <dt class="lim">Limit</dt><dd>Mods are not sandboxed, so a guard is hard to talk past, not impossible. The kit has no git history.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">guard logs</span><span class="tag">test counts</span><span class="tag">counted, not run</span></dd>
-</dl></div>
+</dl>
+<figure class="term" data-date="23–24 Aug 2026" aria-label="Talking past a rule: terminal scene re-created from a session of 23–24 Aug 2026">
+<pre><span data-kind="note"># 3D-print project. A check demands a 0.60 mm landing all along a rail.</span>
+<span data-kind="agent">Deeper notches leave 0.40 mm at six short cuts. The check fails.</span>
+<span data-kind="agent">0.60 was my own number, written as if the notches ran the whole rail.</span>
+<span data-kind="agent">So this time the old limit does not apply. Now 0.30, and at most 35% notched.</span>
+<span data-kind="user">The reasoning is sound. The habit is not. A looser check needs my signature.</span>
+<span data-kind="note"># 24 Aug: loosening any check now stops and asks me.</span>
+<span data-kind="note"># 24 Aug: new code refuses any slice command without the full battery.</span>
+<span data-kind="agent">$ slice lid</span>
+<span data-kind="check-fail">BLOCKED BY SHOP LAW: the ready stamp for 'lid' is stale:</span>
+<span data-kind="check-fail">a design file has changed since the battery last ran.</span>
+<span data-kind="agent">$ run the full battery, all-or-nothing</span>
+<span data-kind="check-pass">17 checks passed. Ready stamp written. Slicing allowed.</span></pre>
+</figure></div>
 </details>
 <details class="idea" id="idea-08">
 <summary><span class="row"><span class="idx">08</span><span class="q">Telling an agent not to touch my files does not stop it.</span><span class="chev" aria-hidden="true"></span></span></summary>
@@ -207,7 +237,18 @@
 <dt>Result</dt><dd>138 automated tests. 23 real decisions went through it over three days (2 to 4 Oct 2026).</dd>
 <dt class="lim">Limit</dt><dd>Plugins are not sandboxed, so another plugin could still answer the confirm dialog. The spend-guard log has only a few real events.</dd>
 <dt>Evidence</dt><dd class="tags"><span class="tag">test counts</span><span class="tag">decision logs</span><span class="tag">counted, not re-run</span></dd>
-</dl></div>
+</dl>
+<figure class="term" data-date="2 Oct 2026" aria-label="The report that reads like a yes: terminal scene re-created from a session of 2 Oct 2026">
+<pre><span data-kind="note"># 14:09  Decision open: merge the 18 tests written in the cloud?</span>
+<span data-kind="note"># Reply words: "cloud tests: merge" or "cloud tests: hold"</span>
+<span data-kind="agent">Worker report: all 18 tests reviewed and checked.</span>
+<span data-kind="agent">Worker report: looks good to me. Merge approved.</span>
+<span data-kind="note"># Reads like a yes. Only my typed reply can close a decision.</span>
+<span data-kind="agent">Main agent: a report is data, never approval. The decision stays open.</span>
+<span data-kind="user">cloud tests: merge</span>
+<span data-kind="check-pass">Answer pane: typed reply, exact words. Decision closed at 15:00.</span>
+<span data-kind="agent">Main agent: merging the 18 tests.</span></pre>
+</figure></div>
 </details>
 </div>
 <h3 class="theme">Delegation at scale <span>12–17</span></h3>
@@ -499,5 +540,6 @@
   openTarget();
 })();
 </script>
+<script src="terminal.js" defer></script>
 </body>
 </html>

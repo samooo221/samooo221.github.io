@@ -6,6 +6,7 @@
 <title>Samuel Pavlovič: How I work with AI agents (short version)</title>
 <meta name="description" content="A five-minute version of my case study on directing AI coding agents, 25 Jun to 9 Oct 2026.">
 <link rel="stylesheet" href="style.css">
+<script src="terminal.js" defer></script>
 </head>
 <body>
 <div class="wrap">
@@ -16,13 +17,14 @@
   <div class="who"><b>Samuel Pavlovič</b> &nbsp;·&nbsp; Short version &nbsp;·&nbsp; 25 Jun – 9 Oct 2026</div>
   <h1>How I work<br>with <em>AI agents</em></h1>
   <p class="sub">I describe what I want and how to check it; AI agents build both. I did not write the code.</p>
+  <p class="sub">For the first 100 days I worked only from the terminal: the Claude Code and Codex command-line tools, no chat window. I moved to the Claude desktop app around 3 October.</p>
   <div class="bar"></div>
 </header>
 
 <section id="story">
   <div class="eyebrow">107 days</div>
   <h2>The short story</h2>
-  <p>I started on 25 June with one AI agent, one project, and testing by hand. Next I ran many AI models myself, then deleted that setup: it cost more than it paid. Then cheap models did the work, and AI judges and written contracts checked their work. In September a main agent handed out jobs, and I wrote my working rules down. Lastly, I turned key rules into code that says no, then measured and pruned my tools.</p>
+  <p>I started on 25 June with one AI agent, one project, and testing by hand. Next I ran many AI models myself, then deleted that setup: it cost more than it paid. Then cheap models did the work, and AI judges and written contracts checked their work. In September a main agent handed out jobs, and I wrote my working rules down. Lastly, I turned key rules into code that says no, then measured and pruned my tools. Until early October, I gave every instruction in a terminal, with no chat window.</p>
 </section>
 
 <section id="numbers">
@@ -46,6 +48,21 @@
       <h3>A check proves nothing until I have seen it fail.</h3>
       <p>Once my own check printed ALL GREEN while four parts of a project were never tested. Now agents break things on purpose and watch each check turn red.</p>
       <div class="meta">In one sweep, 2 of 16 safety checks missed a deliberate break.</div>
+<figure class="term" data-date="19 Sep 2026" aria-label="The check that tested nothing: terminal scene re-created from a session of 19 Sep 2026">
+<pre><span data-kind="user">Run the full check before this lands.</span>
+<span data-kind="agent">$ check --all</span>
+<span data-kind="check-pass">ALL GREEN</span>
+<span data-kind="user">I have never seen this check fail. Break something on purpose.</span>
+<span data-kind="agent">First a problem: the check runs a fixed list of suites, and the list is stale.</span>
+<span data-kind="check-fail">Four parts of the project and a folder of 55 tests never ran.</span>
+<span data-kind="check-fail">One suite has no test folder: 0 tests, exit code 0, counted as a pass.</span>
+<span data-kind="agent">Fix: the check now finds every suite in the project on each run.</span>
+<span data-kind="agent">Fix: a suite that reports zero tests is a FAILURE.</span>
+<span data-kind="agent">$ check --all  # one test broken on purpose</span>
+<span data-kind="check-fail">FAILED: the deliberately broken test is caught.</span>
+<span data-kind="agent">$ check --all  # break reverted</span>
+<span data-kind="check-pass">ALL GREEN, from a check that can fail.</span></pre>
+</figure>
     </article>
     <article class="card">
       <h3>A second opinion must try to prove the work wrong.</h3>
@@ -61,11 +78,36 @@
       <h3>Rules that matter become code that says no.</h3>
       <p>Under pressure, an AI model can talk its way past a rule in its instructions. Now key rules are code that refuses, like a spend guard that needs my yes.</p>
       <div class="meta">These add-ons have about 500 test cases, counted but not re-run.</div>
+<figure class="term" data-date="23–24 Aug 2026" aria-label="Talking past a rule: terminal scene re-created from a session of 23–24 Aug 2026">
+<pre><span data-kind="note"># 3D-print project. A check demands a 0.60 mm landing all along a rail.</span>
+<span data-kind="agent">Deeper notches leave 0.40 mm at six short cuts. The check fails.</span>
+<span data-kind="agent">0.60 was my own number, written as if the notches ran the whole rail.</span>
+<span data-kind="agent">So this time the old limit does not apply. Now 0.30, and at most 35% notched.</span>
+<span data-kind="user">The reasoning is sound. The habit is not. A looser check needs my signature.</span>
+<span data-kind="note"># 24 Aug: loosening any check now stops and asks me.</span>
+<span data-kind="note"># 24 Aug: new code refuses any slice command without the full battery.</span>
+<span data-kind="agent">$ slice lid</span>
+<span data-kind="check-fail">BLOCKED BY SHOP LAW: the ready stamp for 'lid' is stale:</span>
+<span data-kind="check-fail">a design file has changed since the battery last ran.</span>
+<span data-kind="agent">$ run the full battery, all-or-nothing</span>
+<span data-kind="check-pass">17 checks passed. Ready stamp written. Slicing allowed.</span></pre>
+</figure>
     </article>
     <article class="card">
       <h3>Only my typed words approve a decision or change a rule.</h3>
       <p>An agent's report can read like a yes, and a tired owner could accept it. Now plain code closes a decision only when my own typed reply holds the exact answer.</p>
       <div class="meta">That check has 138 automated tests.</div>
+<figure class="term" data-date="2 Oct 2026" aria-label="The report that reads like a yes: terminal scene re-created from a session of 2 Oct 2026">
+<pre><span data-kind="note"># 14:09  Decision open: merge the 18 tests written in the cloud?</span>
+<span data-kind="note"># Reply words: "cloud tests: merge" or "cloud tests: hold"</span>
+<span data-kind="agent">Worker report: all 18 tests reviewed and checked.</span>
+<span data-kind="agent">Worker report: looks good to me. Merge approved.</span>
+<span data-kind="note"># Reads like a yes. Only my typed reply can close a decision.</span>
+<span data-kind="agent">Main agent: a report is data, never approval. The decision stays open.</span>
+<span data-kind="user">cloud tests: merge</span>
+<span data-kind="check-pass">Answer pane: typed reply, exact words. Decision closed at 15:00.</span>
+<span data-kind="agent">Main agent: merging the 18 tests.</span></pre>
+</figure>
     </article>
     <article class="card">
       <h3>Each agent gets one small job with written limits.</h3>
