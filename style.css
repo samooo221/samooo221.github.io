@@ -37,6 +37,8 @@ header.hero{padding:48px 0 8px}
 .cards{display:grid;gap:16px;margin-top:20px}
 .card{border:1px solid var(--line);padding:18px 18px 16px}
 .card h3{font-size:18px}
+.more{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);color:var(--mute);font-size:16px}
+.more strong{color:var(--ink);font-weight:600}
 .card .meta{font-size:14px;color:var(--mute);margin-top:4px}
 .card p{margin-top:10px;font-size:16px}
 .card .go{margin-top:10px;font-size:15px;font-weight:600}
