@@ -24,7 +24,7 @@ header.hero{padding:48px 0 8px}
 .hero.home{display:flex;gap:24px;align-items:center}
 .hero.home img{width:140px;height:140px;border-radius:50%;object-fit:cover;flex:none}
 .hero.home h1{color:var(--red);font-size:clamp(30px,7vw,48px)}
-.hero.home h1 img{display:block;height:clamp(40px,9vw,56px);width:auto;max-width:100%}
+.hero.home h1 img{display:block;height:clamp(40px,9vw,56px);width:auto;max-width:100%;border-radius:0;object-fit:contain}
 .hero.home p{margin-top:10px;color:var(--mute);font-size:18px}
 .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
 .btn{display:inline-block;padding:12px 18px;border:2px solid var(--red);font-weight:600;font-size:16px;text-decoration:none;color:var(--red)}
